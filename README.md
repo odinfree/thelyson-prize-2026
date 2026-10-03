@@ -9,7 +9,7 @@ The advertised deadline is **31 October 2026, 23:59 Anywhere on Earth** — **1 
 ## Start here
 
 1. Read the [contest dossier](contest/README.md), especially its unresolved questions.
-2. Follow the [research agenda](research/README.md), the [initial literature review](research/notes/2026-10-03-ai-fiction-baseline.md), the [October frontier update](research/notes/2026-10-03-frontier-update.md), and the [revision evidence update](research/notes/2026-10-03-revision-evidence.md), and the [reader evidence and workflow update](research/notes/2026-10-03-reader-evidence.md).
+2. Follow the [research agenda](research/README.md) for the source register and dated findings on long-form generation, revision, reader evidence and retrieval.
 3. Use the [project roadmap](planning/roadmap.md) to move from research to a creative brief and small writing experiments.
 4. Keep the [authorship record](provenance/README.md) from the first manuscript passage onward.
 5. Capture transferable lessons in the [Stop Slop integration plan](integrations/stop-slop-refined/README.md).
