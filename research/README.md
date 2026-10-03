@@ -6,6 +6,8 @@ The later [revision evidence update](notes/2026-10-03-revision-evidence.md) dist
 
 The [retrieval boundaries note](notes/2026-10-03-retrieval-boundaries.md) examines confident errors, fallback retrieval and the risk of turning inferred narrative time into canon.
 
+The completed [evidence-window comparison](notes/2026-10-03-evidence-window-results.md) found lower prompt-token use without better semantic agreement. It also records answers that matched a full-story key despite missing support in the excerpt actually shown.
+
 ## Agenda
 
 | Priority | Question | Evidence to seek | Output |

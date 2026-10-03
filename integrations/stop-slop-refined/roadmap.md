@@ -17,6 +17,8 @@ The more promising transfer is a small review-record extension: distinguish diag
 
 These are implementation priorities inferred from local evidence. They do not establish a literary advantage or change the upstream skill.
 
+The later [64-presentation evidence-window comparison](../../research/notes/2026-10-03-evidence-window-results.md) adds two required counterexamples for any future review-record extension: a genuine quotation used for an unsupported inference, and a full-source-correct answer unsupported by the excerpt actually supplied. A quote link or matching label must not automatically approve a repair. Record the supplied evidence boundary alongside source revision identity, and preserve a separate semantic assessment.
+
 ## First: establish the evidence
 
 Read the contest rules and investigate AI-assisted creative writing, long-form narrative evaluation, stylistic diversity, revision, and reader response. Read the original studies before extending claims from advertising copy or social replies to novels. The existing AI-role reference already warns against overgeneralizing its evidence; preserve that discipline.
