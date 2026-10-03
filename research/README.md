@@ -4,6 +4,8 @@ Begin with the [contest dossier](../contest/README.md), [initial AI-fiction revi
 
 The later [revision evidence update](notes/2026-10-03-revision-evidence.md) distinguishes useful feedback, valid repairs, prose preference and diversity. It records unsuccessful editing hypotheses as well as the next implementation questions.
 
+The [retrieval boundaries note](notes/2026-10-03-retrieval-boundaries.md) examines confident errors, fallback retrieval and the risk of turning inferred narrative time into canon.
+
 ## Agenda
 
 | Priority | Question | Evidence to seek | Output |

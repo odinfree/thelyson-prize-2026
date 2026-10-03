@@ -353,5 +353,25 @@
     "status": "read_primary",
     "scope": "Primary methods, results and reliability appendix inspected.",
     "limitation": "Simulated reception is a research intervention, not human feedback on our writing."
+  },
+  {
+    "id": "L29",
+    "title": "Remember by Asking: Retrieval-Induced Memory Evolution for LLM Agents",
+    "url": "https://arxiv.org/abs/2609.34438",
+    "published": "2026-09-28",
+    "accessed": "2026-10-03",
+    "status": "read_primary_preprint",
+    "scope": "Primary methods and all three evaluation tables inspected; conversational memory formation and fallback retrieval.",
+    "limitation": "Fallback is triggered by explicit abstention; query-time tokens omit memory construction, and fiction or human-reader improvement is untested."
+  },
+  {
+    "id": "L30",
+    "title": "KnowMe-Bench: Benchmarking Person Understanding for Lifelong Digital Companions",
+    "url": "https://aclanthology.org/2026.acl-long.1394/",
+    "published": "2026-07",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Primary methods, result tables and narrative reconstruction/evaluation appendices inspected.",
+    "limitation": "Reconstructed literary timelines include synthesized anchors; unequal evidence access and unresolved aggregate reporting scope limit direct comparisons."
   }
 ]
