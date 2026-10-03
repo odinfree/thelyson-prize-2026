@@ -1,6 +1,6 @@
 # Research
 
-Begin with the [contest dossier](../contest/README.md) and [initial AI-fiction review](notes/2026-10-03-ai-fiction-baseline.md). This is an initial research base, not an exhaustive literature review.
+Begin with the [contest dossier](../contest/README.md), [initial AI-fiction review](notes/2026-10-03-ai-fiction-baseline.md), and [October frontier update](notes/2026-10-03-frontier-update.md). The update covers the September novel-length preprints, verified limits, and early diagnostic experiments. This is a growing research base, not an exhaustive literature review.
 
 ## Agenda
 
