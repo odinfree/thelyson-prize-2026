@@ -333,5 +333,25 @@
     "status": "read_primary_with_access_limits",
     "scope": "Indexed primary methods inspected; local recognition, not voluntary continuation.",
     "limitation": "See the dated reader-evidence note; no contest-success inference."
+  },
+  {
+    "id": "L27",
+    "title": "Planning Beyond Text: Graph-based Reasoning for Complex Narrative Generation",
+    "url": "https://aclanthology.org/2026.findings-acl.1874/",
+    "published": "2026-07",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Primary methods, results and human-evaluation appendix inspected.",
+    "limitation": "Graph topology does not certify semantic causality; novel-quality transfer remains untested."
+  },
+  {
+    "id": "L28",
+    "title": "Multi-Agent Comedy Club: Investigating Community Discussion Effects on LLM Humor Generation",
+    "url": "https://aclanthology.org/2026.findings-acl.145/",
+    "published": "2026-07",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Primary methods, results and reliability appendix inspected.",
+    "limitation": "Simulated reception is a research intervention, not human feedback on our writing."
   }
 ]
