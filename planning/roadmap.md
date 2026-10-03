@@ -2,6 +2,8 @@
 
 Updated: 2026-10-03. These are internal targets, not additional contest rules or scheduled automations.
 
+The [writing-system map](writing-system.md) separates working prototypes from the manuscript workflow and the creative decisions that remain open.
+
 | Phase | Target | Work | Exit evidence | State |
 | --- | --- | --- | --- | --- |
 | Foundation | 3 October | Public repo, contest dossier, initial sources, integration plan | Public GitHub repo and initial commit verified on 3 October | Complete |
