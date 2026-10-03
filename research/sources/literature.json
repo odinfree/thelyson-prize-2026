@@ -273,5 +273,65 @@
     "status": "read_primary",
     "scope": "Short-story human creativity ratings compared with automatic methods.",
     "limitation": "One tested LLM judge; no novel-length or repair evaluation."
+  },
+  {
+    "id": "L21",
+    "title": "The linguistic basis of narrative suspense: narrative suspense depends on potentially inquiry-terminating questions",
+    "url": "https://doi.org/10.1017/langcog.2025.10057",
+    "published": "2026",
+    "accessed": "2026-10-03",
+    "status": "read_primary_with_access_limits",
+    "scope": "Primary methods/results checked; correlational suspense evidence from four short stories.",
+    "limitation": "See the dated reader-evidence note; no contest-success inference."
+  },
+  {
+    "id": "L22",
+    "title": "The Role of Different Spoiler Types in the Experience of Short Stories",
+    "url": "https://ssol-journal.com/articles/190/files/6818ab3f892e8.pdf",
+    "published": "2025",
+    "accessed": "2026-10-03",
+    "status": "read_primary_with_access_limits",
+    "scope": "Primary methods/results checked; bounded spoiler manipulation, not novel reception.",
+    "limitation": "See the dated reader-evidence note; no contest-success inference."
+  },
+  {
+    "id": "L23",
+    "title": "An Analysis of Reader Engagement in Literary Fiction through Eye Tracking and Linguistic Features",
+    "url": "https://arxiv.org/pdf/2306.04043",
+    "published": "2023",
+    "accessed": "2026-10-03",
+    "status": "read_primary_with_access_limits",
+    "scope": "Primary methods/results checked; dwell time and stated engagement are distinct.",
+    "limitation": "See the dated reader-evidence note; no contest-success inference."
+  },
+  {
+    "id": "L24",
+    "title": "Different routes to liking: how readers arrive at narrative evaluations",
+    "url": "https://link.springer.com/article/10.1186/s41235-022-00419-0",
+    "published": "2022",
+    "accessed": "2026-10-03",
+    "status": "read_primary_with_access_limits",
+    "scope": "Primary methods/results checked; variation across readers and short stories.",
+    "limitation": "See the dated reader-evidence note; no contest-success inference."
+  },
+  {
+    "id": "L25",
+    "title": "A sixth sense: Narrative experiences of stories with twist endings",
+    "url": "https://benjamins.com/catalog/ssol.17002.kom",
+    "published": "2017 issue; online 2018-06-28",
+    "accessed": "2026-10-03",
+    "status": "read_primary_with_access_limits",
+    "scope": "Publisher record and author manuscript checked; rereading, not randomized ending comparison.",
+    "limitation": "See the dated reader-evidence note; no contest-success inference."
+  },
+  {
+    "id": "L26",
+    "title": "Waiting for Brandon: How Readers Respond to Small Mysteries",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2701237/",
+    "published": "2009",
+    "accessed": "2026-10-03",
+    "status": "read_primary_with_access_limits",
+    "scope": "Indexed primary methods inspected; local recognition, not voluntary continuation.",
+    "limitation": "See the dated reader-evidence note; no contest-success inference."
   }
 ]
