@@ -3,7 +3,12 @@
     "id": "L01",
     "title": "DOC: Improving Long Story Coherence With Detailed Outline Control",
     "url": "https://aclanthology.org/2023.acl-long.190/",
-    "authors_or_organization": ["Kevin Yang", "Dan Klein", "Nanyun Peng", "Yuandong Tian"],
+    "authors_or_organization": [
+      "Kevin Yang",
+      "Dan Klein",
+      "Nanyun Peng",
+      "Yuandong Tian"
+    ],
     "published": "2023-07",
     "accessed": "2026-10-03",
     "status": "read_primary",
@@ -14,7 +19,15 @@
     "id": "L02",
     "title": "StoryWriter: A Multi-Agent Framework for Long Story Generation",
     "url": "https://arxiv.org/html/2506.16445v1",
-    "authors_or_organization": ["Haotian Xia", "Hao Peng", "Yunjia Qi", "Xiaozhi Wang", "Bin Xu", "Lei Hou", "Juanzi Li"],
+    "authors_or_organization": [
+      "Haotian Xia",
+      "Hao Peng",
+      "Yunjia Qi",
+      "Xiaozhi Wang",
+      "Bin Xu",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
     "published": "2025-06-19",
     "accessed": "2026-10-03",
     "status": "read_primary",
@@ -25,7 +38,10 @@
     "id": "L03",
     "title": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
     "url": "https://discovery.ucl.ac.uk/id/eprint/10195027/1/Generative%20AI%20enhances%20individual%20creativity%20but%20reduces%20the%20collective%20diversity%20of%20novel%20content.pdf",
-    "authors_or_organization": ["Anil R. Doshi", "Oliver P. Hauser"],
+    "authors_or_organization": [
+      "Anil R. Doshi",
+      "Oliver P. Hauser"
+    ],
     "published": "2024-07-12",
     "accessed": "2026-10-03",
     "status": "read_primary",
@@ -36,7 +52,12 @@
     "id": "L04",
     "title": "Help Me Write a Story: Evaluating LLMs' Ability to Generate Writing Feedback",
     "url": "https://arxiv.org/html/2507.16007v1",
-    "authors_or_organization": ["Hannah Rashkin", "Elizabeth Clark", "Fantine Huot", "Mirella Lapata"],
+    "authors_or_organization": [
+      "Hannah Rashkin",
+      "Elizabeth Clark",
+      "Fantine Huot",
+      "Mirella Lapata"
+    ],
     "published": "2025-07",
     "accessed": "2026-10-03",
     "status": "read_primary",
@@ -47,7 +68,11 @@
     "id": "L05",
     "title": "Readers Prefer Outputs of AI Trained on Copyrighted Books over Expert Human Writers",
     "url": "https://arxiv.org/html/2510.13939v4",
-    "authors_or_organization": ["Tuhin Chakrabarty", "Jane C. Ginsburg", "Paramveer Dhillon"],
+    "authors_or_organization": [
+      "Tuhin Chakrabarty",
+      "Jane C. Ginsburg",
+      "Paramveer Dhillon"
+    ],
     "published": "2026-03-17 (v4; first posted 2025-10-15)",
     "accessed": "2026-10-03",
     "status": "read_primary",
@@ -58,11 +83,108 @@
     "id": "L06",
     "title": "CraftAlign: Feature-Grounded Evaluation and Revision Guidance for AI Stories",
     "url": "https://arxiv.org/html/2608.01377v1",
-    "authors_or_organization": ["Yang Yang", "Boyun Xu", "Shaofeng Liang", "Yun Han", "Zining Zhong", "Songning Lai", "Kaishen Yuan", "Yutao Yue"],
+    "authors_or_organization": [
+      "Yang Yang",
+      "Boyun Xu",
+      "Shaofeng Liang",
+      "Yun Han",
+      "Zining Zhong",
+      "Songning Lai",
+      "Kaishen Yuan",
+      "Yutao Yue"
+    ],
     "published": "2026-08-02",
     "accessed": "2026-10-03",
     "status": "read_primary",
     "scope": "Preprint v1; feature-guided story revision; cross-editor comparisons and human evaluation.",
     "limitation": "Human study has 20 eligible groups; perceived human-likeness and model-derived features do not establish literary merit or novel coherence."
+  },
+  {
+    "id": "L07",
+    "title": "FactTrack: Time-Aware World State Tracking in Story Outlines",
+    "url": "https://aclanthology.org/2025.naacl-long.144.pdf",
+    "published": "Proceedings paper, April-May 2025",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "90 generated outlines; 39 events each; mean 2490.5 words, SD 594.6.",
+    "human_evaluation": "Human annotation attempt abandoned as too noisy/costly; final contradiction evaluation uses GPT-4 scores.",
+    "limitation": "Only 2000-3000-word outlines evaluated. Incomplete contradiction labels; proxy scoring and model dependence limit claims."
+  },
+  {
+    "id": "L08",
+    "title": "Finding Flawed Fictions: Evaluating Complex Reasoning in Language Models via Plot Hole Detection",
+    "url": "https://arxiv.org/html/2504.11900v1",
+    "published": "v1, 2025-04-16",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "414 short stories averaging 731.81 words; 200 longer stories averaging 2703.09, maximum 3999 words.",
+    "human_evaluation": "Nine English undergraduates assessed 50 short examples, three judgments each; separate benchmark filtering.",
+    "limitation": "Longer stories sharply reduce detection. Extra reasoning usually gives little benefit. Sentence-pair entailment produces false positives; bluffing and genre conventions can be misread."
+  },
+  {
+    "id": "L09",
+    "title": "Staying In Character: Perspective-Bounded Memory for Book-Based Role-Playing Agents",
+    "url": "https://arxiv.org/html/2606.25632v1",
+    "published": "v1, 2026-06-24",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "4386 knowledge-boundary questions across eight novels; narrative task uses 226 scripts. No full-generated-novel length claim adopted.",
+    "human_evaluation": "Humans verify benchmark questions; narrative win rates are model judgments, not new human reader ratings.",
+    "limitation": "Unrestricted retrieval recalls visible facts but often answers inaccessible facts. Removing episodic memory improves recall while harming refusal: accuracy components trade off."
+  },
+  {
+    "id": "L10",
+    "title": "Narrative Knowledge Weaver: Narrative-Centric Retrieval-Augmented Reasoning for Long-Form Text Understanding",
+    "url": "https://arxiv.org/html/2606.05724v1",
+    "published": "v1, 2026-06-04",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "QA: STAGE 151 screenplays, average 27546 English whitespace words or Chinese characters; QuALITY 4115 words; FairytaleQA 2165 words on average.",
+    "human_evaluation": "Uses existing QA data; reported evaluator agreement is repeated LLM agreement, not new human reader validation.",
+    "limitation": "Lightweight retrieval remains competitive on passage-centered QA. Extraction errors propagate; extra construction/query cost and path variance persist."
+  },
+  {
+    "id": "L11",
+    "title": "Scaling Long-Form Story Generation via Narrative State Tracking",
+    "url": "https://arxiv.org/html/2609.35759v1",
+    "published": "v1, 2026-09-28",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "10K, 20K, 50K and 100K word targets; 100 prompts, with 50 used at 100K.",
+    "human_evaluation": "No independent human reader comparison; reported main scores are LLM judgments. Authors audit selected alerts.",
+    "limitation": "Luna at 10K is statistically at parity with rolling summary. Incorrect state can entrench errors. Injected control pairs have 25% target-type false alerts; explicit-injection recall does not establish subtle-error recall."
+  },
+  {
+    "id": "L12",
+    "title": "Shared Worlds, Private Minds: Structured Memory for Long-Form Writing as World Creation",
+    "url": "https://arxiv.org/html/2609.32401v1",
+    "published": "v1, 2026-09-26",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "ConStory-Bench 200 tasks; TMAS 168 checkpoints; LSGC five starters, 14 chapters, 42000-word target and 40000-word completion minimum; individual lengths not independently verified.",
+    "human_evaluation": "Four assessors, two per complete story; 36 ConStory stories and 15 LSGC stories in a separate human sample.",
+    "limitation": "Only five adjudicated consistency positives. Full Context leads two human LSGC dimensions. Judge-human overall rho=.55; final-piece automatic score reads a summary. Hypotheses hurt factual QA; construction averages about 200 calls/story."
+  },
+  {
+    "id": "L13",
+    "title": "The Challenge and Reward of Fair Play in Narrative: A Computational Approach",
+    "url": "https://arxiv.org/html/2507.13841v2",
+    "published": "v2, 2026-05-12; first posted 2025",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "25-paragraph generated detective stories; 54 generated and 11 real stories receive human annotation.",
+    "human_evaluation": "20 participants predict culprits paragraph by paragraph and rate fairness, coherence, surprise and enjoyment.",
+    "limitation": "Small reader pool; main metric is an upper bound. Known-suspect and single-distractor assumptions limit genre coverage. Model generation habits can reveal answers without useful clues."
+  },
+  {
+    "id": "L14",
+    "title": "Long Story Generation via Knowledge Graph and Literary Theory",
+    "url": "https://arxiv.org/html/2508.03137v1",
+    "published": "v1, 2025-08-05",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Main outputs instructed to exceed 10000 words; 5000-word ablations; revision-round study uses 700-word stories.",
+    "human_evaluation": "20 native-English Prolific readers, two per pair; reported task allocation is uneven.",
+    "limitation": "DOC comparator omits its controller. Three revision rounds score below one/two in the short-story Auto-J study; no proof of a universal best revision count."
   }
 ]

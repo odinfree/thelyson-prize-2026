@@ -28,6 +28,8 @@ The visible interface requests an English PDF, a method account of at most **300
 
 The deployed source points to a configured submission backend. This supports describing the form as available; it does not verify successful uploads or admission. Hidden preview strings also exist in the HTML and should not be mistaken for the rendered state.
 
+A read-only check of that page-configured backend on 3 October reported submission availability and a PDF size range of **1,024–15,728,640 bytes** (1 KiB–15 MiB). Use the upper bound when preparing exports. This is an observed service capability, not evidence of a successful upload, an accepted entry, or complete legal terms. The live form remains the source to recheck before delivery.
+
 ## Project preparation choices
 
 Keep prompts, model/version records, AI drafts, revision instructions, and human editorial notes distinguishable. Have the AI implement prose changes; preserve the trail. This is our reproducibility practice, not an additional contest requirement.
