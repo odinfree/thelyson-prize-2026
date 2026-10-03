@@ -373,5 +373,55 @@
     "status": "read_primary",
     "scope": "Primary methods, result tables and narrative reconstruction/evaluation appendices inspected.",
     "limitation": "Reconstructed literary timelines include synthesized anchors; unequal evidence access and unresolved aggregate reporting scope limit direct comparisons."
+  },
+  {
+    "id": "L31",
+    "title": "Optimizing Decomposition for Optimal Claim Verification",
+    "url": "https://aclanthology.org/2025.acl-long.254/",
+    "published": "2025-07",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Final methods, Table1 and confidence-accuracy case study checked.",
+    "limitation": "Reported0.12gain is scoped to PerplexityAI higher-atomicity claims; some cells gain confidence while losing accuracy. Binary biography verification, not fictional unknown states."
+  },
+  {
+    "id": "L32",
+    "title": "Atomic Fact Decomposition Helps Attributed Question Answering",
+    "url": "https://arxiv.org/html/2410.16708v1",
+    "published": "2024-10",
+    "accessed": "2026-10-03",
+    "status": "read_primary_sections",
+    "scope": "Decomposition, retrieval, verification, editing, data construction and evaluation sections checked.",
+    "limitation": "Pipeline changes evidence and operations together; string-edit preservation does not validate narrative meaning. This record inspects v1, not later publication."
+  },
+  {
+    "id": "L33",
+    "title": "Dissecting Atomic Facts: Visual Analytics for Improving Fact Annotations in Language Model Evaluation",
+    "url": "https://arxiv.org/html/2509.01460v1",
+    "published": "2025-09",
+    "accessed": "2026-10-03",
+    "status": "read_primary_preprint",
+    "scope": "Full short paper checked; administrative-document annotation disagreement.",
+    "limitation": "Developing visualization proposal, not demonstrated improvement; matching embeddings does not prove semantic equivalence."
+  },
+  {
+    "id": "L34",
+    "title": "Merging Facts, Crafting Fallacies: Evaluating the Contradictory Nature of Aggregated Factual Claims in Long-Form Generations",
+    "url": "https://aclanthology.org/2024.findings-acl.160/",
+    "published": "2024-08",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Primary setup, human and automatic evaluation and annotation appendix checked.",
+    "limitation": "Individually supported facts may refer to different people; biography evaluation does not establish a remedy for fiction."
+  },
+  {
+    "id": "L35",
+    "title": "FactEHR: A Dataset for Evaluating Factuality in Clinical Notes Using LLMs",
+    "url": "https://proceedings.mlr.press/v298/munnangi25a.html",
+    "published": "2025",
+    "accessed": "2026-10-03",
+    "status": "read_primary_sections",
+    "scope": "Publication record and v2 methods, discussion and evaluation appendices checked.",
+    "limitation": "Clinical decomposition and imperfect model entailment evaluation; fact counts vary across models and do not measure successful reasoning. No clinical-data download or reproduction."
   }
 ]
