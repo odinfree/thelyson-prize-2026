@@ -1,0 +1,90 @@
+[
+  {
+    "id": "C01",
+    "title": "Thélyson Orélien Prize: overview and FAQ",
+    "url": "https://thelyson.ai/#accueil",
+    "authors_or_organization": "Prize website; legal organizer not identified",
+    "published": "undated",
+    "accessed": "2026-10-03",
+    "status": "read_primary_live_browser",
+    "scope": "Advertised deadline, prizes, broad selection process, satire disclaimer",
+    "limitation": "Organizer statements; does not independently verify funding or detailed selection mechanics."
+  },
+  {
+    "id": "C02",
+    "title": "Prize rules",
+    "url": "https://thelyson.ai/#reglement",
+    "authors_or_organization": "Prize website",
+    "published": "undated",
+    "accessed": "2026-10-03",
+    "status": "read_primary_live_browser",
+    "scope": "AI authorship, plagiarism, English PDF, 40,000–120,000 words, disclosure, disqualification",
+    "limitation": "No immutable rules version or full rights/publication terms found."
+  },
+  {
+    "id": "C03",
+    "title": "Book submission form",
+    "url": "https://thelyson.ai/#deposer",
+    "authors_or_organization": "Prize website",
+    "published": "undated",
+    "accessed": "2026-10-03",
+    "status": "read_primary_live_browser",
+    "scope": "Requested files, contact route, 300-word method description, human contribution, attestations",
+    "limitation": "Read-only inspection; no entry submitted and no upload or acceptance tested."
+  },
+  {
+    "id": "C04",
+    "title": "Jury application form",
+    "url": "https://thelyson.ai/#jury",
+    "authors_or_organization": "Prize website",
+    "published": "undated",
+    "accessed": "2026-10-03",
+    "status": "read_primary_live_browser",
+    "scope": "Reading commitments, market abstention, confidential rankings, public juror status",
+    "limitation": "No named final jury or detailed judging rubric established."
+  },
+  {
+    "id": "C05",
+    "title": "Patron wall",
+    "url": "https://thelyson.ai/#mecenes",
+    "authors_or_organization": "Prize website",
+    "published": "undated",
+    "accessed": "2026-10-03",
+    "status": "read_primary_live_browser",
+    "scope": "Displayed Seer One sponsorship and advertised Grand Prix total",
+    "limitation": "Displayed amounts are not proof of escrow or future payout."
+  },
+  {
+    "id": "C06",
+    "title": "Prize patron data snapshot",
+    "url": "https://thelyson.ai/wall.json",
+    "authors_or_organization": "Prize website",
+    "published": "2026-09-29 snapshot",
+    "accessed": "2026-10-03",
+    "status": "read_primary_http",
+    "scope": "Dated data underlying patron display",
+    "limitation": "Site snapshot only; not an independent current funding reconciliation."
+  },
+  {
+    "id": "C07",
+    "title": "Académie Goncourt statement dated 25 September 2026",
+    "url": "https://www.academiegoncourt.com/home",
+    "authors_or_organization": "Académie Goncourt",
+    "published": "2026-09-25",
+    "accessed": "2026-10-03",
+    "status": "read_primary_html",
+    "scope": "Academy's removal of C'était ça ou mourir and its stated reasons",
+    "limitation": "An institutional statement about its decision, not independent proof of plagiarism or AI authorship. The homepage can change."
+  },
+  {
+    "id": "C08",
+    "title": "Seer official documentation",
+    "url": "https://seer-3.gitbook.io/seer-documentation",
+    "authors_or_organization": "Seer",
+    "published": "undated",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "General platform market types and resolution infrastructure; linked from seer.pm",
+    "limitation": "Does not establish this contest's market contracts, rankings, cutoffs, or disputes."
+  }
+]

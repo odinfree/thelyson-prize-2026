@@ -1,0 +1,15 @@
+{
+  "record_id": "G-000",
+  "date": null,
+  "activity": "draft_or_revision",
+  "model_label": "unknown",
+  "exact_model_version": "unknown",
+  "tool_or_interface": "unknown",
+  "method": null,
+  "input_references": [],
+  "human_input_references": [],
+  "output_paths": [],
+  "commit": "pending",
+  "text_origin_issues": [],
+  "status": "template_not_a_run"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "L01",
+    "title": "DOC: Improving Long Story Coherence With Detailed Outline Control",
+    "url": "https://aclanthology.org/2023.acl-long.190/",
+    "authors_or_organization": ["Kevin Yang", "Dan Klein", "Nanyun Peng", "Yuandong Tian"],
+    "published": "2023-07",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "ACL 2023 paper; hierarchical planning and passage control for several-thousand-word stories; human evaluation.",
+    "limitation": "Historical GPT-3-era systems; does not establish effectiveness at novel length or with current models."
+  },
+  {
+    "id": "L02",
+    "title": "StoryWriter: A Multi-Agent Framework for Long Story Generation",
+    "url": "https://arxiv.org/html/2506.16445v1",
+    "authors_or_organization": ["Haotian Xia", "Hao Peng", "Yunjia Qi", "Xiaozhi Wang", "Bin Xu", "Lei Hou", "Juanzi Li"],
+    "published": "2025-06-19",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Preprint v1; event outlines, chapter planning, compressed history; human and model evaluation.",
+    "limitation": "Average evaluated output is 8,081 words; baseline lengths differ substantially; not a full-novel validation."
+  },
+  {
+    "id": "L03",
+    "title": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
+    "url": "https://discovery.ucl.ac.uk/id/eprint/10195027/1/Generative%20AI%20enhances%20individual%20creativity%20but%20reduces%20the%20collective%20diversity%20of%20novel%20content.pdf",
+    "authors_or_organization": ["Anil R. Doshi", "Oliver P. Hauser"],
+    "published": "2024-07-12",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Science Advances randomized experiment; GPT-4 idea assistance for human-written eight-sentence stories.",
+    "limitation": "Microfiction, fixed idea prompts, no iterative collaboration; not evidence about entirely AI-authored novels."
+  },
+  {
+    "id": "L04",
+    "title": "Help Me Write a Story: Evaluating LLMs' Ability to Generate Writing Feedback",
+    "url": "https://arxiv.org/html/2507.16007v1",
+    "authors_or_organization": ["Hannah Rashkin", "Elizabeth Clark", "Fantine Huot", "Mirella Lapata"],
+    "published": "2025-07",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "ACL 2025 paper, read through arXiv v1; 1,300-story feedback benchmark with synthetic problems.",
+    "limitation": "Short English stories and older model set; measures single-turn feedback, not iterative revision outcomes."
+  },
+  {
+    "id": "L05",
+    "title": "Readers Prefer Outputs of AI Trained on Copyrighted Books over Expert Human Writers",
+    "url": "https://arxiv.org/html/2510.13939v4",
+    "authors_or_organization": ["Tuhin Chakrabarty", "Jane C. Ginsburg", "Paramveer Dhillon"],
+    "published": "2026-03-17 (v4; first posted 2025-10-15)",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Preprint v4; preregistered blinded comparison of up-to-450-word author-emulation excerpts across reader groups.",
+    "limitation": "Short excerpts, older models, and author-specific fine-tuning; neither a novel-quality test nor a contest-jury proxy."
+  },
+  {
+    "id": "L06",
+    "title": "CraftAlign: Feature-Grounded Evaluation and Revision Guidance for AI Stories",
+    "url": "https://arxiv.org/html/2608.01377v1",
+    "authors_or_organization": ["Yang Yang", "Boyun Xu", "Shaofeng Liang", "Yun Han", "Zining Zhong", "Songning Lai", "Kaishen Yuan", "Yutao Yue"],
+    "published": "2026-08-02",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Preprint v1; feature-guided story revision; cross-editor comparisons and human evaluation.",
+    "limitation": "Human study has 20 eligible groups; perceived human-likeness and model-derived features do not establish literary merit or novel coherence."
+  }
+]

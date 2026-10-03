@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.local/
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+# Generated books and receipts stay local until deliberately selected for versioning.
+submission/exports/
+submission/receipts/
+*.epub
+*.pdf
