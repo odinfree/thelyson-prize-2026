@@ -1,6 +1,6 @@
 # Research campaign: decisions for the book
 
-3 October 2026. The first campaign assembled a 35-entry [literature register](../sources/literature.json), an Elicit systematic review and five follow-up research exchanges, local TypeSafe Jev evaluations, and 200 GPU inference attempts on the owned Lycurgus workstation. The private [lab report](https://github.com/odinfree/thelyson-research-lab/blob/main/reports/campaign-findings-2026-10-03.md) retains implementations, individual outcomes and costs. There are no human reader results or contest scores.
+3 October 2026. The first campaign assembled a 35-entry [literature register](../sources/literature.json), an Elicit systematic review and five research-agent exchanges, local TypeSafe Jev evaluations, and 200 GPU inference attempts on the owned Lycurgus workstation. The private [lab report](https://github.com/odinfree/thelyson-research-lab/blob/main/reports/campaign-findings-2026-10-03.md) retains implementations, individual outcomes and costs. There are no human reader results or contest scores.
 
 The strongest practical direction is to develop a distinctive, finishable book while using explicit source and revision records to protect its commitments. The [working prototypes](../../planning/writing-system.md) separate world facts, beliefs, knowledge, chronology and hypothetical events; they also retain exact source versions and invalidate reviews after relevant changes. Their checks protect declared records. They cannot establish that an interpretation is true or that a book is compelling.
 
