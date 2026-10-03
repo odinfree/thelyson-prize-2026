@@ -4,7 +4,7 @@ Updated: 2026-10-03. These are internal targets, not additional contest rules or
 
 | Phase | Target | Work | Exit evidence | State |
 | --- | --- | --- | --- | --- |
-| Foundation | 3 October | Public repo, contest dossier, initial sources, integration plan | Files pushed and remote verified | Awaiting remote verification |
+| Foundation | 3 October | Public repo, contest dossier, initial sources, integration plan | Public GitHub repo and initial commit verified on 3 October | Complete |
 | Contest and research | 3–6 October | Resolve material rules questions; study long-form planning, originality, reader response, and editing | Cited findings, explicit unknowns, experiment briefs | In progress |
 | Creative direction | 6–8 October | Develop distinct concepts, choose audience, narrative form, scale, voice | Selected creative brief and scene-level plan | Not started |
 | Method pilots | 8–10 October | Compare planning/revision methods on small passages; continuity and voice probes | Readable samples, reader judgments, adopted/rejected methods | Not started |
