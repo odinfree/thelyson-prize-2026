@@ -2,7 +2,7 @@
 
 A public workspace for our entry to the [Thélyson Orélien Prize for New Writing](https://thelyson.ai/): research the contest, develop an original book, write and revise it with AI, and preserve what we learn.
 
-**Stage:** active contest research, method prototypes and unselected short opening experiments. No book premise, title or genre is selected; there is no complete manuscript or submission.
+**Stage:** contest research and method prototypes, with four unselected concepts developed through nine current scenes. No book premise, title or genre is selected; there is no complete manuscript or submission. Read the [3 October findings and next decisions](research/notes/2026-10-03-campaign-summary.md).
 
 The advertised deadline is **31 October 2026, 23:59 Anywhere on Earth** — **1 November, 12:59 Europe/Zurich**. The published rules require an English PDF of **40,000–120,000 words** whose wording is entirely AI-generated. Human planning and editorial feedback are allowed. These are the organizer's published conditions, last checked **3 October 2026**, and must be rechecked before entry.
 

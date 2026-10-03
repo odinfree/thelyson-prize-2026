@@ -9,7 +9,7 @@ The [writing-system map](writing-system.md) separates working prototypes from th
 | Foundation | 3 October | Public repo, contest dossier, initial sources, integration plan | Public GitHub repo and initial commit verified on 3 October | Complete |
 | Contest and research | 3–6 October | Resolve material rules questions; study long-form planning, originality, reader response, and editing | Cited findings, explicit unknowns, experiment briefs | In progress |
 | Creative direction | 6–8 October | Develop distinct concepts, choose audience, narrative form, scale, voice | Selected creative brief and scene-level plan | Exploration started early; selection pending |
-| Method pilots | 8–10 October | Compare planning/revision methods on small passages; continuity and voice probes | Readable samples, reader judgments, adopted/rejected methods | Engineering and AI-review pilots active; no human results |
+| Method pilots | 8–10 October | Compare planning/revision methods on small passages; continuity and voice probes | Readable samples, reader judgments, adopted/rejected methods | Initial engineering and AI-review pilots recorded; no human results |
 | Full draft | 10–21 October | Draft in coherent units with chapter and continuity records | Complete beginning-to-ending manuscript in allowed range | Not started |
 | Revision | 22–27 October | Structural pass, continuity pass, voice and sentence pass | Resolved editorial notes and consistent manuscript | Not started |
 | Package | 28–29 October | Recheck live rules, PDF layout, extracted text, word count, disclosure | Reviewed submission package | Not started |
