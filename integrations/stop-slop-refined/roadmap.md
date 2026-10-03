@@ -19,6 +19,8 @@ These are implementation priorities inferred from local evidence. They do not es
 
 The later [64-presentation evidence-window comparison](../../research/notes/2026-10-03-evidence-window-results.md) adds two required counterexamples for any future review-record extension: a genuine quotation used for an unsupported inference, and a full-source-correct answer unsupported by the excerpt actually supplied. A quote link or matching label must not automatically approve a repair. Record the supplied evidence boundary alongside source revision identity, and preserve a separate semantic assessment.
 
+The subsequent [typed-claim pilot](../../research/notes/2026-10-03-typed-claim-results.md) adds a narrower engineering lesson: bind a fidelity assessment to the exact claim program it reviewed, and reject a changed program paired with a stale assessment. Its small semantic gain clusters around one conjunction; a new timing error and one malformed response remain. Preserve attempts, complete pairs and failure costs separately. This supports inspectable review records, not automatic acceptance of a typed verdict.
+
 ## First: establish the evidence
 
 Read the contest rules and investigate AI-assisted creative writing, long-form narrative evaluation, stylistic diversity, revision, and reader response. Read the original studies before extending claims from advertising copy or social replies to novels. The existing AI-role reference already warns against overgeneralizing its evidence; preserve that discipline.

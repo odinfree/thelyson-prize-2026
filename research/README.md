@@ -8,6 +8,8 @@ The [retrieval boundaries note](notes/2026-10-03-retrieval-boundaries.md) examin
 
 The completed [evidence-window comparison](notes/2026-10-03-evidence-window-results.md) found lower prompt-token use without better semantic agreement. It also records answers that matched a full-story key despite missing support in the excerpt actually shown.
 
+The later [typed-claim comparison](notes/2026-10-03-typed-claim-results.md) found a narrow benefit concentrated in variants of one conjunction, alongside a new timing error and a retained output failure. It separates complete pairs, failed attempts and quotation accuracy.
+
 ## Agenda
 
 | Priority | Question | Evidence to seek | Output |
