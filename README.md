@@ -2,14 +2,14 @@
 
 A public workspace for our entry to the [Thélyson Orélien Prize for New Writing](https://thelyson.ai/): research the contest, develop an original book, write and revise it with AI, and preserve what we learn.
 
-**Stage:** active contest research and small method prototypes. No premise, title, genre, manuscript, or submission has been chosen or produced.
+**Stage:** active contest research, method prototypes and unselected short opening experiments. No book premise, title or genre is selected; there is no complete manuscript or submission.
 
 The advertised deadline is **31 October 2026, 23:59 Anywhere on Earth** — **1 November, 12:59 Europe/Zurich**. The published rules require an English PDF of **40,000–120,000 words** whose wording is entirely AI-generated. Human planning and editorial feedback are allowed. These are the organizer's published conditions, last checked **3 October 2026**, and must be rechecked before entry.
 
 ## Start here
 
 1. Read the [contest dossier](contest/README.md), especially its unresolved questions.
-2. Follow the [research agenda](research/README.md), the [initial literature review](research/notes/2026-10-03-ai-fiction-baseline.md), and the [October frontier update](research/notes/2026-10-03-frontier-update.md).
+2. Follow the [research agenda](research/README.md), the [initial literature review](research/notes/2026-10-03-ai-fiction-baseline.md), the [October frontier update](research/notes/2026-10-03-frontier-update.md), and the [revision evidence update](research/notes/2026-10-03-revision-evidence.md).
 3. Use the [project roadmap](planning/roadmap.md) to move from research to a creative brief and small writing experiments.
 4. Keep the [authorship record](provenance/README.md) from the first manuscript passage onward.
 5. Capture transferable lessons in the [Stop Slop integration plan](integrations/stop-slop-refined/README.md).

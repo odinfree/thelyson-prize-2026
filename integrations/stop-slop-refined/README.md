@@ -35,6 +35,8 @@ The revision artifact records sentence edits but explicitly cannot explain secti
 
 These are scope gaps and testable hypotheses. We have not demonstrated that the current skill damages fiction or that the proposed additions improve it.
 
+Two optional fiction overlays have now failed their private exploratory advancement checks. The [revision evidence update](../../research/notes/2026-10-03-revision-evidence.md) explains why action-label agreement, diagnosis and proposed repair need separate review. Some frozen labels also encode disputable rhythm preferences. Original counts are retained; neither overlay is proposed for adoption upstream.
+
 ## Contribution boundary
 
 1. Investigate the contest and writing research before implementing upstream changes.

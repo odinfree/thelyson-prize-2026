@@ -186,5 +186,92 @@
     "scope": "Main outputs instructed to exceed 10000 words; 5000-word ablations; revision-round study uses 700-word stories.",
     "human_evaluation": "20 native-English Prolific readers, two per pair; reported task allocation is uneven.",
     "limitation": "DOC comparator omits its controller. Three revision rounds score below one/two in the short-story Auto-J study; no proof of a universal best revision count."
+  },
+  {
+    "id": "L15",
+    "title": "Feedback-Only AI for Writing Instruction: A Constrained-Generative Tool That Preserves Authorship",
+    "url": "https://journals.sagepub.com/doi/10.1177/23294906251414835",
+    "authors_or_organization": [
+      "Heidi Schultz"
+    ],
+    "published": "2026-02-26",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Human-written narrative revision after constrained AI feedback.",
+    "limitation": "No unaided-revision control; does not test AI-authored repairs."
+  },
+  {
+    "id": "L16",
+    "title": "LLM Review: Enhancing Creative Writing via Blind Peer Review Feedback",
+    "url": "https://arxiv.org/html/2601.08003v1",
+    "authors_or_organization": [
+      "Li et al."
+    ],
+    "published": "2026-01",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Iterative short-fiction generation with private revision after peer feedback.",
+    "limitation": "Human judgments cover candidate outputs, not alternative methods or initial drafts."
+  },
+  {
+    "id": "L17",
+    "title": "Modifying Large Language Model Post-Training for Diverse Creative Writing",
+    "url": "https://arxiv.org/html/2503.17126v1",
+    "authors_or_organization": [
+      "Chung et al."
+    ],
+    "published": "2025-03",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Diversity-aware post-training; human set comparisons.",
+    "limitation": "Human inputs were summaries; prose voice and an inconclusive quality tradeoff remain unresolved."
+  },
+  {
+    "id": "L18",
+    "title": "Generating Constructive Feedback on Stories via Reinforcement Learning",
+    "url": "https://arxiv.org/html/2609.04824v1",
+    "authors_or_organization": [
+      "Stahl",
+      "Ziegenbein",
+      "Wachsmuth"
+    ],
+    "published": "2026-09",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Human evaluation of generated story feedback.",
+    "limitation": "Feedback ratings do not demonstrate successful downstream revisions."
+  },
+  {
+    "id": "L19",
+    "title": "LitBench: A Benchmark and Dataset for Reliable Evaluation of Creative Writing",
+    "url": "https://arxiv.org/pdf/2507.00769",
+    "authors_or_organization": [
+      "Daniel Fein",
+      "Sebastian Russo",
+      "Violet Xiang",
+      "Kabir Jolly",
+      "Rafael Rafailov",
+      "Nick Haber"
+    ],
+    "published": "2025-07-01",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Reddit-derived preferences and a separate fresh-story human experiment.",
+    "limitation": "Benchmark accuracy differs from human-study preference; neither establishes repair validity."
+  },
+  {
+    "id": "L20",
+    "title": "The Limits of Automatic Evaluation of Creativity in Large Language Models",
+    "url": "https://arxiv.org/pdf/2608.23705",
+    "authors_or_organization": [
+      "Alessandro Tutone",
+      "Giorgio Franceschelli",
+      "Mirco Musolesi"
+    ],
+    "published": "2026-08-24",
+    "accessed": "2026-10-03",
+    "status": "read_primary",
+    "scope": "Short-story human creativity ratings compared with automatic methods.",
+    "limitation": "One tested LLM judge; no novel-length or repair evaluation."
   }
 ]

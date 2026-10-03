@@ -2,6 +2,8 @@
 
 Begin with the [contest dossier](../contest/README.md), [initial AI-fiction review](notes/2026-10-03-ai-fiction-baseline.md), and [October frontier update](notes/2026-10-03-frontier-update.md). The update covers the September novel-length preprints, verified limits, and early diagnostic experiments. This is a growing research base, not an exhaustive literature review.
 
+The later [revision evidence update](notes/2026-10-03-revision-evidence.md) distinguishes useful feedback, valid repairs, prose preference and diversity. It records unsuccessful editing hypotheses as well as the next implementation questions.
+
 ## Agenda
 
 | Priority | Question | Evidence to seek | Output |
