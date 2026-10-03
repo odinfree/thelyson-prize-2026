@@ -2,6 +2,21 @@
 
 Status: proposed work, 3 October 2026. Baseline: [`1d384cd0b6577ce5ad15297c8e867334e0ba1af1`](https://github.com/odinfree/stop-slop-refined/tree/1d384cd0b6577ce5ad15297c8e867334e0ba1af1). No implementation is included in this plan.
 
+## Campaign evidence update
+
+The private lab implemented and tested two optional fiction overlays. Neither passed its advancement criterion; the [revision evidence note](../../research/notes/2026-10-03-revision-evidence.md) preserves the failures and disputed labels. The candidate patches below remain proposals, not a queue of approved upstream changes. No third overlay or browser feature is justified by those runs.
+
+The more promising transfer is a small review-record extension: distinguish diagnosis, proposed operation, actual revised prose, constraint preservation and aesthetic preference. A bounded actual repair has now been independently assessed by another AI reviewer and replayed through source persistence and the review ledger. This demonstrates interoperability and exact revision binding, not better human-rated writing. Before an upstream patch, use new public fixtures and test a repair that fails despite a plausible diagnosis, an unchanged quote with changed attribution, and an unresolved preference dispute. Keep private manuscript material out of those fixtures.
+
+| Proposed transfer | Current evidence | Next acceptance evidence |
+| --- | --- | --- |
+| Fiction-specific style route | Two diagnostic overlays did not advance | Fresh comparison of actual applied revisions, with repair and preservation assessed separately |
+| Source and revision identity in review records | Working private prototype and actual-repair replay | Small public fixture demonstrating stale-review rejection without claiming semantic validation |
+| Separate aesthetic disagreement from requirement failure | Three diagnostic labels remained disputable on audit | A public example retaining both interpretations without forcing a universal rewrite rule |
+| Reader comparison guidance | Four-opening packet prepared; no participants or responses | Actual reading evidence with exposure, order and missingness retained |
+
+These are implementation priorities inferred from local evidence. They do not establish a literary advantage or change the upstream skill.
+
 ## First: establish the evidence
 
 Read the contest rules and investigate AI-assisted creative writing, long-form narrative evaluation, stylistic diversity, revision, and reader response. Read the original studies before extending claims from advertising copy or social replies to novels. The existing AI-role reference already warns against overgeneralizing its evidence; preserve that discipline.

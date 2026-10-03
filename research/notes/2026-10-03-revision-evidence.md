@@ -39,6 +39,8 @@ For narrative state, source changes should invalidate dependent claims for revie
 
 The current deterministic prototype propagates staleness through declared dependencies. It cannot discover omitted dependencies or certify a new interpretation. Its next integration test uses a retained approximately 1,000-word draft and actual revisions, extending beyond sentence-sized controls without claiming novel-scale validation.
 
+Later campaign update: actual comedy and return-opening revisions have now been replayed through the relevant records. The return repair met its two specified disclosure targets and preserved seven constraints according to an independent, nonblind AI review. Exact source links and stale-revision controls passed; the assessment remains an attributed judgment, with no measured aesthetic or human-reader advantage. This completes the proposed interoperability demonstration, not a comparative efficacy experiment.
+
 ## Creative work and next decisions
 
 Three original openings now explore an orchard harvest, a comedy revival and a one-day return after fifteen years. Independent AI reviews found useful staging and disclosure questions; they are not reader tests. A fourth concept follows a team building a night-bus service and broadens the portfolio toward collective discovery and accomplishment. These are private research drafts, not a selected entry.

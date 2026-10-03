@@ -2,6 +2,8 @@
 
 Status: research and planning. No changes, installations, issues, or pull requests have been made in the upstream repository.
 
+The private lab has since tested two optional fiction overlays; neither passed its advancement criterion. The [roadmap's campaign update](roadmap.md#campaign-evidence-update) now prioritizes exact revision records and separate assessment of repairs, preserved constraints and aesthetic disagreements. Those prototypes are not shipped upstream behavior.
+
 We will use the contest project to learn which editing practices improve a long work of fiction, then contribute general improvements to [odinfree/stop-slop-refined](https://github.com/odinfree/stop-slop-refined). The book remains the primary work. A cleaner word-count report or fewer flagged phrases does not establish better fiction.
 
 ## Verified baseline
