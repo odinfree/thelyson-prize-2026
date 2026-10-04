@@ -98,9 +98,9 @@ He comes to see where I mean. “That gets shade most of the morning.”
 
 He points to the other side of the little yard. I can just see three empty pots. The sticks are still in them, leaning together. The sign is gone.
 
-I am glad he has not cleared the sticks away. I cannot say why without making them carry more than sticks should have to carry. I drink my tea and let him explain where he will put the new plants.
+I am glad he has not cleared the sticks away. I drink my tea and let him explain where he will put the new plants.
 
-We wash what we have used. I dry the pan with the corner of a towel that he tells me is meant for hands, and apologise, and he says it doesn't matter now. The ordinary friction comforts me until I become aware of taking comfort from it. Then it is only a pan again, and I put it away.
+We wash what we have used. I dry the pan with the corner of a towel that he tells me is meant for hands, and apologise, and he says it doesn't matter now. I put the pan away.
 
 He lays out what we need by the door: his keys, the shed key, a torch, the phone, the blue bag and the canvas jacket. The bag has been in the kitchen all night. I check the inner zip by touch. The envelope is there, stiff against the lining.
 

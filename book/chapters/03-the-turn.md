@@ -90,7 +90,7 @@ I leave the coat and go downstairs.
 
 The table top has become much larger since it was taken out of the warehouse. Upright between Leo and the seller, it reaches above their waists. Its legs are gone, but the shallow framework beneath it catches the light in square corners. I can see why Jo has moved the plant. Nothing about it looks willing to bend.
 
-They come through the outside door slowly, one edge leading. Arun walks backwards ahead of them, watching the wall. Jo stays on the landing. I shut the door against the stop so it cannot swing onto Leo's fingers, then hurry up behind them. The sandwich bag is in my hand. I have carried it all the way from the warehouse as if someone has trusted me with a tiny animal.
+They come through the outside door slowly, one edge leading. Arun walks backwards ahead of them, watching the wall. Jo stays on the landing. I hold the open door against the stop so it cannot swing onto Leo's fingers, then hurry up behind them. The sandwich bag is in my hand. I have carried it all the way from the warehouse as if someone has trusted me with a tiny animal.
 
 At the top of the stairs they stop. Leo rests his end on a folded towel while the seller changes his grip.
 
@@ -152,7 +152,7 @@ I put it in the sandwich bag, then remember her instruction about nothing else g
 
 Jo points to a bowl on a shelf. It contains letters, a pencil sharpener and a small green stone. I take an opened gas bill and fold the piece of wood into an empty corner. On the back I write TABLE in Jo's pencil. The pencil has followed me from the warehouse. I have put it in my pocket without asking, as easily as breathing.
 
-“Sorry,” I say, handing it to her.
+“Sorry,” I say, holding it out to her.
 
 “You can use it.”
 

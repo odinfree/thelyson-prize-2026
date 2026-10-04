@@ -28,7 +28,7 @@ He glances at his watch. “We've got time.”
 
 I look too. Five to six. There is time for tea to cool and for the boat to be put away. I drink again because my hands want the warmth and my mouth doesn't know how to wait for it.
 
-Jo stands beside me. Her hair has a flat place at the back where she slept on it. The rest has been pushed behind her ears. Under the dark coat she is wearing the same trousers as last night and a different jumper, one with a loose thread at the cuff.
+Jo stands beside me. Her hair has a flat place at the back where she slept on it. The rest has been pushed behind her ears. Under the dark coat she is wearing trousers and a jumper with a loose thread at the cuff.
 
 “Did you sleep?” I ask.
 
@@ -208,7 +208,7 @@ We look at the result together. Leo is squinting. Jo has one eye partly closed. 
 
 “You would. You've only lost an eye.”
 
-She laughs and takes another, holding the phone herself this time so we are all too close to it. I can see our faces in the little glass. My own is the youngest adult face in the picture. That is a strange thing for a mother to bring to her daughter's thirtieth birthday. I lift my chin to see past the unfamiliar thought and Jo takes the picture before I have arranged anything.
+She laughs and takes another, holding the phone herself this time so we are all too close to it. I can see our faces in the little glass. My face is close beside Jo's, with only eleven years between them. I could be her older sister. I move back a little, which makes no useful difference, and Jo takes the picture before I have arranged anything.
 
 She looks at it for a moment, then puts the phone away.
 

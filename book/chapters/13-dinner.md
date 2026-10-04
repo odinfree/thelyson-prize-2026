@@ -68,7 +68,7 @@ Patrick leans across to look. “You could put a bit—”
 
 He nods. “Fair enough.”
 
-I feel a warm rush towards her which includes relief at not having to hear another solution. The chip remains where it is, visible beside my knife. Somebody will repair it, or live with it. At present it is neither a tragedy nor a charming feature, simply a place on the table where the colour changes.
+I feel a warm rush towards her which includes relief at not having to hear another solution. The chip remains where it is, visible beside my knife.
 
 Phil tells us about trying to carry a mattress upstairs alone. He had taken off the packaging too soon, and once it expanded it blocked the landing. He spent most of the evening on the wrong side of it. Ellen asks why he did not ring someone, and he says he could not bear the number of people who would have been pleased to help. I laugh hard enough to put down my fork.
 
@@ -152,7 +152,7 @@ We laugh. Jo takes another piece of bread and wipes sauce from her plate.
 
 “We could make several.”
 
-She says this gently enough that I hear my own insistence. I have been hoping to arrive at the right solution before the others, to offer her the one useful thing nobody at work has thought of. She has spent weeks looking at the wall. I have spent less than a minute listening to her describe it.
+She says this gently enough that I hear my own insistence.
 
 “What colour was the blue?” I ask.
 

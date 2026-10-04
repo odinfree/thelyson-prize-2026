@@ -190,7 +190,7 @@ There is enough time for another turn, perhaps. I look towards the willow. Then 
 
 I want to tell him not to say good in that voice, but this time the voice is his and the annoyance is mine. I keep rowing.
 
-Close to the landing he gives me smaller directions. We need to approach at an angle that makes sense to him and not yet to me. I follow what he asks, sometimes a stroke late. He tells me to let the boat move instead of attempting to correct everything at once. I resent the wisdom of this as a rowing instruction and refuse to let it become anything else.
+Close to the landing he gives me smaller directions. We need to approach at an angle that makes sense to him and not yet to me. I follow what he asks, sometimes a stroke late. He tells me to let the boat move instead of attempting to correct everything at once.
 
 We come alongside too far from the boards. He doesn't stretch or leap. He has me work one oar lightly, then stop, then try again. The second approach is better. He reaches the painter and passes it around a cleat, holding us close while I bring the blades in.
 

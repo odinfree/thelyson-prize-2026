@@ -160,12 +160,6 @@ The memory comes then, not the hall but the car beforehand. Jo beside me, testin
 
 I had told her to ask. Of course I had. I had said there was nothing wrong with needing the song where she could sing it.
 
-And afterwards, when I had begun to describe her to Leo, standing so squarely at the front of the hall, she had caught my sleeve.
-
-Don't make it one of those stories.
-
-I had understood exactly what she meant. I had promised. There had been other things to tell Leo, and I had told them instead. The promise had been small enough to keep without congratulating myself. Now I have lost it in front of seven people because I wanted to hear them laugh.
-
 Arun takes a slip from the bowl. “I've got something impossible.”
 
 “Show Ellen,” Phil says. “She'll call it a railway.”

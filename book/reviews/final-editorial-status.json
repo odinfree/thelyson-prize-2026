@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "state": "revision_01_verified",
+  "manuscript_fingerprint": "781bab346d268538e9e0f4710caa8b64d32ec9081ccd3d86cd3fb2d9c455b5c3",
+  "prose_words": 44552,
+  "chapters": 22,
+  "changed_chapters": 14,
+  "unresolved_required_repairs": [],
+  "scope": "Complete first draft read by integrator, disjoint cross-reviews, root-authored repairs independently checked in affected context. Shared project context; no blinded human-reader test.",
+  "historical_record_note": "revision-01-changes.json assessment_status describes its state before independent verification; the immutable record is superseded by this completion record and the linked verification dispositions.",
+  "reviews": [
+    {
+      "path": "book/reviews/2026-10-04-whole-book-review.md",
+      "sha256": "6f85a1652fe34a8865fdd83fbf1214024ef6ea84082f202b6eea4792adba7ba6"
+    },
+    {
+      "path": "book/reviews/2026-10-04-revision-01-a-verification.md",
+      "sha256": "a32562b79993302553299bab4c4d6c980f321f8ba4dc0583a54c42f531aa4ebd"
+    },
+    {
+      "path": "book/reviews/2026-10-04-revision-01-a-verification.json",
+      "sha256": "5ae1166750917c29355a5cf6b2ee69b6ddf2b2a3c085b2cd44c34c1b1c32ef68"
+    },
+    {
+      "path": "book/reviews/2026-10-04-revision-01-c-verification.md",
+      "sha256": "ab61aca35959cc6f21cfb53b88785fd159ff9c643e8eb8c74fcfdeb6bd90be15"
+    },
+    {
+      "path": "book/reviews/2026-10-04-revision-01-c-verification.json",
+      "sha256": "8b9cdefe28b80a27a9eab19c52ba95ba6ddb18486762e366a51ce5b8b09dd117"
+    },
+    {
+      "path": "book/reviews/revision-01-changes.json",
+      "sha256": "4b3bc9cf633b20c4ed4f5bfd436b431bf57b867755a444f9463b7b8c2ff47ef1"
+    }
+  ],
+  "limits": [
+    "No originality certificate, human preference result, contest score or organizer acceptance.",
+    "Any later manuscript change needs affected-context review and regenerated export verification."
+  ]
+}

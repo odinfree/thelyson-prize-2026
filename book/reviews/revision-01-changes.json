@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "author": "Codex integrator; exact model snapshot unavailable",
+  "baseline_commit": "38e7942b5e4e6fe62baec71101f860efac34eeef",
+  "assessment_status": "repairs applied; independent recheck pending",
+  "changes": [
+    {
+      "path": "book/chapters/03-the-turn.md",
+      "issues": [
+        "A-01",
+        "A-02",
+        "R007"
+      ],
+      "before_sha256": "14df721f7f9de0c0469098fd5d3ea763519a2ddeddcb8afe0569b86dc401e096",
+      "after_sha256": "0dfed00e4a282f1a8c95554097a3f40f5bc62417f5b9cab8b98ec779986252c1",
+      "edits": [
+        {
+          "old": "I shut the door against the stop so it cannot swing onto Leo's fingers",
+          "new": "I hold the open door against the stop so it cannot swing onto Leo's fingers"
+        },
+        {
+          "old": "“Sorry,” I say, handing it to her.",
+          "new": "“Sorry,” I say, holding it out to her."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/04-upstairs.md",
+      "issues": [
+        "A-optional-tin"
+      ],
+      "before_sha256": "e31bfcfa31033aaba939e351507c15c372f413950e287338d5b843640de7b7ba",
+      "after_sha256": "9877baf75b299a900ee3b463ef5f744524ec3a28fe680cd1d41271ac428ee338",
+      "edits": [
+        {
+          "old": "I say it too quickly. She leaves the tin beside the folder. It seems ridiculous now that I have taken it down. There was no reason for it to contain an account of me. I am here, taking up a chair and needing tea, and she has something to send before she can start cooking.",
+          "new": "I say it too quickly. She leaves the tin beside the folder."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/06-places.md",
+      "issues": [
+        "A-optional-library"
+      ],
+      "before_sha256": "21e27b04dc0d77dd42689a8ae3af9a26538d67736050956f6289a617b1edbfab",
+      "after_sha256": "e1acee6fd514752f01544cec9f6fde31d3f9b9142ef36bd3adbecd06a2e0ec80",
+      "edits": [
+        {
+          "old": "She takes a bite of bread. I have wanted her to speak without thinking about how long I have, and the first time she does it I make her finish the sentence carefully. I take some pickle. It is sharp and rather good.",
+          "new": "She takes a bite of bread. I take some pickle. It is sharp and rather good."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/08-a-smaller-kitchen.md",
+      "issues": [
+        "R001",
+        "R011",
+        "B-03"
+      ],
+      "before_sha256": "c0769911310ddd8e6f0c61ba7251c38734cb6e51b8f02691fd0d78c137c07efa",
+      "after_sha256": "8532620e03b6b85bd25ab5181098f0dc2436b1bffbb424dcd5c1d6b1f769b670",
+      "edits": [
+        {
+          "old": "I take the blue bag into the bathroom.",
+          "new": "I take the blue bag into the bathroom. I put it down and wash my hands, working the soil out from beside the nails. The last dark streak circles the drain and goes."
+        },
+        {
+          "old": "Leo goes to fetch the tea he has left in the kitchen.",
+          "new": "Leo takes his cup to the kitchen for more hot water."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/09-the-seam.md",
+      "issues": [
+        "R005",
+        "B-02"
+      ],
+      "before_sha256": "7fa3dd470fd49baba7ed4762b3200e5a94f1e055ce6e5733ebb446c6405f7e15",
+      "after_sha256": "2713b3356a802d86343850bae80a71ba89cc89f297357a00cd894799ed6502ca",
+      "edits": [
+        {
+          "old": "“Jo did the other sort,” Bess says. “On that cushion there. Hers went all the way through before she noticed.”\n\nI look at the cushion on the end of the bench. It has a small square sewn to one side.\n\n“When was Jo here?”\n\n“Last summer,” Leo says. “A couple of times.”\n\n“To help you?”\n\n“To come out.”\n\nThe thread catches round my finger. I pull it free and feel the wax drag across the red line it has made.\n\n“Does she row?”\n\n“A bit.”\n\n“Better than me, presumably.”\n\n“You haven't tried.”\n\nIt is a sensible answer, which I dislike. In the cottage I have seen Catherine's hand inside his coat. Now even this, the thing I was going to discover with him, has a place for Jo already worn into it.\n\n“She wanted to see if we'd get as far as the bridge,” Bess says. “We didn't. The wind got up. We spent longer eating the sandwiches than going anywhere.”\n\nLeo looks at the seam, then at me.\n\n“We can do something different.”\n\n“I haven't asked for different.”\n\n“No.”\n\nHe keeps his hand on the shaft. I have crossed the thread where it should lie flat. He waits while I undo it. It would be possible to make this into a quarrel about not being told, and he would probably apologise. I could spend ten minutes being right about something neither of us can mend.\n\n“Did she like it?” I ask instead.\n\n“The sandwiches?”\n\n“The boat.”\n\n“I think so. She came back.”\n\nI pull the stitch into place. His answer is less than I want and more than I knew.\n\n",
+          "new": "“Jo did the other sort,” Bess says. “On that cushion there. Hers went all the way through before she noticed.”\n\nI look at the cushion on the end of the bench. It has a small square sewn to one side.\n\n“When was Jo here?”\n\n“Last summer,” Leo says. “A couple of times.”\n\n“To help you?”\n\n“To come out.”\n\nI had been saving up the boat to tell her about. I look from the cushion to the open door, trying to put her here, getting into it.\n\n“Did she sit where you sit?”\n\n“Eventually. She wanted to do everything first.”\n\n“That sounds familiar.”\n\n“Does it?”\n\nHis hand stays on the shaft. I have crossed the thread where it should lie flat. I draw the needle back through and try again, holding the loose end clear with my little finger.\n\n“She wanted to see if we'd get as far as the bridge,” Bess says. “We didn't. The wind got up. We spent longer eating the sandwiches than going anywhere.”\n\n“What did you have?”\n\n“Cheese,” Leo says.\n\n“And something she brought in a little tub,” Bess says. “Which he put his elbow in.”\n\nLeo looks at the seam. “It was by my elbow.”\n\n“Then she brought you more lunch?”\n\n“On the next trip.”\n\nI laugh and pull the stitch tight too soon. Leo turns the shaft a little so I can get at it. This time I lay the thread along the leather before drawing it through. The crooked loop settles beside the other stitches.\n\n"
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/12-eight.md",
+      "issues": [
+        "R006",
+        "B-04"
+      ],
+      "before_sha256": "7a1cc69514cc98d71cb6cf738bf3b1bef02419e619a1c4743d622678ded9794e",
+      "after_sha256": "29dab694d2b370ce1b9e4a9087784d31c2d08f526f49de23e87edf09a9d02ee8",
+      "edits": [
+        {
+          "old": "Arun's borrowed bread is already on the counter.",
+          "new": "Arun's bread is already on the counter."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/13-dinner.md",
+      "issues": [
+        "B-optional-commentary"
+      ],
+      "before_sha256": "0dd3a3a96995dd3f54dc60da97853a81c3273950ed6d4d5260894f9b3e06b8e2",
+      "after_sha256": "2a54e8c9e07121e8d3dec107a8d517a97d62f22d57e1aa4943d1f27105400946",
+      "edits": [
+        {
+          "old": " Somebody will repair it, or live with it. At present it is neither a tragedy nor a charming feature, simply a place on the table where the colour changes.",
+          "new": ""
+        },
+        {
+          "old": " I have been hoping to arrive at the right solution before the others, to offer her the one useful thing nobody at work has thought of. She has spent weeks looking at the wall. I have spent less than a minute listening to her describe it.",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/14-the-story-i-tell.md",
+      "issues": [
+        "R010",
+        "B-01"
+      ],
+      "before_sha256": "2220db8337d20f08f2862692d4b757f7bb1042fdeba78818c1da1bcd426e128c",
+      "after_sha256": "263a8ad4d86a50bca11ecead7a698b81d645ace2e8d121b0caefd74ed8e7a19b",
+      "edits": [
+        {
+          "old": "And afterwards, when I had begun to describe her to Leo, standing so squarely at the front of the hall, she had caught my sleeve.\n\nDon't make it one of those stories.\n\nI had understood exactly what she meant. I had promised. There had been other things to tell Leo, and I had told them instead. The promise had been small enough to keep without congratulating myself. Now I have lost it in front of seven people because I wanted to hear them laugh.\n\n",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/15-after-the-plates.md",
+      "issues": [
+        "R004",
+        "B-05"
+      ],
+      "before_sha256": "8bc8021e6ff9b95ee42d453484f7da76ad0a0ddb3b725a959bf0e3d6e5ad7fcc",
+      "after_sha256": "501adbc274adad4bd3c6d62fc63a243fec51263edb1edbc1be5ffd7355dce844",
+      "edits": [
+        {
+          "old": "She rubs under one eye with the side of her finger, checks the finger and wipes it on her trousers.",
+          "new": "She rubs under one eye with the side of her finger, checks the finger and wipes it on her dress."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/18-a-message.md",
+      "issues": [
+        "R002",
+        "C-message-timing"
+      ],
+      "before_sha256": "5d4022e66c01f728b90c5193fd21ac8d4aaa6b65ce790174f38eebba5ff568c8",
+      "after_sha256": "2b4813f6611b83b50f469c91ad33eadb0397efa356fc83be422435fe22059759",
+      "edits": [
+        {
+          "old": "I knew it did this afternoon, when I came up to change, but I have forgotten which one it is.",
+          "new": "I heard it when we came up to bed, but I have forgotten which one it is."
+        },
+        {
+          "old": "Below it are messages about ordinary things, the last one giving the time he would meet me.",
+          "new": "Below it are messages about ordinary things."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/19-before-the-light.md",
+      "issues": [
+        "R009"
+      ],
+      "before_sha256": "52b5f8b76060c2b066b48ee681abb7ba2a019c4f64d568454feaaa6c43980fed",
+      "after_sha256": "3e50d13bf9e172c5ef03cdae56e9641b265fcda545f97cce3fb9e2ebd38c39b4",
+      "edits": [
+        {
+          "old": " I cannot say why without making them carry more than sticks should have to carry.",
+          "new": ""
+        },
+        {
+          "old": "The ordinary friction comforts me until I become aware of taking comfort from it. Then it is only a pan again, and I put it away.",
+          "new": "I put the pan away."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/20-the-water.md",
+      "issues": [
+        "R009"
+      ],
+      "before_sha256": "e0c395a7a22e1cf83f3307f833e3ba4ea2647625d8cf634585f93f4f93bcd82b",
+      "after_sha256": "90c47544069435c858ffdd070962c058b9f303b48f478a4aed5eb6a21c8e50d3",
+      "edits": [
+        {
+          "old": " I resent the wisdom of this as a rowing instruction and refuse to let it become anything else.",
+          "new": ""
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/21-on-the-bank.md",
+      "issues": [
+        "R003",
+        "R004"
+      ],
+      "before_sha256": "c6b7e323f3cdd60444cc5b4b107c501aebe1fbd5722adc8326db1b781a42e62b",
+      "after_sha256": "7b530103d1115c043f0a9b4c58b32180703b19ef1bd85e150204aa31bd088b65",
+      "edits": [
+        {
+          "old": "Under the dark coat she is wearing the same trousers as last night and a different jumper, one with a loose thread at the cuff.",
+          "new": "Under the dark coat she is wearing trousers and a jumper with a loose thread at the cuff."
+        },
+        {
+          "old": "My own is the youngest adult face in the picture. That is a strange thing for a mother to bring to her daughter's thirtieth birthday. I lift my chin to see past the unfamiliar thought and Jo takes the picture before I have arranged anything.",
+          "new": "My face is close beside Jo's, with only eleven years between them. I could be her older sister. I move back a little, which makes no useful difference, and Jo takes the picture before I have arranged anything."
+        }
+      ]
+    },
+    {
+      "path": "book/chapters/22-the-car.md",
+      "issues": [
+        "R008"
+      ],
+      "before_sha256": "aa5a81792bf53b4a4b1672fe0409d6969a8b391e6013f8659f3d7ac9f08a4ac2",
+      "after_sha256": "21e04e26af984682174d6e012ea9b9e6418a4caf2cbed5dced1111443ca9f1dc",
+      "edits": [
+        {
+          "old": "“I thought it would be the same woman,” she says.\n\n“So did I.”",
+          "new": "“I thought it would be the same woman,” I say.\n\nJo looks towards Ruth but does not answer."
+        }
+      ]
+    }
+  ]
+}

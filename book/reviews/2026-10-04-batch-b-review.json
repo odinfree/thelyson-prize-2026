@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "review_id": "2026-10-04-batch-b",
+  "status": "review_complete_repairs_pending",
+  "primary_chapters": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "sources": [
+    {
+      "path": "book/chapters/08-a-smaller-kitchen.md",
+      "sha256": "c0769911310ddd8e6f0c61ba7251c38734cb6e51b8f02691fd0d78c137c07efa"
+    },
+    {
+      "path": "book/chapters/09-the-seam.md",
+      "sha256": "7fa3dd470fd49baba7ed4762b3200e5a94f1e055ce6e5733ebb446c6405f7e15"
+    },
+    {
+      "path": "book/chapters/10-ellen.md",
+      "sha256": "edfe910fc8b5666b57a067ec73dbab2edf433a882e00842b1df1666b5f1ed513"
+    },
+    {
+      "path": "book/chapters/11-in-the-kitchen.md",
+      "sha256": "2db697f9a2c2ae4b4bbabf748bc792bfa9b10a2e5d9bb2df8290e0f83f768ad8"
+    },
+    {
+      "path": "book/chapters/12-eight.md",
+      "sha256": "7a1cc69514cc98d71cb6cf738bf3b1bef02419e619a1c4743d622678ded9794e"
+    },
+    {
+      "path": "book/chapters/13-dinner.md",
+      "sha256": "0dd3a3a96995dd3f54dc60da97853a81c3273950ed6d4d5260894f9b3e06b8e2"
+    },
+    {
+      "path": "book/chapters/14-the-story-i-tell.md",
+      "sha256": "2220db8337d20f08f2862692d4b757f7bb1042fdeba78818c1da1bcd426e128c"
+    },
+    {
+      "path": "book/chapters/05-the-list.md",
+      "sha256": "96b0195859a1bbb05c4d35cf136f5706b6a7dbecc480e58bfdacc667f7846b1e"
+    },
+    {
+      "path": "book/chapters/07-the-other-gate.md",
+      "sha256": "a8453e14b1430cc76392deff692ddd412b6b750fb83fa579eadd297c6088acfc"
+    },
+    {
+      "path": "book/chapters/15-after-the-plates.md",
+      "sha256": "8bc8021e6ff9b95ee42d453484f7da76ad0a0ddb3b725a959bf0e3d6e5ad7fcc"
+    },
+    {
+      "path": "book/outline/novel-outline.md",
+      "sha256": "5df83f2b229f00856c8aa2993c49285768892fa300a6ff653e83e380d40ccf1b"
+    },
+    {
+      "path": "book/chapters/02-the-underside.md",
+      "sha256": "43ccaf0c0517765196dc24da404b42d7e7c9b4f24206f48d6bf74a2ec3633969"
+    },
+    {
+      "path": "book/reading/de/03-die-unterseite.md",
+      "sha256": "2df0e1b8c48e881296f499b47c59183b60db8d84bd3113d03ead6f7e19f9d76c"
+    }
+  ],
+  "findings": [
+    {
+      "id": "B-01",
+      "kind": "knowledge_continuity",
+      "state": "open",
+      "dependencies": [
+        "book/chapters/14-the-story-i-tell.md",
+        "book/chapters/15-after-the-plates.md"
+      ],
+      "recommendation": "Remove recovered after-concert promise certainty from chapter14; preserve pre-concert anxiety, public correction and chapter15 uncertain-memory trust."
+    },
+    {
+      "id": "B-02",
+      "kind": "structure",
+      "state": "open",
+      "dependencies": [
+        "book/chapters/08-a-smaller-kitchen.md",
+        "book/chapters/09-the-seam.md",
+        "book/chapters/10-ellen.md"
+      ],
+      "recommendation": "Compress chapter9 Jo-outing exclusion exchange while preserving prior visits, repair, reciprocal work and desire to row."
+    },
+    {
+      "id": "B-03",
+      "kind": "object_continuity",
+      "state": "open",
+      "dependencies": [
+        "book/chapters/08-a-smaller-kitchen.md"
+      ],
+      "recommendation": "Replace tea retrieval from kitchen with another ordinary purpose; retain cup already in sitting room and rug action."
+    },
+    {
+      "id": "B-04",
+      "kind": "object_continuity",
+      "state": "open",
+      "dependencies": [
+        "book/chapters/05-the-list.md",
+        "book/chapters/12-eight.md"
+      ],
+      "recommendation": "Remove borrowed qualifier from restaurant bread; retain dish and towel loans."
+    },
+    {
+      "id": "B-05",
+      "kind": "object_continuity",
+      "state": "open",
+      "dependencies": [
+        "book/chapters/11-in-the-kitchen.md",
+        "book/chapters/15-after-the-plates.md"
+      ],
+      "recommendation": "Use Jo dress in chapter15 unless a useful clothing change is enacted."
+    }
+  ],
+  "reviewer_prior_authorship": [
+    "Batch A chapters2-7",
+    "Original boat-shed development pilot partly inherited by chapter9"
+  ],
+  "translation_check": {
+    "target": "book/reading/de/03-die-unterseite.md",
+    "source": "book/chapters/02-the-underside.md",
+    "result": "No substantive fidelity error found in one comparative AI reading"
+  },
+  "model_label": "GPT-6 / Codex",
+  "exact_model_snapshot": "unknown",
+  "seed": "unknown",
+  "token_counts": "unknown",
+  "manuscript_edits_by_reviewer": false
+}

@@ -136,7 +136,7 @@ Jo comes over. She frees the lid from the cable and closes it properly.
 
 “No.”
 
-I say it too quickly. She leaves the tin beside the folder. It seems ridiculous now that I have taken it down. There was no reason for it to contain an account of me. I am here, taking up a chair and needing tea, and she has something to send before she can start cooking.
+I say it too quickly. She leaves the tin beside the folder.
 
 “This one has a cross on the back,” I say, picking up a drawing. “Is that old too?”
 

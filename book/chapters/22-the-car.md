@@ -80,9 +80,9 @@ She goes back and opens the rear door. Then she stands beside the front wing, lo
 
 Jo takes my hand out of the jacket pocket. The stone stays behind.
 
-“I thought it would be the same woman,” she says.
+“I thought it would be the same woman,” I say.
 
-“So did I.”
+Jo looks towards Ruth but does not answer.
 
 There is no reason it should have been. People have shifts, homes to go to, things they do when they aren't helping other people leave. I am irritated by the reasonableness of this and say nothing about it.
 

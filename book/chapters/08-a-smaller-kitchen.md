@@ -40,7 +40,7 @@ I want to give a generous answer which will also leave him in no doubt about wha
 
 “That took a while.”
 
-He puts water on. I take the blue bag into the bathroom.
+He puts water on. I take the blue bag into the bathroom. I put it down and wash my hands, working the soil out from beside the nails. The last dark streak circles the drain and goes.
 
 The mirror is narrow, and close enough to inspect myself whether I want to or not. I look like somebody who has been carrying furniture. There is dust on the green fabric at my hip and a bright patch on my cheek where I have rubbed it. I raise my arm and see the small hollow beneath it, familiar skin assembled into an unfamiliar sight after a day of looking so hard at other people.
 
@@ -222,7 +222,7 @@ He looks towards the window. “I don't think you have to be very fair about it 
 
 I would like to thank him for this and also point out that he has made an absurdly generous offer on my behalf. Instead I put the photograph back beneath Jo's picture. Catherine is still there. The order has not solved anything, but I can breathe without looking at her hand.
 
-Leo goes to fetch the tea he has left in the kitchen. On the way he catches the rug with his heel, dislodging the book. He bends to straighten it, makes it worse and finally leaves it. That is familiar enough to hurt in a different place.
+Leo takes his cup to the kitchen for more hot water. On the way he catches the rug with his heel, dislodging the book. He bends to straighten it, makes it worse and finally leaves it. That is familiar enough to hurt in a different place.
 
 “Do you still put the hot-water bottle against your feet?” I ask when he comes back.
 

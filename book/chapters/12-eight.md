@@ -88,7 +88,7 @@ Phil rings from the street because the bell seems not to have worked. We hear Jo
 
 “I'd have let him keep it,” Phil says, “but I wanted to see whether anyone could cut it.”
 
-The loaf has split along the top, opening into a dark ridge. He baked it himself and has brought it without deciding whether it is a gift or an apology. Arun's borrowed bread is already on the counter. Jo says two sorts will be useful. Phil looks grateful enough that I like her for saying it.
+The loaf has split along the top, opening into a dark ridge. He baked it himself and has brought it without deciding whether it is a gift or an apology. Arun's bread is already on the counter. Jo says two sorts will be useful. Phil looks grateful enough that I like her for saying it.
 
 He has a broad face and a small careful voice. When Jo introduces us he holds out a hand, changes his mind and leans forward, then stops again. I shake the hand while it is available. We both seem relieved to have completed something.
 

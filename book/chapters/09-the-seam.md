@@ -150,39 +150,33 @@ I look at the cushion on the end of the bench. It has a small square sewn to one
 
 “To come out.”
 
-The thread catches round my finger. I pull it free and feel the wax drag across the red line it has made.
+I had been saving up the boat to tell her about. I look from the cushion to the open door, trying to put her here, getting into it.
 
-“Does she row?”
+“Did she sit where you sit?”
 
-“A bit.”
+“Eventually. She wanted to do everything first.”
 
-“Better than me, presumably.”
+“That sounds familiar.”
 
-“You haven't tried.”
+“Does it?”
 
-It is a sensible answer, which I dislike. In the cottage I have seen Catherine's hand inside his coat. Now even this, the thing I was going to discover with him, has a place for Jo already worn into it.
+His hand stays on the shaft. I have crossed the thread where it should lie flat. I draw the needle back through and try again, holding the loose end clear with my little finger.
 
 “She wanted to see if we'd get as far as the bridge,” Bess says. “We didn't. The wind got up. We spent longer eating the sandwiches than going anywhere.”
 
-Leo looks at the seam, then at me.
+“What did you have?”
 
-“We can do something different.”
+“Cheese,” Leo says.
 
-“I haven't asked for different.”
+“And something she brought in a little tub,” Bess says. “Which he put his elbow in.”
 
-“No.”
+Leo looks at the seam. “It was by my elbow.”
 
-He keeps his hand on the shaft. I have crossed the thread where it should lie flat. He waits while I undo it. It would be possible to make this into a quarrel about not being told, and he would probably apologise. I could spend ten minutes being right about something neither of us can mend.
+“Then she brought you more lunch?”
 
-“Did she like it?” I ask instead.
+“On the next trip.”
 
-“The sandwiches?”
-
-“The boat.”
-
-“I think so. She came back.”
-
-I pull the stitch into place. His answer is less than I want and more than I knew.
+I laugh and pull the stitch tight too soon. Leo turns the shaft a little so I can get at it. This time I lay the thread along the leather before drawing it through. The crooked loop settles beside the other stitches.
 
 Bess brings over the mugs. Mine has a blue fish with one eye worn away. She puts it well beyond my elbow, looks at the stitches and says the sleeve needs to sit flat on the underside too. We turn the oar together. She presses the leather with her thumb and nods.
 

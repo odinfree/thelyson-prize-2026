@@ -260,7 +260,7 @@ She puts her arms around me. The bag is between our legs and I push it aside wit
 
 “All right.”
 
-We stay that way until her weight changes. I let my arms loosen. She rubs under one eye with the side of her finger, checks the finger and wipes it on her trousers.
+We stay that way until her weight changes. I let my arms loosen. She rubs under one eye with the side of her finger, checks the finger and wipes it on her dress.
 
 I go down carefully, one hand on the rail. At the turn I look up. She is still there, holding the door open with her bare heel. From inside the flat Nina calls a question about the pan.
 

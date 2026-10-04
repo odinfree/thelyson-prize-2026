@@ -72,7 +72,7 @@ She stops. I put down my bread.
 
 “Yes.”
 
-She takes a bite of bread. I have wanted her to speak without thinking about how long I have, and the first time she does it I make her finish the sentence carefully. I take some pickle. It is sharp and rather good.
+She takes a bite of bread. I take some pickle. It is sharp and rather good.
 
 Leo rings the bell from downstairs. Arun gets up, grateful perhaps for something to do with the last of his bread, and goes to let him in. We hear their voices on the stairs. Leo comes into the room carrying a small tin and a folded piece of sandpaper. He looks first at me, then at the chair beside me, as though checking where he will fit.
 

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "reviewer": "Codex subagent setting_and_reading",
+  "exact_model_snapshot": "unknown",
+  "baseline_commit": "38e7942b5e4e6fe62baec71101f860efac34eeef",
+  "verification_status": "passed_within_declared_scope",
+  "manuscript_edited_by_reviewer": false,
+  "change_record_sha256": "4b3bc9cf633b20c4ed4f5bfd436b431bf57b867755a444f9463b7b8c2ff47ef1",
+  "manifest_sha256": "60d3bedfa68fd39f471845ada3b756b253acf1146432ab38756e756fb344cfca",
+  "files": [
+    {
+      "chapter": 8,
+      "path": "book/chapters/08-a-smaller-kitchen.md",
+      "role": "transition_context",
+      "baseline_sha256": "c0769911310ddd8e6f0c61ba7251c38734cb6e51b8f02691fd0d78c137c07efa",
+      "candidate_sha256": "8532620e03b6b85bd25ab5181098f0dc2436b1bffbb424dcd5c1d6b1f769b670",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 2
+    },
+    {
+      "chapter": 11,
+      "path": "book/chapters/11-in-the-kitchen.md",
+      "role": "transition_context",
+      "baseline_sha256": "2db697f9a2c2ae4b4bbabf748bc792bfa9b10a2e5d9bb2df8290e0f83f768ad8",
+      "candidate_sha256": "2db697f9a2c2ae4b4bbabf748bc792bfa9b10a2e5d9bb2df8290e0f83f768ad8",
+      "unchanged_from_baseline": true
+    },
+    {
+      "chapter": 14,
+      "path": "book/chapters/14-the-story-i-tell.md",
+      "role": "transition_context",
+      "baseline_sha256": "2220db8337d20f08f2862692d4b757f7bb1042fdeba78818c1da1bcd426e128c",
+      "candidate_sha256": "263a8ad4d86a50bca11ecead7a698b81d645ace2e8d121b0caefd74ed8e7a19b",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 1
+    },
+    {
+      "chapter": 15,
+      "path": "book/chapters/15-after-the-plates.md",
+      "role": "repair_target",
+      "baseline_sha256": "8bc8021e6ff9b95ee42d453484f7da76ad0a0ddb3b725a959bf0e3d6e5ad7fcc",
+      "candidate_sha256": "501adbc274adad4bd3c6d62fc63a243fec51263edb1edbc1be5ffd7355dce844",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 1
+    },
+    {
+      "chapter": 16,
+      "path": "book/chapters/16-on-foot.md",
+      "role": "transition_context",
+      "baseline_sha256": "805edbb680d86511bb24d0f39a4fba7915369c52ff4b844a23cf857cc26d9476",
+      "candidate_sha256": "805edbb680d86511bb24d0f39a4fba7915369c52ff4b844a23cf857cc26d9476",
+      "unchanged_from_baseline": true
+    },
+    {
+      "chapter": 17,
+      "path": "book/chapters/17-the-photographs.md",
+      "role": "transition_context",
+      "baseline_sha256": "6b5dd23b74cdbe32a170aebb69ef9ef3ab8b1bda8d004cd8f5862bda47c2cacb",
+      "candidate_sha256": "6b5dd23b74cdbe32a170aebb69ef9ef3ab8b1bda8d004cd8f5862bda47c2cacb",
+      "unchanged_from_baseline": true
+    },
+    {
+      "chapter": 18,
+      "path": "book/chapters/18-a-message.md",
+      "role": "repair_target",
+      "baseline_sha256": "5d4022e66c01f728b90c5193fd21ac8d4aaa6b65ce790174f38eebba5ff568c8",
+      "candidate_sha256": "2b4813f6611b83b50f469c91ad33eadb0397efa356fc83be422435fe22059759",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 2
+    },
+    {
+      "chapter": 19,
+      "path": "book/chapters/19-before-the-light.md",
+      "role": "repair_target",
+      "baseline_sha256": "52b5f8b76060c2b066b48ee681abb7ba2a019c4f64d568454feaaa6c43980fed",
+      "candidate_sha256": "3e50d13bf9e172c5ef03cdae56e9641b265fcda545f97cce3fb9e2ebd38c39b4",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 2
+    },
+    {
+      "chapter": 20,
+      "path": "book/chapters/20-the-water.md",
+      "role": "repair_target",
+      "baseline_sha256": "e0c395a7a22e1cf83f3307f833e3ba4ea2647625d8cf634585f93f4f93bcd82b",
+      "candidate_sha256": "90c47544069435c858ffdd070962c058b9f303b48f478a4aed5eb6a21c8e50d3",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 1
+    },
+    {
+      "chapter": 21,
+      "path": "book/chapters/21-on-the-bank.md",
+      "role": "repair_target",
+      "baseline_sha256": "c6b7e323f3cdd60444cc5b4b107c501aebe1fbd5722adc8326db1b781a42e62b",
+      "candidate_sha256": "7b530103d1115c043f0a9b4c58b32180703b19ef1bd85e150204aa31bd088b65",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 2
+    },
+    {
+      "chapter": 22,
+      "path": "book/chapters/22-the-car.md",
+      "role": "repair_target",
+      "baseline_sha256": "aa5a81792bf53b4a4b1672fe0409d6969a8b391e6013f8659f3d7ac9f08a4ac2",
+      "candidate_sha256": "21e04e26af984682174d6e012ea9b9e6418a4caf2cbed5dced1111443ca9f1dc",
+      "declared_edits_reconstruct_full_candidate": true,
+      "declared_edit_count": 1
+    }
+  ],
+  "issue_dispositions": {
+    "C01": "verified_repaired",
+    "C02": "verified_repaired",
+    "C03": "verified_repaired",
+    "C04": "verified_repaired",
+    "C05": "verified_repaired",
+    "C06": "verified_clarified",
+    "R009": "verified_no_identified_collateral_regression"
+  },
+  "independence_note": "Targets15,18,19,20,21,22 authored by a different agent; root performed revisions. Context14 was originally authored by this reviewer and is checked only for the transition into15, not presented as independent assessment of original prose.",
+  "limits": [
+    "Not a fresh whole-novel literary review.",
+    "No human reader, contest score, authorship certification, or PDF-layout assessment.",
+    "Hashes bind the evidence; semantic verification required reading actual paragraphs and scene context."
+  ]
+}

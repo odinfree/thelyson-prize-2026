@@ -12,7 +12,7 @@ The white shirt is on the chair. I put it on, buttoning only enough of it to kee
 
 On the landing I stop, waiting to remember why I have got up. Water. A message. Some small preparation that might make the morning less sudden.
 
-The stair nearest the bottom creaks. I knew it did this afternoon, when I came up to change, but I have forgotten which one it is. I find it with all my weight.
+The stair nearest the bottom creaks. I heard it when we came up to bed, but I have forgotten which one it is. I find it with all my weight.
 
 In the kitchen the little clock above the cooker says half past twelve. I get a glass of water and drink it standing at the sink. Outside, a security light comes on in somebody else's garden. The fence appears, a watering can, three dark pots. Then they go away.
 
@@ -58,7 +58,7 @@ He goes back upstairs and I tear the page off the pad. The sound is louder than 
 
 “Here. I've opened Jo.”
 
-Her name is at the top of the screen. Below it are messages about ordinary things, the last one giving the time he would meet me. I make myself look only at the blank place where I am supposed to put new words.
+Her name is at the top of the screen. Below it are messages about ordinary things. I make myself look only at the blank place where I am supposed to put new words.
 
 “It's Flora,” I say as I type. “Are you still awake?”
 
