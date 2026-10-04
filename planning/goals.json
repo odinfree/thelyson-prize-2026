@@ -4,7 +4,7 @@
   "updated_on": "2026-10-04",
   "timezone": "Europe/Zurich",
   "long_term_objective": "Complete and revise the selected English novel and prepare a verified contest entry package; external submission remains separately instructed.",
-  "current_phase_goal": "G00",
+  "current_phase_goal": "G01",
   "next_execution_goal": "G01",
   "status_values": [
     "queued",
@@ -37,7 +37,7 @@
     {
       "id": "G00",
       "title": "Persist selected-book plan and workflow",
-      "status": "active",
+      "status": "complete",
       "depends_on": [],
       "target": "2026-10-04",
       "owner": "Codex integrator",
@@ -52,8 +52,14 @@
         "Plan, workflow and milestone dependencies independently reviewed.",
         "Relevant Markdown links and JSON validated; reviewed commit pushed and remote verified."
       ],
-      "evidence": [],
-      "next_action": "Complete independent document review and Git delivery."
+      "evidence": [
+        "provenance/human-inputs.md#h-003--2026-10-04--book-selection-and-reading-format",
+        "book/brief/source-baseline.json",
+        "planning/2026-10-04-plan-review.md",
+        "52 changed-document relative links validated; JSON parsed; 12 milestone IDs and dependency graph checked; two source hashes and word counts verified.",
+        "Reviewed plan commit b5661daeca8c6f0bde375c7fb39f9385400b7eb4 merged to main and verified on GitHub."
+      ],
+      "next_action": "Complete. Resume with G01; future milestone work is queued."
     },
     {
       "id": "G01",
@@ -295,5 +301,6 @@
       "evidence": [],
       "next_action": "Reassess review-record binding after actual sequential revisions; no new style overlay by default."
     }
-  ]
+  ],
+  "planning_phase_completed_on": "2026-10-04"
 }

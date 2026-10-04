@@ -2,6 +2,8 @@
 
 Updated 4 October 2026. The user chose this concept after reading the four German openings, then requested a durable plan, workflow and goals. Title is working; the ending is unselected. The prior eight-hour research campaign is complete and its heartbeat remains paused.
 
+The planning setup is complete and its reviewed content has been merged and pushed. G01 is the next queued execution milestone; no new writing or service job is running.
+
 ## Next action
 
 **Present the existing café continuation in German, text only, in this chat.** It has not yet been presented in the reading sequence. Retrieve C01 from the [source baseline](../book/brief/source-baseline.json), check its hash, and translate the actual text. Do not write another café continuation by default.
