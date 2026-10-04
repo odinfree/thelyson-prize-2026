@@ -17,8 +17,8 @@ The proposed reading experience is an intimate family novel with one speculative
 | Provisional length | Aim for 45,000–50,000 English words, subject to the middle test; this is a project target, not a quality claim |
 | Language workflow | English manuscript source; German text-only reading versions for the user |
 | Intended audience | Readers of intimate, character-led speculative family fiction; market demand is unmeasured |
-| Setting | Contemporary ordinary town; exact country/town and story date still to choose |
-| Ending | Open. Departure remains irreversible; its emotional and practical outcome must follow from the intervening action |
+| Setting | Fictional Merewick, English Midlands; 16–17 May 2026, chosen autonomously under H-005 |
+| Ending | Working ending B: leave the gathering for a walk with Leo, row at dawn, Jo chooses to join at the landing; irreversible collection at07:00. Full-draft payoff remains to be reviewed. |
 
 ## What exists and what remains open
 
@@ -37,3 +37,7 @@ Before the full outline, decide the present-day desire Flora pursues beyond spen
 - The final encounter must keep the return boundary while allowing relationships to remain mixed or unfinished. A magical exception cannot supply the payoff.
 
 Use the [next-step plan](../../planning/fifteenth-year-next-steps.md) to turn these questions into scenes, an outline and a drafting schedule.
+
+## Autonomous execution decision
+
+Under H-005, the provisional setting, present desires, chapter sequence and ending have been resolved for drafting in the [full outline](../outline/novel-outline.md). The [development review](../reviews/2026-10-04-development-review.md) found the warehouse and middle tests usable, with explicit middle integration repairs. The two private sources have been deliberately imported as chapter1. Earlier descriptions above preserve the selection-stage baseline; they are not current blockers. The human selected the concept, not these newly generated plot details.

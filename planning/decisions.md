@@ -12,3 +12,7 @@
 | 2026-10-04 | Use the two English development scenes as the pinned starting point; offer German text-only readings | Existing source and user's reading preference | Working language method; no new manuscript drafted |
 
 Provisional: literary/speculative family form, Flora's first-person present, 45,000–50,000 English words. Still open: final title, setting/date, precise present-day desires, necessary additional return rules, full outline/ending, pen name/model attribution, and final submission details. User concept selection does not approve every prior plot proposal.
+
+## Autonomous manuscript execution — 4 October2026
+
+H-005 authorizes immediate execution through a revised local entry package. The [outline](../book/outline/novel-outline.md) records AI creative choices and the [development review](../book/reviews/2026-10-04-development-review.md) records separate assessment. Earlier target dates do not cause waiting. German readings are saved and linked while writing continues. Ending B is a working creative choice, not a human preference result. No new paid-service/GPU allocation, recurring automation, or external submission has been made.

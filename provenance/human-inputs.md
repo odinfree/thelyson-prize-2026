@@ -19,3 +19,7 @@ After the four openings were presented in German, the user selected *The Fifteen
 The user requested that all necessary work be captured in a plan, workflow and persistent goals. Effect: [workflow](../planning/workflow.md), [milestones](../planning/goals.json), and [resumption record](../planning/RESUME.md). This records future work separately from actual completion. No new recurring automation, manuscript prose, service allocation or submission is created by these planning records.
 
 For later entries, record: date, subject, a concise account of the direction or critique, affected chapters, and the linked AI revision record. Keep private personal data out of this file.
+
+## H-005 — 2026-10-04 — Autonomous execution
+
+The user instructed Codex to carry the project out autonomously from start to end. Effect: execute the selected book plan immediately, resolve provisional creative choices, draft and revise the English novel, and prepare a verified entry package. Reading translations remain text-only artifacts and do not block drafting while feedback is absent. Existing separate-instruction boundaries for actual contest submission and spending remain in force. No manuscript replacement language was supplied.

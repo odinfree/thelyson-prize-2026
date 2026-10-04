@@ -2,7 +2,7 @@
 
 A public workspace for our entry to the [Thélyson Orélien Prize for New Writing](https://thelyson.ai/): research the contest, develop an original book, write and revise it with AI, and preserve what we learn.
 
-**Stage:** the user selected **The Fifteenth Year** on **4 October 2026** after reading the four openings in German. The English development source contains an opening and café continuation totaling 2,182 words. Setting, full structure and ending remain in development; there is no complete manuscript or submission. Start with the [resume record](planning/RESUME.md), [creative brief](book/brief/creative-brief.md), and [next steps](planning/fifteenth-year-next-steps.md).
+**Stage:** autonomous manuscript execution is active under the user’s 4 October instruction. **The Fifteenth Year** is selected; the opening and reviewed warehouse have been adopted, the middle and ending tested, and the [22-chapter outline](book/outline/novel-outline.md) is being drafted by three authors with exclusive chapter ranges. Start with the [resume record](planning/RESUME.md), [creative brief](book/brief/creative-brief.md), and [goals](planning/goals.json). There is no complete or submitted entry yet.
 
 The advertised deadline is **31 October 2026, 23:59 Anywhere on Earth** — **1 November, 12:59 Europe/Zurich**. The published rules require an English PDF of **40,000–120,000 words** whose wording is entirely AI-generated. Human planning and editorial feedback are allowed. These core conditions were rechecked **4 October 2026** in a [limited page refresh](research/sources/2026-10-04-contest-refresh.json) and must be rechecked before entry.
 

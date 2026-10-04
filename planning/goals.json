@@ -4,8 +4,8 @@
   "updated_on": "2026-10-04",
   "timezone": "Europe/Zurich",
   "long_term_objective": "Complete and revise the selected English novel and prepare a verified contest entry package; external submission remains separately instructed.",
-  "current_phase_goal": "G01",
-  "next_execution_goal": "G01",
+  "current_phase_goal": "G06",
+  "next_execution_goal": "G06",
   "status_values": [
     "queued",
     "active",
@@ -22,10 +22,11 @@
       22
     ],
     "submission_target": "2026-10-30",
-    "published_deadline_utc": "2026-11-01T11:59:00Z"
+    "published_deadline_utc": "2026-11-01T11:59:00Z",
+    "schedule_note": "Execute immediately under H-005; earlier October dates are superseded pacing targets, not waiting gates."
   },
   "execution_state": {
-    "new_manuscript_written_this_phase": false,
+    "new_manuscript_written_this_phase": true,
     "active_service_jobs": [],
     "new_paid_or_gpu_allocation": false,
     "recurring_automation_created": false,
@@ -64,26 +65,30 @@
     {
       "id": "G01",
       "title": "Read existing cafe continuation",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G00"
       ],
       "target": "2026-10-04 to 2026-10-05",
       "owner": "Codex translator",
       "outputs": [
-        "Chat: German text-only C01 reading"
+        "book/reading/de/02-das-cafe.md"
       ],
       "done_when": [
-        "Pinned C01 translated from actual source and presented in chat.",
+        "Pinned C01 faithfully translated to a durable German text-only reading artifact and linked in chat; H-005 allows work to continue without waiting for reading feedback.",
         "Any received human feedback recorded separately; absence of feedback not invented as approval."
       ],
-      "evidence": [],
-      "next_action": "Retrieve C01 from source baseline; present German reading without audio."
+      "evidence": [
+        "book/reading/de/02-das-cafe.md",
+        "book/reviews/2026-10-04-development-review.md",
+        "German text artifact linked in chat; full independent fidelity read found no substantive issue."
+      ],
+      "next_action": "Reading artifact delivered; record real user feedback if received."
     },
     {
       "id": "G02",
       "title": "Develop warehouse reunion",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G01"
       ],
@@ -101,13 +106,19 @@
         "Jo and Leo act beyond correcting Flora; mixed motives and viewpoint preserved.",
         "Actual candidate reviewed and any repair rechecked; writing and translation records distinguish their roles."
       ],
-      "evidence": [],
-      "next_action": "Brief a 1500-2000-word reunion using O01 and C01; do not assume purchase or evening invitation."
+      "evidence": [
+        "experiments/manuscript-development/warehouse/draft-01.md",
+        "book/reviews/2026-10-04-development-review.md",
+        "book/chapters/02-the-underside.md",
+        "book/reading/de/03-die-unterseite.md",
+        "Integrator exact comparison confirms only sock-to-ankle repair on manuscript import; reviewed warehouse otherwise preserved."
+      ],
+      "next_action": "Complete; the generated German reading is delivered. Check downstream delivery chapters during whole-book review."
     },
     {
       "id": "G03",
       "title": "Test the middle and ending options",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G02"
       ],
@@ -124,13 +135,18 @@
         "Both retain the single 07:00-to-07:00 return.",
         "Character desires support the working direction; open artistic questions remain visible."
       ],
-      "evidence": [],
-      "next_action": "Choose one middle test made possible by the reunion, then compare ending consequences."
+      "evidence": [
+        "experiments/manuscript-development/middle/draft-01.md",
+        "experiments/manuscript-development/middle/endings.md",
+        "book/reviews/2026-10-04-development-review.md",
+        "book/outline/novel-outline.md"
+      ],
+      "next_action": "Ending B selected as an AI working decision; check actual full draft payoff."
     },
     {
       "id": "G04",
       "title": "Resolve necessary setting and world decisions",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G00"
       ],
@@ -146,13 +162,16 @@
         "Only necessary additional return rules adopted explicitly.",
         "Consequential travel, opening hours and optional boat logistics checked against sources or labeled invented."
       ],
-      "evidence": [],
-      "next_action": "Identify decisions needed by the warehouse; research only consequential details. Run independently of prose edits."
+      "evidence": [
+        "research/notes/2026-10-04-setting-logistics.md",
+        "book/outline/novel-outline.md"
+      ],
+      "next_action": "Apply the researched limits and invented setting consistently; no real-world location claim."
     },
     {
       "id": "G05",
       "title": "Build full outline and drafting baseline",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G03",
         "G04"
@@ -170,13 +189,18 @@
         "Chosen development prose deliberately imported or revised into manuscript with source records.",
         "Timeline, knowledge limits and unresolved promises reviewed."
       ],
-      "evidence": [],
-      "next_action": "Construct chapter cards from demonstrated scene consequences; adopt a working ending."
+      "evidence": [
+        "book/outline/novel-outline.md",
+        "book/manifest.json",
+        "book/chapters/01-seven.md",
+        "book/reviews/2026-10-04-development-review.md"
+      ],
+      "next_action": "Outline and source baseline adopted; actual full-draft review still required."
     },
     {
       "id": "G06",
       "title": "Complete first English draft",
-      "status": "queued",
+      "status": "active",
       "depends_on": [
         "G05"
       ],
@@ -191,8 +215,10 @@
         "Actual manuscript count recorded separately from notes, translations and alternate drafts.",
         "Structural gaps, additional scene needs and unresolved factual assumptions surfaced for revision; the first draft itself has a complete beginning-to-ending sequence."
       ],
-      "evidence": [],
-      "next_action": "Draft in coherent scene batches, roughly 3500-4000 new words per drafting day according to retained material."
+      "evidence": [
+        "book/manifest.json"
+      ],
+      "next_action": "Three authors own chapters2–7,8–14,15–22; root integrates and independently checks actual prose."
     },
     {
       "id": "G07",
@@ -302,5 +328,6 @@
       "next_action": "Reassess review-record binding after actual sequential revisions; no new style overlay by default."
     }
   ],
-  "planning_phase_completed_on": "2026-10-04"
+  "planning_phase_completed_on": "2026-10-04",
+  "autonomous_execution_authorized_on": "2026-10-04"
 }

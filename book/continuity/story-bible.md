@@ -28,3 +28,9 @@ Updated 4 October 2026. This is a compact reading of the two [pinned English sou
 ## Open promises for the next scene
 
 Show the reunion with adult Jo and the furniture decision. Keep the clothes bag and photograph envelope accounted for when they matter. Let the result establish the next action without quietly granting additional time, access or an invitation. Update this record against generated prose; do not edit the old source to make a new plan appear pre-established.
+
+## Drafting commitments adopted under H-005
+
+The [full outline](../outline/novel-outline.md) now chooses Merewick, an invented English Midlands town, 16–17 May2026; ages Flora41, Leo59, Jo30; a rented first-floor flat; 118cm round table with removable legs; and a calm, sheltered daylight skiff outing with two rowing oars. These are AI creative decisions, not retroactive readings of O01/C01. The borrowed paddle in the photograph remains distinct. The warehouse purchase is enacted in its reviewed candidate at £90 delivered; later dinner invitation and other planned outcomes still require their actual chapters. Six planned diners include Jo; Patrick is seventh if present, and a later Flora invitation makes eight. Old folding furniture supplies additional surface/places. Leo lives alone after a real later relationship with Catherine, ended two years earlier. Bess is a rowing friend.
+
+The development boat-shed scene is retained unchanged but cannot be imported verbatim as chapter9: its house-sale revelation, dress, lunch and one-oar demonstration differ from the adopted sequence. Chapter9 must repair all four. Chapter8 must explicitly transfer the photos out of the green dress. Per-batch handoffs record actual drafted states; reconcile them against the final prose before replacing these commitments with established-canon claims.

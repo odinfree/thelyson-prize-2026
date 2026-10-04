@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "title": "The Fifteenth Year",
+  "language": "en",
+  "chapters": [
+    {
+      "number": 1,
+      "path": "book/chapters/01-seven.md"
+    },
+    {
+      "number": 2,
+      "path": "book/chapters/02-the-underside.md"
+    },
+    {
+      "number": 3,
+      "path": "book/chapters/03-the-turn.md"
+    },
+    {
+      "number": 4,
+      "path": "book/chapters/04-upstairs.md"
+    },
+    {
+      "number": 5,
+      "path": "book/chapters/05-the-list.md"
+    },
+    {
+      "number": 6,
+      "path": "book/chapters/06-places.md"
+    },
+    {
+      "number": 7,
+      "path": "book/chapters/07-the-other-gate.md"
+    },
+    {
+      "number": 8,
+      "path": "book/chapters/08-a-smaller-kitchen.md"
+    },
+    {
+      "number": 9,
+      "path": "book/chapters/09-the-seam.md"
+    },
+    {
+      "number": 10,
+      "path": "book/chapters/10-ellen.md"
+    },
+    {
+      "number": 11,
+      "path": "book/chapters/11-in-the-kitchen.md"
+    },
+    {
+      "number": 12,
+      "path": "book/chapters/12-eight.md"
+    },
+    {
+      "number": 13,
+      "path": "book/chapters/13-dinner.md"
+    },
+    {
+      "number": 14,
+      "path": "book/chapters/14-the-story-i-tell.md"
+    },
+    {
+      "number": 15,
+      "path": "book/chapters/15-after-the-plates.md"
+    },
+    {
+      "number": 16,
+      "path": "book/chapters/16-on-foot.md"
+    },
+    {
+      "number": 17,
+      "path": "book/chapters/17-the-photographs.md"
+    },
+    {
+      "number": 18,
+      "path": "book/chapters/18-a-message.md"
+    },
+    {
+      "number": 19,
+      "path": "book/chapters/19-before-the-light.md"
+    },
+    {
+      "number": 20,
+      "path": "book/chapters/20-the-water.md"
+    },
+    {
+      "number": 21,
+      "path": "book/chapters/21-on-the-bank.md"
+    },
+    {
+      "number": 22,
+      "path": "book/chapters/22-the-car.md"
+    }
+  ]
+}
