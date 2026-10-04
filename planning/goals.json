@@ -4,8 +4,8 @@
   "updated_on": "2026-10-04",
   "timezone": "Europe/Zurich",
   "long_term_objective": "Complete and revise the selected English novel and prepare a verified contest entry package; external submission remains separately instructed.",
-  "current_phase_goal": "G06",
-  "next_execution_goal": "G06",
+  "current_phase_goal": "G07",
+  "next_execution_goal": "G07",
   "status_values": [
     "queued",
     "active",
@@ -32,7 +32,9 @@
     "recurring_automation_created": false,
     "previous_campaign_heartbeat": "paused",
     "submission": "not_prepared",
-    "acceptance": "not_submitted"
+    "acceptance": "not_submitted",
+    "first_draft_words": 44851,
+    "first_draft_complete": true
   },
   "goals": [
     {
@@ -200,7 +202,7 @@
     {
       "id": "G06",
       "title": "Complete first English draft",
-      "status": "active",
+      "status": "complete",
       "depends_on": [
         "G05"
       ],
@@ -216,14 +218,18 @@
         "Structural gaps, additional scene needs and unresolved factual assumptions surfaced for revision; the first draft itself has a complete beginning-to-ending sequence."
       ],
       "evidence": [
-        "book/manifest.json"
+        "book/reviews/first-draft-manifest.json",
+        "book/continuity/batch-a-handoff.md",
+        "book/continuity/batch-b-handoff.md",
+        "book/continuity/batch-c-handoff.md",
+        "All22 chapters exist in declared order,44,851 prose words; complete beginning-to-ending sequence, not reviewed final."
       ],
-      "next_action": "Three authors own chapters2–7,8–14,15–22; root integrates and independently checks actual prose."
+      "next_action": "First draft frozen; structural and continuity repairs remain open."
     },
     {
       "id": "G07",
       "title": "Revise the complete structure",
-      "status": "queued",
+      "status": "active",
       "depends_on": [
         "G06"
       ],
@@ -239,8 +245,10 @@
         "Structural edits applied and consequential continuity rechecked.",
         "Retain relevant human responses when received, never substitute simulated readers."
       ],
-      "evidence": [],
-      "next_action": "Read the full book before sentence polishing; prioritize scene and ending changes."
+      "evidence": [
+        "book/reviews/integration/root-reading-progress.json"
+      ],
+      "next_action": "Resolve repeated displacement scene and incompatible promise memories, then verify whole-arc consequences."
     },
     {
       "id": "G08",

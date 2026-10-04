@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "title": "The Fifteenth Year",
+  "manuscript_fingerprint": "f14e2d070bd694bb74c11eb73141740a1099185304996361181f59856af04517",
+  "complete_sequence": true,
+  "chapter_count": 22,
+  "expected_chapters": 22,
+  "prose_words": 44851,
+  "count_method": "whitespace tokens; excludes numbered chapter titles and standalone scene separators",
+  "published_length_range_satisfied": true,
+  "missing": [],
+  "chapters": [
+    {
+      "number": 1,
+      "path": "book/chapters/01-seven.md",
+      "title": "Seven",
+      "sha256": "a3b7a3d2c891492edc6079ee7d720ae0801649bd0dd22294812bac941593082c",
+      "words": 2182
+    },
+    {
+      "number": 2,
+      "path": "book/chapters/02-the-underside.md",
+      "title": "The underside",
+      "sha256": "43ccaf0c0517765196dc24da404b42d7e7c9b4f24206f48d6bf74a2ec3633969",
+      "words": 1833
+    },
+    {
+      "number": 3,
+      "path": "book/chapters/03-the-turn.md",
+      "title": "The turn",
+      "sha256": "14df721f7f9de0c0469098fd5d3ea763519a2ddeddcb8afe0569b86dc401e096",
+      "words": 2118
+    },
+    {
+      "number": 4,
+      "path": "book/chapters/04-upstairs.md",
+      "title": "Upstairs",
+      "sha256": "e31bfcfa31033aaba939e351507c15c372f413950e287338d5b843640de7b7ba",
+      "words": 2109
+    },
+    {
+      "number": 5,
+      "path": "book/chapters/05-the-list.md",
+      "title": "The list",
+      "sha256": "96b0195859a1bbb05c4d35cf136f5706b6a7dbecc480e58bfdacc667f7846b1e",
+      "words": 1908
+    },
+    {
+      "number": 6,
+      "path": "book/chapters/06-places.md",
+      "title": "Places",
+      "sha256": "21e27b04dc0d77dd42689a8ae3af9a26538d67736050956f6289a617b1edbfab",
+      "words": 2133
+    },
+    {
+      "number": 7,
+      "path": "book/chapters/07-the-other-gate.md",
+      "title": "The other gate",
+      "sha256": "a8453e14b1430cc76392deff692ddd412b6b750fb83fa579eadd297c6088acfc",
+      "words": 2179
+    },
+    {
+      "number": 8,
+      "path": "book/chapters/08-a-smaller-kitchen.md",
+      "title": "A smaller kitchen",
+      "sha256": "c0769911310ddd8e6f0c61ba7251c38734cb6e51b8f02691fd0d78c137c07efa",
+      "words": 2317
+    },
+    {
+      "number": 9,
+      "path": "book/chapters/09-the-seam.md",
+      "title": "The seam",
+      "sha256": "7fa3dd470fd49baba7ed4762b3200e5a94f1e055ce6e5733ebb446c6405f7e15",
+      "words": 2082
+    },
+    {
+      "number": 10,
+      "path": "book/chapters/10-ellen.md",
+      "title": "Ellen",
+      "sha256": "edfe910fc8b5666b57a067ec73dbab2edf433a882e00842b1df1666b5f1ed513",
+      "words": 1962
+    },
+    {
+      "number": 11,
+      "path": "book/chapters/11-in-the-kitchen.md",
+      "title": "In the kitchen",
+      "sha256": "2db697f9a2c2ae4b4bbabf748bc792bfa9b10a2e5d9bb2df8290e0f83f768ad8",
+      "words": 2227
+    },
+    {
+      "number": 12,
+      "path": "book/chapters/12-eight.md",
+      "title": "Eight",
+      "sha256": "7a1cc69514cc98d71cb6cf738bf3b1bef02419e619a1c4743d622678ded9794e",
+      "words": 2113
+    },
+    {
+      "number": 13,
+      "path": "book/chapters/13-dinner.md",
+      "title": "Dinner",
+      "sha256": "0dd3a3a96995dd3f54dc60da97853a81c3273950ed6d4d5260894f9b3e06b8e2",
+      "words": 2165
+    },
+    {
+      "number": 14,
+      "path": "book/chapters/14-the-story-i-tell.md",
+      "title": "The story I tell",
+      "sha256": "2220db8337d20f08f2862692d4b757f7bb1042fdeba78818c1da1bcd426e128c",
+      "words": 2363
+    },
+    {
+      "number": 15,
+      "path": "book/chapters/15-after-the-plates.md",
+      "title": "After the plates",
+      "sha256": "8bc8021e6ff9b95ee42d453484f7da76ad0a0ddb3b725a959bf0e3d6e5ad7fcc",
+      "words": 2030
+    },
+    {
+      "number": 16,
+      "path": "book/chapters/16-on-foot.md",
+      "title": "On foot",
+      "sha256": "805edbb680d86511bb24d0f39a4fba7915369c52ff4b844a23cf857cc26d9476",
+      "words": 1852
+    },
+    {
+      "number": 17,
+      "path": "book/chapters/17-the-photographs.md",
+      "title": "The photographs",
+      "sha256": "6b5dd23b74cdbe32a170aebb69ef9ef3ab8b1bda8d004cd8f5862bda47c2cacb",
+      "words": 2150
+    },
+    {
+      "number": 18,
+      "path": "book/chapters/18-a-message.md",
+      "title": "A message",
+      "sha256": "5d4022e66c01f728b90c5193fd21ac8d4aaa6b65ce790174f38eebba5ff568c8",
+      "words": 1821
+    },
+    {
+      "number": 19,
+      "path": "book/chapters/19-before-the-light.md",
+      "title": "Before the light",
+      "sha256": "52b5f8b76060c2b066b48ee681abb7ba2a019c4f64d568454feaaa6c43980fed",
+      "words": 2034
+    },
+    {
+      "number": 20,
+      "path": "book/chapters/20-the-water.md",
+      "title": "The water",
+      "sha256": "e0c395a7a22e1cf83f3307f833e3ba4ea2647625d8cf634585f93f4f93bcd82b",
+      "words": 1887
+    },
+    {
+      "number": 21,
+      "path": "book/chapters/21-on-the-bank.md",
+      "title": "On the bank",
+      "sha256": "c6b7e323f3cdd60444cc5b4b107c501aebe1fbd5722adc8326db1b781a42e62b",
+      "words": 1909
+    },
+    {
+      "number": 22,
+      "path": "book/chapters/22-the-car.md",
+      "title": "The car",
+      "sha256": "aa5a81792bf53b4a4b1672fe0409d6969a8b391e6013f8659f3d7ac9f08a4ac2",
+      "words": 1477
+    }
+  ],
+  "limits": "Order, source bytes and mechanical count only; no literary, originality or eligibility certification."
+}

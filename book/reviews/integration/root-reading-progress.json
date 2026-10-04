@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "reviewer": "Codex integrator, same campaign, not blind",
+  "scope": "Integrator completed a full read of all22 first-draft chapters; independent cross-reviews still being recorded.",
+  "chapters": [
+    {
+      "path": "book/chapters/01-seven.md",
+      "sha256": "a3b7a3d2c891492edc6079ee7d720ae0801649bd0dd22294812bac941593082c",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/02-the-underside.md",
+      "sha256": "43ccaf0c0517765196dc24da404b42d7e7c9b4f24206f48d6bf74a2ec3633969",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/03-the-turn.md",
+      "sha256": "14df721f7f9de0c0469098fd5d3ea763519a2ddeddcb8afe0569b86dc401e096",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/04-upstairs.md",
+      "sha256": "e31bfcfa31033aaba939e351507c15c372f413950e287338d5b843640de7b7ba",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/05-the-list.md",
+      "sha256": "96b0195859a1bbb05c4d35cf136f5706b6a7dbecc480e58bfdacc667f7846b1e",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/06-places.md",
+      "sha256": "21e27b04dc0d77dd42689a8ae3af9a26538d67736050956f6289a617b1edbfab",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/07-the-other-gate.md",
+      "sha256": "a8453e14b1430cc76392deff692ddd412b6b750fb83fa579eadd297c6088acfc",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/08-a-smaller-kitchen.md",
+      "sha256": "c0769911310ddd8e6f0c61ba7251c38734cb6e51b8f02691fd0d78c137c07efa",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/09-the-seam.md",
+      "sha256": "7fa3dd470fd49baba7ed4762b3200e5a94f1e055ce6e5733ebb446c6405f7e15",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/10-ellen.md",
+      "sha256": "edfe910fc8b5666b57a067ec73dbab2edf433a882e00842b1df1666b5f1ed513",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/11-in-the-kitchen.md",
+      "sha256": "2db697f9a2c2ae4b4bbabf748bc792bfa9b10a2e5d9bb2df8290e0f83f768ad8",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/12-eight.md",
+      "sha256": "7a1cc69514cc98d71cb6cf738bf3b1bef02419e619a1c4743d622678ded9794e",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/13-dinner.md",
+      "sha256": "0dd3a3a96995dd3f54dc60da97853a81c3273950ed6d4d5260894f9b3e06b8e2",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/14-the-story-i-tell.md",
+      "sha256": "2220db8337d20f08f2862692d4b757f7bb1042fdeba78818c1da1bcd426e128c",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/15-after-the-plates.md",
+      "sha256": "8bc8021e6ff9b95ee42d453484f7da76ad0a0ddb3b725a959bf0e3d6e5ad7fcc",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/16-on-foot.md",
+      "sha256": "805edbb680d86511bb24d0f39a4fba7915369c52ff4b844a23cf857cc26d9476",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/17-the-photographs.md",
+      "sha256": "6b5dd23b74cdbe32a170aebb69ef9ef3ab8b1bda8d004cd8f5862bda47c2cacb",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/18-a-message.md",
+      "sha256": "5d4022e66c01f728b90c5193fd21ac8d4aaa6b65ce790174f38eebba5ff568c8",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/19-before-the-light.md",
+      "sha256": "52b5f8b76060c2b066b48ee681abb7ba2a019c4f64d568454feaaa6c43980fed",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/20-the-water.md",
+      "sha256": "e0c395a7a22e1cf83f3307f833e3ba4ea2647625d8cf634585f93f4f93bcd82b",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/21-on-the-bank.md",
+      "sha256": "c6b7e323f3cdd60444cc5b4b107c501aebe1fbd5722adc8326db1b781a42e62b",
+      "read_complete": true
+    },
+    {
+      "path": "book/chapters/22-the-car.md",
+      "sha256": "aa5a81792bf53b4a4b1672fe0409d6969a8b391e6013f8659f3d7ac9f08a4ac2",
+      "read_complete": true
+    }
+  ],
+  "issues": [
+    {
+      "id": "R001",
+      "path": "book/chapters/08-a-smaller-kitchen.md",
+      "finding": "Both cups taken to sitting room; Leo later fetches his tea said to be left in kitchen.",
+      "proposed_repair": "Fetch tea pot or refill mugs rather than relocate an existing cup.",
+      "status": "open; preserve first draft before repair"
+    },
+    {
+      "id": "R002",
+      "path": "book/chapters/18-a-message.md",
+      "finding": "Flora recalls going upstairs to change in afternoon; chapter8 puts changing bathroom through kitchen.",
+      "proposed_repair": "Recall going upstairs to bed that night, or establish first creaking-step encounter.",
+      "status": "open; preserve first draft before repair"
+    },
+    {
+      "id": "R003",
+      "path": "book/chapters/21-on-the-bank.md",
+      "finding": "Flora41 calls her face youngest adult in picture containing Jo30.",
+      "proposed_repair": "Express the eleven-year apparent age gap rather than reverse the ages.",
+      "status": "open; freeze draft before repair"
+    },
+    {
+      "id": "R004",
+      "path": "book/chapters/15-after-the-plates.md; book/chapters/21-on-the-bank.md",
+      "finding": "Jo wears dark blue dress in11;15 and21 assume trousers on birthday evening.",
+      "proposed_repair": "Use dress in15; describe morning trousers without claiming they were worn at dinner.",
+      "status": "open; freeze draft before repair"
+    },
+    {
+      "id": "R005",
+      "path": "book/chapters/09-the-seam.md",
+      "finding": "Extended jealousy about Jo having rowed repeats displacement mechanism between Catherine and Ellen scenes.",
+      "proposed_repair": "Retain actual Jo-trip knowledge and brief mixed response; replace repeated exclusion negotiation with curiosity and concrete shared work.",
+      "status": "open; freeze draft before repair"
+    },
+    {
+      "id": "R006",
+      "path": "book/chapters/12-eight.md",
+      "finding": "Arun bread described as borrowed, although given in5; dish/towel are borrowed.",
+      "proposed_repair": "Remove borrowed from bread description.",
+      "status": "open; freeze draft before repair"
+    },
+    {
+      "id": "R007",
+      "path": "book/chapters/03-the-turn.md",
+      "finding": "Pencil handed to Jo then later still in Flora pocket; door shut against a stop intended to keep it open.",
+      "proposed_repair": "Offer pencil without completed handover; hold door open against stop.",
+      "status": "open; freeze draft before repair"
+    },
+    {
+      "id": "R008",
+      "path": "book/chapters/22-the-car.md",
+      "finding": "Jo expects the same collection woman though she did not encounter first attendant on-page.",
+      "proposed_repair": "Assign expectation to Flora, who actually saw the attendant; avoid unsupported Jo access.",
+      "status": "open; freeze draft before repair"
+    },
+    {
+      "id": "R009",
+      "path": "book/chapters/19-before-the-light.md; book/chapters/20-the-water.md",
+      "finding": "Some narration explicitly refuses to turn objects or rowing into lessons, repeating an editorial gesture rather than the physical experience.",
+      "proposed_repair": "Consider cutting these optional self-interpreting clauses while preserving action, emotion and the useful rowing instruction.",
+      "status": "open; freeze draft before repair"
+    },
+    {
+      "id": "R010",
+      "path": "book/chapters/14-the-story-i-tell.md; book/chapters/15-after-the-plates.md",
+      "finding": "Chapter14 explicitly remembers the after-concert promise;15 explicitly cannot remember it.",
+      "proposed_repair": "Preserve15 uncertainty and trust;14 retains pre-concert anxiety memory but not recovered promise. Preserve public factual correction.",
+      "status": "open; first-draft frozen before repair"
+    },
+    {
+      "id": "R011",
+      "path": "book/chapters/08-a-smaller-kitchen.md",
+      "finding": "Chapter7 ends with explicit wish to wash compost from hands;8 does not complete it before changing clothes.",
+      "proposed_repair": "Add a short enacted handwash on entering bathroom; no need to treat omission as impossible off-page action.",
+      "status": "optional clarity repair, not hard contradiction"
+    }
+  ]
+}
