@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "selected_on": "2026-10-04",
+  "working_title": "The Fifteenth Year",
+  "repository": "https://github.com/odinfree/thelyson-research-lab",
+  "revision": "ce573d0ea0c83a31474acce67e54f951a26f05b1",
+  "sources": [
+    {
+      "id": "O01",
+      "title": "Return opening",
+      "repository_path": "experiments/creative/openings-v1/return/draft-02.md",
+      "sha256": "bd8226e0ba00592ff354bb9f7f9a86fa86cf1badeb17aded8aa73abd84fe8168",
+      "words_whitespace_split": 1030,
+      "status": "development_draft",
+      "shown_in_german_reading_sequence": true
+    },
+    {
+      "id": "C01",
+      "title": "Cafe continuation",
+      "repository_path": "experiments/creative/consequence-scenes-v1/return/draft-01.md",
+      "sha256": "2481b81b52995ab871b5bf12bef8192d41a61ca905542548eee4152275716725",
+      "words_whitespace_split": 1152,
+      "status": "development_draft",
+      "shown_in_german_reading_sequence": false
+    }
+  ],
+  "total_development_words": 2182,
+  "assembled_manuscript": false,
+  "exact_model_snapshot": "unknown",
+  "source_provenance_note": "Existing source manifests and review records remain in the private lab; these are file pins, not newly generated prose or independently authenticated authorship."
+}

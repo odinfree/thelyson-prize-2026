@@ -1,6 +1,8 @@
 # The book
 
-No manuscript exists yet. The [creative brief](brief/creative-brief.md) is deliberately undecided while contest and method research begins.
+The user selected **The Fifteenth Year** on 4 October 2026. Read the [creative brief](brief/creative-brief.md), [development plan](../planning/fifteenth-year-next-steps.md), and [source baseline](brief/source-baseline.json).
+
+Two English development scenes exist in the private lab: the return/opening and café continuation, totaling 2,182 words. They have not been assembled into a manuscript under `chapters/`. The German opening shown in chat was a reading translation. Our proposed working method keeps English as the manuscript source and provides German reading versions in chat, as text only.
 
 ## Working files
 

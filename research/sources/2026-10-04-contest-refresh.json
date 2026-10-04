@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-04",
+  "checked_at_utc": "2026-10-04T08:07:24.639112+00:00",
+  "url": "https://thelyson.ai/",
+  "method": "Read-only HTTP GET; inspected page text and embedded structured description after web reader could not access the URL.",
+  "html_sha256": "7ae165e76e804105e76675cba5924d2f7df9eba3b4b67bdab69ce884c25fcbf9",
+  "html_bytes": 182662,
+  "core_conditions": {
+    "english_pdf": true,
+    "minimum_words": 40000,
+    "maximum_words": 120000,
+    "ai_authored_wording": true,
+    "human_direction_allowed": true,
+    "published_deadline": "2026-10-31 23:59 UTC-12",
+    "deadline_utc": "2026-11-01T11:59:00Z",
+    "deadline_europe_zurich": "2026-11-01T12:59:00+01:00"
+  },
+  "limits": [
+    "Not a full diff against the previous page.",
+    "No submission backend, actual upload, receipt, rights terms, prize funding or detailed judging mechanism reverified.",
+    "Page content is organizer evidence, not project authorization."
+  ]
+}

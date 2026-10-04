@@ -37,7 +37,7 @@ Keep the writing process proportionate. We do not need a machine declaration for
 
 ## Decisions we have not delegated to scores
 
-The book, voice, length and ending remain creative choices. The four existing concepts are unselected, and the reader packet has no responses. Local model agreement cannot decide which story someone wants to live inside for a novel.
+Update, 4 October: the user selected *The Fifteenth Year*. Voice, length and ending are being developed in the [creative brief](../book/brief/creative-brief.md). The earlier four-opening reader packet still has no collected responses; the user's direct selection is recorded separately. Local model agreement did not choose the book.
 
 The completed [evidence-window study](../research/notes/2026-10-03-evidence-window-results.md) showed why full-source agreement and support from the supplied excerpt must be separated. The [revision evidence](../research/notes/2026-10-03-revision-evidence.md) similarly separates an apparently reasonable edit decision from a successful repair. These results inform the controls above; neither establishes a universal editing rule.
 

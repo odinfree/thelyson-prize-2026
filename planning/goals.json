@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "project": "The Fifteenth Year",
+  "updated_on": "2026-10-04",
+  "timezone": "Europe/Zurich",
+  "long_term_objective": "Complete and revise the selected English novel and prepare a verified contest entry package; external submission remains separately instructed.",
+  "current_phase_goal": "G00",
+  "next_execution_goal": "G01",
+  "status_values": [
+    "queued",
+    "active",
+    "complete",
+    "awaiting_instruction"
+  ],
+  "planning_targets": {
+    "english_words": [
+      45000,
+      50000
+    ],
+    "chapters": [
+      18,
+      22
+    ],
+    "submission_target": "2026-10-30",
+    "published_deadline_utc": "2026-11-01T11:59:00Z"
+  },
+  "execution_state": {
+    "new_manuscript_written_this_phase": false,
+    "active_service_jobs": [],
+    "new_paid_or_gpu_allocation": false,
+    "recurring_automation_created": false,
+    "previous_campaign_heartbeat": "paused",
+    "submission": "not_prepared",
+    "acceptance": "not_submitted"
+  },
+  "goals": [
+    {
+      "id": "G00",
+      "title": "Persist selected-book plan and workflow",
+      "status": "active",
+      "depends_on": [],
+      "target": "2026-10-04",
+      "owner": "Codex integrator",
+      "outputs": [
+        "planning/fifteenth-year-next-steps.md",
+        "planning/workflow.md",
+        "planning/RESUME.md",
+        "book/brief/creative-brief.md"
+      ],
+      "done_when": [
+        "User selection recorded; source baseline pinned.",
+        "Plan, workflow and milestone dependencies independently reviewed.",
+        "Relevant Markdown links and JSON validated; reviewed commit pushed and remote verified."
+      ],
+      "evidence": [],
+      "next_action": "Complete independent document review and Git delivery."
+    },
+    {
+      "id": "G01",
+      "title": "Read existing cafe continuation",
+      "status": "queued",
+      "depends_on": [
+        "G00"
+      ],
+      "target": "2026-10-04 to 2026-10-05",
+      "owner": "Codex translator",
+      "outputs": [
+        "Chat: German text-only C01 reading"
+      ],
+      "done_when": [
+        "Pinned C01 translated from actual source and presented in chat.",
+        "Any received human feedback recorded separately; absence of feedback not invented as approval."
+      ],
+      "evidence": [],
+      "next_action": "Retrieve C01 from source baseline; present German reading without audio."
+    },
+    {
+      "id": "G02",
+      "title": "Develop warehouse reunion",
+      "status": "queued",
+      "depends_on": [
+        "G01"
+      ],
+      "target": "2026-10-05",
+      "owner": "Codex author; separate reviewer",
+      "outputs": [
+        "New scene brief",
+        "English warehouse candidate and retained revisions",
+        "Separate review; German reading",
+        "Provenance and continuity updates"
+      ],
+      "done_when": [
+        "Adult Jo encountered on the page.",
+        "Table decision enacted and produces a next consequence.",
+        "Jo and Leo act beyond correcting Flora; mixed motives and viewpoint preserved.",
+        "Actual candidate reviewed and any repair rechecked; writing and translation records distinguish their roles."
+      ],
+      "evidence": [],
+      "next_action": "Brief a 1500-2000-word reunion using O01 and C01; do not assume purchase or evening invitation."
+    },
+    {
+      "id": "G03",
+      "title": "Test the middle and ending options",
+      "status": "queued",
+      "depends_on": [
+        "G02"
+      ],
+      "target": "2026-10-06 to 2026-10-07",
+      "owner": "Codex author; separate reviewer",
+      "outputs": [
+        "Middle-scene candidate",
+        "Two ending outlines",
+        "Recorded working structural decision"
+      ],
+      "done_when": [
+        "Middle activity changes the story beyond another request/correction.",
+        "Each ending names an action and its necessary setup.",
+        "Both retain the single 07:00-to-07:00 return.",
+        "Character desires support the working direction; open artistic questions remain visible."
+      ],
+      "evidence": [],
+      "next_action": "Choose one middle test made possible by the reunion, then compare ending consequences."
+    },
+    {
+      "id": "G04",
+      "title": "Resolve necessary setting and world decisions",
+      "status": "queued",
+      "depends_on": [
+        "G00"
+      ],
+      "target": "2026-10-06 to 2026-10-07",
+      "owner": "Codex researcher and integrator",
+      "outputs": [
+        "Scene-specific research notes",
+        "Brief and story-bible decisions"
+      ],
+      "done_when": [
+        "Country/town or deliberate fictional setting and story date chosen.",
+        "Flora, Jo and Leo each have a concrete current desire.",
+        "Only necessary additional return rules adopted explicitly.",
+        "Consequential travel, opening hours and optional boat logistics checked against sources or labeled invented."
+      ],
+      "evidence": [],
+      "next_action": "Identify decisions needed by the warehouse; research only consequential details. Run independently of prose edits."
+    },
+    {
+      "id": "G05",
+      "title": "Build full outline and drafting baseline",
+      "status": "queued",
+      "depends_on": [
+        "G03",
+        "G04"
+      ],
+      "target": "2026-10-08 to 2026-10-09",
+      "owner": "Codex integrator",
+      "outputs": [
+        "Chapter outline and ordered scene IDs",
+        "07:00-to-07:00 timeline",
+        "Chapter/source manifest and provenance"
+      ],
+      "done_when": [
+        "Beginning-to-ending sequence with varied action and consequences.",
+        "Provisional 18-22 chapters and 45000-50000-word target fit the story without filler.",
+        "Chosen development prose deliberately imported or revised into manuscript with source records.",
+        "Timeline, knowledge limits and unresolved promises reviewed."
+      ],
+      "evidence": [],
+      "next_action": "Construct chapter cards from demonstrated scene consequences; adopt a working ending."
+    },
+    {
+      "id": "G06",
+      "title": "Complete first English draft",
+      "status": "queued",
+      "depends_on": [
+        "G05"
+      ],
+      "target": "2026-10-10 to 2026-10-21",
+      "owner": "Assigned scene authors; integrator",
+      "outputs": [
+        "Complete ordered English manuscript",
+        "Generation log and continuity updates"
+      ],
+      "done_when": [
+        "Every planned part exists, including the ending.",
+        "Actual manuscript count recorded separately from notes, translations and alternate drafts.",
+        "Structural gaps, additional scene needs and unresolved factual assumptions surfaced for revision; the first draft itself has a complete beginning-to-ending sequence."
+      ],
+      "evidence": [],
+      "next_action": "Draft in coherent scene batches, roughly 3500-4000 new words per drafting day according to retained material."
+    },
+    {
+      "id": "G07",
+      "title": "Revise the complete structure",
+      "status": "queued",
+      "depends_on": [
+        "G06"
+      ],
+      "target": "2026-10-22 to 2026-10-25",
+      "owner": "Codex structural reviewer and author",
+      "outputs": [
+        "Whole-book review",
+        "Revised manuscript",
+        "Issue resolution record"
+      ],
+      "done_when": [
+        "Whole arc read for agency, repetition, pacing and earned payoff.",
+        "Structural edits applied and consequential continuity rechecked.",
+        "Retain relevant human responses when received, never substitute simulated readers."
+      ],
+      "evidence": [],
+      "next_action": "Read the full book before sentence polishing; prioritize scene and ending changes."
+    },
+    {
+      "id": "G08",
+      "title": "Finish continuity and prose revision",
+      "status": "queued",
+      "depends_on": [
+        "G07"
+      ],
+      "target": "2026-10-26 to 2026-10-27",
+      "owner": "Codex reviewer and author",
+      "outputs": [
+        "Revised English manuscript",
+        "Continuity/voice review and disposition notes"
+      ],
+      "done_when": [
+        "Time, knowledge, object and viewpoint issues resolved or deliberately retained.",
+        "Voice, ambiguity and rhythm preserved where purposeful.",
+        "Actual revised text checked for collateral damage and count remains within current rules."
+      ],
+      "evidence": [],
+      "next_action": "Review and repair bounded passages against exact source versions."
+    },
+    {
+      "id": "G09",
+      "title": "Prepare reviewable entry package",
+      "status": "queued",
+      "depends_on": [
+        "G08"
+      ],
+      "target": "2026-10-28 to 2026-10-29",
+      "owner": "Codex integrator",
+      "outputs": [
+        "Local English PDF",
+        "Extracted text and word-count report",
+        "Method disclosure",
+        "Submission checklist and unresolved terms"
+      ],
+      "done_when": [
+        "Live applicable rules and relevant open questions rechecked.",
+        "PDF readability, chapter order, text extraction and allowed length verified.",
+        "Accurate model/human-role disclosure ready; unknown details not invented.",
+        "Submission materials prepared for user decision, not sent."
+      ],
+      "evidence": [],
+      "next_action": "Assemble and validate the completed manuscript, disclosure and entry details."
+    },
+    {
+      "id": "G10",
+      "title": "Submit when instructed and reconcile receipt",
+      "status": "awaiting_instruction",
+      "depends_on": [
+        "G09"
+      ],
+      "target": "2026-10-30 target",
+      "owner": "User and Codex within explicit instruction",
+      "outputs": [
+        "Private submission receipt and status record"
+      ],
+      "done_when": [
+        "Specific submission instruction received after concrete package is available.",
+        "Actual receipt verified and any acceptance outcome recorded separately."
+      ],
+      "evidence": [],
+      "next_action": "Remain unsent until instructed; this milestone is not a scheduled submission."
+    },
+    {
+      "id": "G11",
+      "title": "Transfer demonstrated learning to Stop Slop",
+      "status": "queued",
+      "depends_on": [
+        "G07"
+      ],
+      "target": "After useful manuscript evidence",
+      "owner": "Codex integrator and separate reviewer",
+      "outputs": [
+        "Small proposed patch with new public fixtures",
+        "Validation and review record"
+      ],
+      "done_when": [
+        "Concrete manuscript problem and bounded improvement documented.",
+        "Original public fixtures preserve failure and keep cases.",
+        "Upstream baseline refreshed and small implementation independently reviewed before contribution."
+      ],
+      "evidence": [],
+      "next_action": "Reassess review-record binding after actual sequential revisions; no new style overlay by default."
+    }
+  ]
+}
