@@ -1,0 +1,923 @@
+{
+  "reviewed_on": "2026-10-04",
+  "reviewer": "Codex agent /root/setting_and_reading; exact model label unavailable",
+  "scope": "Optional Stop Slop input-identity preflight proposal; no manuscript or upstream edits",
+  "status": "verified_repair_no_remaining_actionable_findings",
+  "baseline": "1d384cd0b6577ce5ad15297c8e867334e0ba1af1",
+  "initial_proposal_pins": [
+    {
+      "path": "integrations/stop-slop-refined/proposal/README.md",
+      "bytes": 6247,
+      "sha256": "89cbfef9daff66ecdf04f2f3ad41613f50190f074f5ac74ac0e552679ecfb61f"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/scripts/check_review_inputs.mjs",
+      "bytes": 5452,
+      "sha256": "aac3413b9d318b1f98ef0bd8b59b9ae7af8e8b8ddea9b4bde57f9a52cc348357"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/check_review_inputs.test.mjs",
+      "bytes": 6187,
+      "sha256": "e0991a5b66f3b6d5698ed5840b011e10446fc9aa32e823fc7e70009dcb997e4e"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/candidate-changed.txt",
+      "bytes": 35,
+      "sha256": "f8f4a8b9635a8b4651e6489423b1c43a6e8985051a001cc3199c58b7b15b86b0"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/candidate.txt",
+      "bytes": 35,
+      "sha256": "e8e8a750c26aa31d457184f91d11292e3e254c302af60b983f112cb815ee704e"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/context-changed.txt",
+      "bytes": 34,
+      "sha256": "fcebdbf2cb813b8c2cdee3ec6ea1bb603f466e9edcdf07382ee3f1c6c62dbd3d"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/context.txt",
+      "bytes": 49,
+      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/invalid-file.json",
+      "bytes": 591,
+      "sha256": "aac4eba488d89011ed54abc6051882d261eb1d3fefb8fa0b48a2fda32477acee"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/missing-role.json",
+      "bytes": 424,
+      "sha256": "1ec034b36f043d8875b040b633e2d2d6a8103d290e8c66de85e06a5f4f0e33da"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/source.txt",
+      "bytes": 54,
+      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/stale-candidate.json",
+      "bytes": 611,
+      "sha256": "d39486fac79e90532d15d529e0dab921544f0e897eef0f972809b60fd6f19980"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/stale-context.json",
+      "bytes": 611,
+      "sha256": "4a708a19698771c94fb09b72070c7f9cf80d4de590108bec4f51292e05ddfd14"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/unchanged.json",
+      "bytes": 603,
+      "sha256": "a042ddb954b68dcf9619ff34c6cc108d38a6acf4e83c2cdfb34240719557b91d"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/learning-evidence.json",
+      "bytes": 944,
+      "sha256": "26f6e609471ebc302397c9ea399cfbfbd3af6955d354ec7deef8f56cd91152f1"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/review-input-binding.patch",
+      "bytes": 21733,
+      "sha256": "d0c18b7b4b7f70d93dc66138f2253ad445ed0628d62c7603876a73dbb545c727"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/validation-commands.json",
+      "bytes": 7270,
+      "sha256": "7b725bd1c07562109c3a12f8f87ef760527b976a1e860a938b8f0698eae8e6a2"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/validation-summary.json",
+      "bytes": 777,
+      "sha256": "296d519e5ee0d9abd2916eb1f603eaf463a0b0bc72fb00c5ee81e2d091b0aa71"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SS-01",
+      "severity": "medium",
+      "status": "repaired_and_independently_verified",
+      "path": "integrations/stop-slop-refined/proposal/files/scripts/check_review_inputs.mjs",
+      "initial_lines": [
+        139,
+        141
+      ],
+      "summary": "Entrypoint symlinks silently bypass CLI validation and exit 0",
+      "reproduction": [
+        {
+          "label": "direct",
+          "argv": [
+            "node",
+            "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/files/scripts/check_review_inputs.mjs",
+            "--manifest",
+            "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/stale-candidate.json",
+            "--root",
+            "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs"
+          ],
+          "exit": 1,
+          "stdout": "",
+          "stderr": "{\"status\":\"rejected\",\"code\":\"STALE_INPUT\",\"message\":\"input candidate (candidate) has changed bytes\"}\n"
+        },
+        {
+          "label": "symlink",
+          "argv": [
+            "node",
+            "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/checker-alias.mjs",
+            "--manifest",
+            "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/stale-candidate.json",
+            "--root",
+            "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs"
+          ],
+          "exit": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "cause": "Node resolves a symlinked entrypoint in import.meta.url while process.argv[1] retains the alias; lexical equality skips main.",
+      "requested_fix": "Resolve entrypoint identities, or use a separate CLI wrapper; add positive, stale and malformed-input symlink invocation regression cases.",
+      "repair_verification": {
+        "patch_sha256": "fee91932f93a2abebe5d45c2404848a91f502bf18bde23fa7572b0e5e6d23ba0",
+        "implementation_change": "Compare realpaths of argv[1] and import.meta.url before calling main; no checker or manifest-schema changes.",
+        "provided_regressions_passed": 18,
+        "independent_cli_cases_passed": 18,
+        "module_import_does_not_execute_main": true
+      }
+    }
+  ],
+  "independent_validation": {
+    "baseline": "1d384cd0b6577ce5ad15297c8e867334e0ba1af1",
+    "apply_check": true,
+    "provided_tests_passed": 15,
+    "patch_files_match_proposal_files": [
+      "scripts/check_review_inputs.mjs",
+      "tests/check_review_inputs.test.mjs",
+      "tests/fixtures/review-inputs/candidate-changed.txt",
+      "tests/fixtures/review-inputs/candidate.txt",
+      "tests/fixtures/review-inputs/context-changed.txt",
+      "tests/fixtures/review-inputs/context.txt",
+      "tests/fixtures/review-inputs/invalid-file.json",
+      "tests/fixtures/review-inputs/missing-role.json",
+      "tests/fixtures/review-inputs/source.txt",
+      "tests/fixtures/review-inputs/stale-candidate.json",
+      "tests/fixtures/review-inputs/stale-context.json",
+      "tests/fixtures/review-inputs/unchanged.json"
+    ],
+    "builder_before_after_bytes_equal": true,
+    "builder_script_closing_text_encoded": true,
+    "builder_fixture_sha256": "27127a406f199eea160e6ca948244bf6402613acd946560c0ad02db86fb00c18",
+    "builder_html_sha256": "69f2142a3955414455d2bfcac5b2c0c8d1a7813ebb843346e65402cf5c7a917d",
+    "browser_data_no_drift": true,
+    "existing_syntax_checks": true,
+    "unchanged_existing_files": [
+      "scripts/build_revision_artifact.mjs",
+      "assets/revision_template.html",
+      "SKILL.md",
+      "docs/app.js",
+      "docs/site-data.js",
+      "scripts/generate-site-data.mjs"
+    ]
+  },
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "check-ignore",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a"
+      ],
+      "cwd": "${PROJECT_ROOT}",
+      "exit": 0,
+      "stdout": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "clone",
+        "--quiet",
+        "--no-hardlinks",
+        "${PROJECT_ROOT}/.local/reference/stop-slop-refined",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout"
+      ],
+      "cwd": "${PROJECT_ROOT}",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "1d384cd0b6577ce5ad15297c8e867334e0ba1af1"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "1d384cd0b6577ce5ad15297c8e867334e0ba1af1\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "--check",
+        "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/review-input-binding.patch"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/build_revision_artifact.mjs",
+        "--data",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/independent-builder-fixture.json",
+        "--output",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/builder-before.html"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/builder-before.html\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/review-input-binding.patch"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--test",
+        "tests/check_review_inputs.test.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "\u2714 unchanged declared source, candidate and context pass without approving prose (2.4075ms)\n\u2714 public fixture stale-candidate.json is rejected (0.63725ms)\n\u2714 public fixture stale-context.json is rejected (0.540958ms)\n\u2714 public fixture missing-role.json is rejected (0.168916ms)\n\u2714 public fixture invalid-file.json is rejected (0.380209ms)\n\u2714 changing only source invalidates the check (5.077542ms)\n\u2714 line endings are bytes, not normalized text (3.416ms)\n\u2714 context is optional, while source and candidate remain required (0.387083ms)\n\u2714 duplicate IDs, invalid hashes, unknown roles and absent paths fail before reuse (0.361041ms)\n\u2714 malformed shapes fail closed (0.132292ms)\n\u2714 missing file and non-directory root are rejected (0.691291ms)\n\u2714 lexical absolute and traversal paths are refused (0.313833ms)\n\u2714 a symlink escaping root fails even with a matching content hash (3.562583ms)\n\u2714 CLI reports matching inputs and stale failure with different exit codes (49.998084ms)\n\u2714 CLI rejects malformed JSON and duplicate flags (54.819667ms)\n\u2139 tests 15\n\u2139 suites 0\n\u2139 pass 15\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 157.827458\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "docs/app.js"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/generate-site-data.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/build_revision_artifact.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/check_review_inputs.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/generate-site-data.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "wrote docs/site-data.js\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code",
+        "--",
+        "docs/site-data.js"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/build_revision_artifact.mjs",
+        "--data",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/independent-builder-fixture.json",
+        "--output",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/builder-after.html"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/builder-after.html\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "independent_builder_fixture": [
+    {
+      "para": 1,
+      "items": [
+        {
+          "type": "keep",
+          "text": "The crate is tagged </script><script>alert(\"test\")</script> & ready."
+        },
+        {
+          "type": "edit",
+          "old": "Dispatch is available at all times.",
+          "new": "Dispatch closes at five.",
+          "why": "preserves the stated weekday limit"
+        },
+        {
+          "type": "del",
+          "old": "We would like to note this detail.",
+          "why": "removes an unnecessary introduction"
+        }
+      ]
+    }
+  ],
+  "learning_origin_git_hashes_match": true,
+  "review_limits": [
+    "The reviewer did not author this proposal, but the review is another AI agent in the same project, not an external or human review.",
+    "The reviewer authored chapter 14 and previously reviewed chapters 15-22; origin-record hash checking is not independent literary validation.",
+    "Only declared bytes are bound; semantic review correctness, omitted context, authenticity and concurrent mutation remain outside scope.",
+    "Executed on local Node v26.8.1/macOS; no Windows execution or broader Node-version compatibility claim.",
+    "Pinned upstream applicability is established; no new remote fetch, pull request, upstream installation, merge or literary-score claim."
+  ],
+  "revised_proposal_pins": [
+    {
+      "path": "integrations/stop-slop-refined/proposal/README.md",
+      "bytes": 6820,
+      "sha256": "109c431e2196ec24c7bc0c01ce568312af4bc3f00232155fdb31fa1a8468a11c"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/scripts/check_review_inputs.mjs",
+      "bytes": 5622,
+      "sha256": "9faba44bbf810f6d0c392d4eb4a1e5db36c0ee635abf6dfddcce2b9a0e99f464"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/check_review_inputs.test.mjs",
+      "bytes": 7235,
+      "sha256": "765657d95d0d2fa8c06aaf3e605caccf917539689581e88d6c1c91084686ab00"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/candidate-changed.txt",
+      "bytes": 35,
+      "sha256": "f8f4a8b9635a8b4651e6489423b1c43a6e8985051a001cc3199c58b7b15b86b0"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/candidate.txt",
+      "bytes": 35,
+      "sha256": "e8e8a750c26aa31d457184f91d11292e3e254c302af60b983f112cb815ee704e"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/context-changed.txt",
+      "bytes": 34,
+      "sha256": "fcebdbf2cb813b8c2cdee3ec6ea1bb603f466e9edcdf07382ee3f1c6c62dbd3d"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/context.txt",
+      "bytes": 49,
+      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/invalid-file.json",
+      "bytes": 591,
+      "sha256": "aac4eba488d89011ed54abc6051882d261eb1d3fefb8fa0b48a2fda32477acee"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/missing-role.json",
+      "bytes": 424,
+      "sha256": "1ec034b36f043d8875b040b633e2d2d6a8103d290e8c66de85e06a5f4f0e33da"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/source.txt",
+      "bytes": 54,
+      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/stale-candidate.json",
+      "bytes": 611,
+      "sha256": "d39486fac79e90532d15d529e0dab921544f0e897eef0f972809b60fd6f19980"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/stale-context.json",
+      "bytes": 611,
+      "sha256": "4a708a19698771c94fb09b72070c7f9cf80d4de590108bec4f51292e05ddfd14"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs/unchanged.json",
+      "bytes": 603,
+      "sha256": "a042ddb954b68dcf9619ff34c6cc108d38a6acf4e83c2cdfb34240719557b91d"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/history/review-input-binding-v1.patch",
+      "bytes": 21733,
+      "sha256": "d0c18b7b4b7f70d93dc66138f2253ad445ed0628d62c7603876a73dbb545c727"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/history/validation-v1-commands.json",
+      "bytes": 7270,
+      "sha256": "7b725bd1c07562109c3a12f8f87ef760527b976a1e860a938b8f0698eae8e6a2"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/history/validation-v1-summary.json",
+      "bytes": 777,
+      "sha256": "296d519e5ee0d9abd2916eb1f603eaf463a0b0bc72fb00c5ee81e2d091b0aa71"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/learning-evidence.json",
+      "bytes": 944,
+      "sha256": "26f6e609471ebc302397c9ea399cfbfbd3af6955d354ec7deef8f56cd91152f1"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/review-input-binding.patch",
+      "bytes": 22977,
+      "sha256": "fee91932f93a2abebe5d45c2404848a91f502bf18bde23fa7572b0e5e6d23ba0"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/validation-commands.json",
+      "bytes": 8287,
+      "sha256": "bfa08bcb8a9766951372d165b142d21caccc9a1753e140cd61665e73dcb96c8d"
+    },
+    {
+      "path": "integrations/stop-slop-refined/proposal/validation-summary.json",
+      "bytes": 1102,
+      "sha256": "f6a9445af712b98689f57ddb9eb54e67faf087db3775992720c6841d779bacad"
+    }
+  ],
+  "revised_independent_validation": {
+    "patch_sha256": "fee91932f93a2abebe5d45c2404848a91f502bf18bde23fa7572b0e5e6d23ba0",
+    "patch_bytes": 22977,
+    "baseline": "1d384cd0b6577ce5ad15297c8e867334e0ba1af1",
+    "provided_tests_passed": 18,
+    "apply_check": true,
+    "expected_patch_scope_only": true,
+    "patch_files_match_proposal_files": true,
+    "cli_matrix": [
+      {
+        "mode": "direct",
+        "flags": [],
+        "manifest": "unchanged",
+        "exit": 0,
+        "code": null,
+        "verified_json_output": true
+      },
+      {
+        "mode": "direct",
+        "flags": [],
+        "manifest": "stale",
+        "exit": 1,
+        "code": "STALE_INPUT",
+        "verified_json_output": true
+      },
+      {
+        "mode": "direct",
+        "flags": [],
+        "manifest": "malformed",
+        "exit": 1,
+        "code": "INVALID_MANIFEST",
+        "verified_json_output": true
+      },
+      {
+        "mode": "file_symlink",
+        "flags": [],
+        "manifest": "unchanged",
+        "exit": 0,
+        "code": null,
+        "verified_json_output": true
+      },
+      {
+        "mode": "file_symlink",
+        "flags": [],
+        "manifest": "stale",
+        "exit": 1,
+        "code": "STALE_INPUT",
+        "verified_json_output": true
+      },
+      {
+        "mode": "file_symlink",
+        "flags": [],
+        "manifest": "malformed",
+        "exit": 1,
+        "code": "INVALID_MANIFEST",
+        "verified_json_output": true
+      },
+      {
+        "mode": "directory_symlink",
+        "flags": [],
+        "manifest": "unchanged",
+        "exit": 0,
+        "code": null,
+        "verified_json_output": true
+      },
+      {
+        "mode": "directory_symlink",
+        "flags": [],
+        "manifest": "stale",
+        "exit": 1,
+        "code": "STALE_INPUT",
+        "verified_json_output": true
+      },
+      {
+        "mode": "directory_symlink",
+        "flags": [],
+        "manifest": "malformed",
+        "exit": 1,
+        "code": "INVALID_MANIFEST",
+        "verified_json_output": true
+      },
+      {
+        "mode": "direct",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "unchanged",
+        "exit": 0,
+        "code": null,
+        "verified_json_output": true
+      },
+      {
+        "mode": "direct",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "stale",
+        "exit": 1,
+        "code": "STALE_INPUT",
+        "verified_json_output": true
+      },
+      {
+        "mode": "direct",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "malformed",
+        "exit": 1,
+        "code": "INVALID_MANIFEST",
+        "verified_json_output": true
+      },
+      {
+        "mode": "file_symlink",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "unchanged",
+        "exit": 0,
+        "code": null,
+        "verified_json_output": true
+      },
+      {
+        "mode": "file_symlink",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "stale",
+        "exit": 1,
+        "code": "STALE_INPUT",
+        "verified_json_output": true
+      },
+      {
+        "mode": "file_symlink",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "malformed",
+        "exit": 1,
+        "code": "INVALID_MANIFEST",
+        "verified_json_output": true
+      },
+      {
+        "mode": "directory_symlink",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "unchanged",
+        "exit": 0,
+        "code": null,
+        "verified_json_output": true
+      },
+      {
+        "mode": "directory_symlink",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "stale",
+        "exit": 1,
+        "code": "STALE_INPUT",
+        "verified_json_output": true
+      },
+      {
+        "mode": "directory_symlink",
+        "flags": [
+          "--preserve-symlinks-main"
+        ],
+        "manifest": "malformed",
+        "exit": 1,
+        "code": "INVALID_MANIFEST",
+        "verified_json_output": true
+      }
+    ],
+    "direct_import_does_not_run_main": true,
+    "builder_before_after_bytes_equal": true,
+    "builder_script_closing_text_encoded": true,
+    "builder_html_sha256": "69f2142a3955414455d2bfcac5b2c0c8d1a7813ebb843346e65402cf5c7a917d",
+    "browser_data_no_drift": true,
+    "existing_syntax_checks": true,
+    "reference_clean": true,
+    "retained_v1_patch_hash_matches": true
+  },
+  "revised_commands": [
+    {
+      "argv": [
+        "git",
+        "clone",
+        "--quiet",
+        "--no-hardlinks",
+        "${PROJECT_ROOT}/.local/reference/stop-slop-refined",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout"
+      ],
+      "cwd": "${PROJECT_ROOT}",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "1d384cd0b6577ce5ad15297c8e867334e0ba1af1"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "--check",
+        "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/review-input-binding.patch"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/build_revision_artifact.mjs",
+        "--data",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/independent-builder-fixture.json",
+        "--output",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/v2-builder-before.html"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/v2-builder-before.html\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "apply",
+        "${PROJECT_ROOT}/integrations/stop-slop-refined/proposal/review-input-binding.patch"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--test",
+        "tests/check_review_inputs.test.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "\u2714 unchanged declared source, candidate and context pass without approving prose (2.526167ms)\n\u2714 public fixture stale-candidate.json is rejected (0.613084ms)\n\u2714 public fixture stale-context.json is rejected (0.601417ms)\n\u2714 public fixture missing-role.json is rejected (0.14225ms)\n\u2714 public fixture invalid-file.json is rejected (0.349458ms)\n\u2714 changing only source invalidates the check (7.121667ms)\n\u2714 line endings are bytes, not normalized text (3.451125ms)\n\u2714 context is optional, while source and candidate remain required (0.394125ms)\n\u2714 duplicate IDs, invalid hashes, unknown roles and absent paths fail before reuse (0.590041ms)\n\u2714 malformed shapes fail closed (0.114125ms)\n\u2714 missing file and non-directory root are rejected (0.370583ms)\n\u2714 lexical absolute and traversal paths are refused (0.364917ms)\n\u2714 a symlink escaping root fails even with a matching content hash (3.748375ms)\n\u2714 CLI reports matching inputs and stale failure with different exit codes (48.99525ms)\n\u2714 CLI rejects malformed JSON and duplicate flags (53.001958ms)\n\u2714 symlink CLI invocation checks unchanged.json, with and without preserved main symlink (53.837791ms)\n\u2714 symlink CLI invocation checks stale-candidate.json, with and without preserved main symlink (56.508791ms)\n\u2714 symlink CLI invocation checks malformed.json, with and without preserved main symlink (55.509834ms)\n\u2139 tests 18\n\u2139 suites 0\n\u2139 pass 18\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 321.054917\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "docs/app.js"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/generate-site-data.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/build_revision_artifact.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--check",
+        "scripts/check_review_inputs.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/generate-site-data.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "wrote docs/site-data.js\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code",
+        "--",
+        "docs/site-data.js"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/build_revision_artifact.mjs",
+        "--data",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/independent-builder-fixture.json",
+        "--output",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/v2-builder-after.html"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/v2-builder-after.html\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--name-only"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "references/revision-artifact.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "cwd": "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/upstream-v2-checkout",
+      "exit": 0,
+      "stdout": "scripts/check_review_inputs.mjs\ntests/check_review_inputs.test.mjs\ntests/fixtures/review-inputs/candidate-changed.txt\ntests/fixtures/review-inputs/candidate.txt\ntests/fixtures/review-inputs/context-changed.txt\ntests/fixtures/review-inputs/context.txt\ntests/fixtures/review-inputs/invalid-file.json\ntests/fixtures/review-inputs/missing-role.json\ntests/fixtures/review-inputs/source.txt\ntests/fixtures/review-inputs/stale-candidate.json\ntests/fixtures/review-inputs/stale-context.json\ntests/fixtures/review-inputs/unchanged.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "${PROJECT_ROOT}/.local/stop-slop-independent-review-4almhd3a/import-helper.mjs"
+      ],
+      "cwd": "${PROJECT_ROOT}",
+      "exit": 0,
+      "stdout": "function\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "${PROJECT_ROOT}/.local/reference/stop-slop-refined",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "${PROJECT_ROOT}",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "revised_cli_case_command_pattern": "node [flags] [direct checker | file-symlink checker | directory-symlink/check_review_inputs.mjs] --manifest [case manifest] --root integrations/stop-slop-refined/proposal/files/tests/fixtures/review-inputs",
+  "revised_cli_malformed_fixture": "{",
+  "final_disposition": "The bounded local proposal is suitable for integrator consideration. No correctness, completeness, independence, prose quality, acceptance, or upstream-publication guarantee follows from matching bytes."
+}

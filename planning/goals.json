@@ -4,8 +4,8 @@
   "updated_on": "2026-10-04",
   "timezone": "Europe/Zurich",
   "long_term_objective": "Complete and revise the selected English novel and prepare a verified contest entry package; external submission remains separately instructed.",
-  "current_phase_goal": "G07",
-  "next_execution_goal": "G07",
+  "current_phase_goal": "G10",
+  "next_execution_goal": "G10",
   "status_values": [
     "queued",
     "active",
@@ -31,10 +31,15 @@
     "new_paid_or_gpu_allocation": false,
     "recurring_automation_created": false,
     "previous_campaign_heartbeat": "paused",
-    "submission": "not_prepared",
+    "submission": "verified_local_package_unsent",
     "acceptance": "not_submitted",
     "first_draft_words": 44851,
-    "first_draft_complete": true
+    "first_draft_complete": true,
+    "revised_prose_words": 44552,
+    "revision_state": "independently_verified",
+    "pdf_pages": 167,
+    "pdf_sha256": "e2c03246cda441ffadd58a2bc95e83882ca9f87c3b2c398c984ef2138f9b6cec",
+    "stop_slop": "local_proposal_independently_reviewed_not_contributed"
   },
   "goals": [
     {
@@ -62,7 +67,7 @@
         "52 changed-document relative links validated; JSON parsed; 12 milestone IDs and dependency graph checked; two source hashes and word counts verified.",
         "Reviewed plan commit b5661daeca8c6f0bde375c7fb39f9385400b7eb4 merged to main and verified on GitHub."
       ],
-      "next_action": "Complete. Resume with G01; future milestone work is queued."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs."
     },
     {
       "id": "G01",
@@ -85,7 +90,7 @@
         "book/reviews/2026-10-04-development-review.md",
         "German text artifact linked in chat; full independent fidelity read found no substantive issue."
       ],
-      "next_action": "Reading artifact delivered; record real user feedback if received."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs."
     },
     {
       "id": "G02",
@@ -115,7 +120,7 @@
         "book/reading/de/03-die-unterseite.md",
         "Integrator exact comparison confirms only sock-to-ankle repair on manuscript import; reviewed warehouse otherwise preserved."
       ],
-      "next_action": "Complete; the generated German reading is delivered. Check downstream delivery chapters during whole-book review."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs."
     },
     {
       "id": "G03",
@@ -143,7 +148,7 @@
         "book/reviews/2026-10-04-development-review.md",
         "book/outline/novel-outline.md"
       ],
-      "next_action": "Ending B selected as an AI working decision; check actual full draft payoff."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs."
     },
     {
       "id": "G04",
@@ -168,7 +173,7 @@
         "research/notes/2026-10-04-setting-logistics.md",
         "book/outline/novel-outline.md"
       ],
-      "next_action": "Apply the researched limits and invented setting consistently; no real-world location claim."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs."
     },
     {
       "id": "G05",
@@ -197,7 +202,7 @@
         "book/chapters/01-seven.md",
         "book/reviews/2026-10-04-development-review.md"
       ],
-      "next_action": "Outline and source baseline adopted; actual full-draft review still required."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs."
     },
     {
       "id": "G06",
@@ -224,12 +229,12 @@
         "book/continuity/batch-c-handoff.md",
         "All22 chapters exist in declared order,44,851 prose words; complete beginning-to-ending sequence, not reviewed final."
       ],
-      "next_action": "First draft frozen; structural and continuity repairs remain open."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs."
     },
     {
       "id": "G07",
       "title": "Revise the complete structure",
-      "status": "active",
+      "status": "complete",
       "depends_on": [
         "G06"
       ],
@@ -246,14 +251,19 @@
         "Retain relevant human responses when received, never substitute simulated readers."
       ],
       "evidence": [
-        "book/reviews/integration/root-reading-progress.json"
+        "book/reviews/final-editorial-status.json",
+        "book/reviews/final-manifest.json",
+        "book/reviews/2026-10-04-whole-book-review.md",
+        "book/reviews/2026-10-04-revision-01-a-verification.md",
+        "book/reviews/2026-10-04-revision-01-c-verification.md"
       ],
-      "next_action": "Resolve repeated displacement scene and incompatible promise memories, then verify whole-arc consequences."
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs.",
+      "completed_on": "2026-10-04"
     },
     {
       "id": "G08",
       "title": "Finish continuity and prose revision",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G07"
       ],
@@ -268,13 +278,20 @@
         "Voice, ambiguity and rhythm preserved where purposeful.",
         "Actual revised text checked for collateral damage and count remains within current rules."
       ],
-      "evidence": [],
-      "next_action": "Review and repair bounded passages against exact source versions."
+      "evidence": [
+        "book/reviews/final-editorial-status.json",
+        "book/reviews/final-manifest.json",
+        "book/reviews/2026-10-04-whole-book-review.md",
+        "book/reviews/2026-10-04-revision-01-a-verification.md",
+        "book/reviews/2026-10-04-revision-01-c-verification.md"
+      ],
+      "next_action": "Complete; preserve evidence and reopen only when relevant new work changes the recorded inputs.",
+      "completed_on": "2026-10-04"
     },
     {
       "id": "G09",
       "title": "Prepare reviewable entry package",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G08"
       ],
@@ -292,8 +309,15 @@
         "Accurate model/human-role disclosure ready; unknown details not invented.",
         "Submission materials prepared for user decision, not sent."
       ],
-      "evidence": [],
-      "next_action": "Assemble and validate the completed manuscript, disclosure and entry details."
+      "evidence": [
+        "submission/package-report.json",
+        "submission/README.md",
+        "submission/method-disclosure.md",
+        "contest/2026-10-04-package-check.md",
+        "book/reviews/2026-10-04-package-tooling-review.md"
+      ],
+      "next_action": "Complete; use the verified local package for the separately instructed submission decision. Reverify if files or rules change.",
+      "completed_on": "2026-10-04"
     },
     {
       "id": "G10",
@@ -312,12 +336,12 @@
         "Actual receipt verified and any acceptance outcome recorded separately."
       ],
       "evidence": [],
-      "next_action": "Remain unsent until instructed; this milestone is not a scheduled submission."
+      "next_action": "Await the user's separate instruction for sending this completed package and the private entry details; no submission job is running."
     },
     {
       "id": "G11",
       "title": "Transfer demonstrated learning to Stop Slop",
-      "status": "queued",
+      "status": "complete",
       "depends_on": [
         "G07"
       ],
@@ -332,10 +356,16 @@
         "Original public fixtures preserve failure and keep cases.",
         "Upstream baseline refreshed and small implementation independently reviewed before contribution."
       ],
-      "evidence": [],
-      "next_action": "Reassess review-record binding after actual sequential revisions; no new style overlay by default."
+      "evidence": [
+        "integrations/stop-slop-refined/proposal/completion.json",
+        "integrations/stop-slop-refined/proposal/review-input-binding.patch",
+        "book/reviews/2026-10-04-stop-slop-proposal-review.md"
+      ],
+      "next_action": "Local proposal complete; actual upstream contribution remains a future project phase, with fresh baseline check.",
+      "completed_on": "2026-10-04"
     }
   ],
   "planning_phase_completed_on": "2026-10-04",
-  "autonomous_execution_authorized_on": "2026-10-04"
+  "autonomous_execution_authorized_on": "2026-10-04",
+  "autonomous_preparation_completed_on": "2026-10-04"
 }

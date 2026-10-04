@@ -1,0 +1,3 @@
+# Preserve exact unified-diff context bytes; these artifacts use git apply --check.
+integrations/stop-slop-refined/proposal/*.patch -whitespace
+integrations/stop-slop-refined/proposal/history/*.patch -whitespace

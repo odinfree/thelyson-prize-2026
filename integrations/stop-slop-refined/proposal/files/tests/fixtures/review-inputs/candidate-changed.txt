@@ -1,0 +1,1 @@
+Weekday dispatches close at 18:00.

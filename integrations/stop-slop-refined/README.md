@@ -1,14 +1,14 @@
 # Stop Slop Refined integration
 
-Status: research and planning. No changes, installations, issues, or pull requests have been made in the upstream repository.
+Status, 4 October 2026: a [small local implementation proposal](proposal/README.md) and original fixtures are prepared. No changes, installations, issues or pull requests have been made in the upstream repository. The proposal checks declared review-input bytes; it does not change style rules or score fiction.
 
 The private lab has since tested two optional fiction overlays; neither passed its advancement criterion. The [roadmap's campaign update](roadmap.md#campaign-evidence-update) now prioritizes exact revision records and separate assessment of repairs, preserved constraints and aesthetic disagreements. Those prototypes are not shipped upstream behavior.
 
-We will use the contest project to learn which editing practices improve a long work of fiction, then contribute general improvements to [odinfree/stop-slop-refined](https://github.com/odinfree/stop-slop-refined). The book remains the primary work. A cleaner word-count report or fewer flagged phrases does not establish better fiction.
+The completed novel supplied concrete review/versioning problems for this bounded proposal. Its engineering checks demonstrate stale-input rejection, not improved reader experience. Broader contributions to [odinfree/stop-slop-refined](https://github.com/odinfree/stop-slop-refined) still need appropriate evidence. A cleaner count or fewer flagged phrases does not establish better fiction.
 
 ## Verified baseline
 
-Inspected on 3 October 2026 through GitHub and a local reference clone:
+Inspected on 3 October 2026 through GitHub and a local reference clone; fetched again on 4 October before preparing the patch, with the same HEAD and `origin/main`:
 
 - Default branch: `main`.
 - Commit: [`1d384cd0b6577ce5ad15297c8e867334e0ba1af1`](https://github.com/odinfree/stop-slop-refined/tree/1d384cd0b6577ce5ad15297c8e867334e0ba1af1).
@@ -17,7 +17,7 @@ Inspected on 3 October 2026 through GitHub and a local reference clone:
 - Validation: 14 written regression cases in `references/examples.md`; CI regenerates browser data and rejects drift in `docs/site-data.js`.
 - Local read-only checks passed: `node --check` for `docs/app.js`, `scripts/generate-site-data.mjs`, and `scripts/build_revision_artifact.mjs`. These are syntax checks, not editing-quality evaluations. The 14 rewrite cases were inspected but not executed.
 
-The local clone is under ignored `.local/reference/stop-slop-refined/`; it is research material, not a vendored dependency. Refresh the upstream commit before implementing a patch.
+The local clone is under ignored `.local/reference/stop-slop-refined/`; it is research material, not a vendored dependency. The proposal was tested in separate scratch checkouts against this pin. Refresh it again before a later upstream contribution.
 
 ## What already works
 
@@ -47,7 +47,7 @@ Two optional fiction overlays have now failed their private exploratory advancem
 4. Add the smallest contextual rule that explains both the failure and the counterexample. Prefer opt-in fiction behavior over a global rewrite of short-form rules.
 5. Recheck existing regression cases and build behavior before proposing a patch.
 
-The [roadmap](roadmap.md) identifies candidate patches, target files, and acceptance checks. It authorizes planning here; it does not claim those patches exist or that a submission has been made.
+The [roadmap](roadmap.md) retains broader hypotheses and acceptance checks. Only the linked review-input proposal has been implemented locally. Its [independent review](../../book/reviews/2026-10-04-stop-slop-proposal-review.md) retains an actual failed CLI invocation and the subsequent repair check. No upstream submission has been made.
 
 ## Pinned sources
 

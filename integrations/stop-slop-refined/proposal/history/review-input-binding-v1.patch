@@ -1,0 +1,493 @@
+diff --git a/references/revision-artifact.md b/references/revision-artifact.md
+index 4d007b0de49a04a8326bb5ed6d736fc41ff89a9a..d5c58fd9e67ea9ce58a2c0c5523999fd1bf37648 100644
+--- a/references/revision-artifact.md
++++ b/references/revision-artifact.md
+@@ -104,3 +104,28 @@ This prevents source text from closing the script block or injecting markup. Use
+ ## Boundary
+ 
+ The artifact explains sentence edits. Use the normal Stop Slop diagnosis and change summary for a new outline, moved section, changed argument, or rebuilt AI-first center.
++
++
++## Optional input-identity check
++
++Before reusing a saved review, an optional standalone check can compare its declared input files with the exact bytes originally reviewed. This does not alter the HTML builder or automatically run when building an artifact.
++
++Save a separate manifest with `version: 1`, a non-empty `review_id`, and `inputs`. Each input needs a unique non-empty `id`, a `role` of `source`, `candidate`, or `context`, a relative `path`, and a lowercase 64-character `sha256`. At least one source and one candidate are required; context inputs are optional. Declare the brief, adjacent section, policy, or other context actually used, not only the edited paragraph. See the [original dispatch-notice fixture](../tests/fixtures/review-inputs/unchanged.json).
++
++Create the hashes when recording the review, while the reviewed files are stable. Do not update a stale manifest's hashes merely to get a passing result; review the changed material and save a new record. The check never rewrites the manifest or input files.
++
++```bash
++node scripts/check_review_inputs.mjs \
++  --manifest /path/to/review-inputs.json \
++  --root /path/to/declared-input-directory
++```
++
++Paths resolve from `--root`, not the manifest's directory or the current working directory. Use forward slashes. Absolute paths, parent traversal, backslashes and symlinks resolving outside that root are rejected. Inputs must resolve to readable regular files. Hashes include every byte, including encoding and line endings; text is not normalized.
++
++Exit 0 reports `declared_inputs_match` with the verified IDs, roles, paths and hashes. Exit 1 reports a JSON rejection on stderr: invalid manifest/root/file, escaping path, or changed bytes. The utility uses only Node built-ins and makes no network or model calls. Run its tests with:
++
++```bash
++node --test tests/check_review_inputs.test.mjs
++```
++
++A match proves only that these declared bytes match this supplied manifest. It does **not** prove the review is correct, its author or manifest is authentic, its context is complete, or reuse is appropriate. The manifest does not sign or hash the review's own prose. Omitted context is invisible to the check, and altered files could be restored to the same bytes. Use a trusted immutable snapshot: this is not an atomic snapshot, a filesystem security sandbox, or protection against concurrent changes. Files can change during or after checking. Record the manifest with the review and recheck the snapshot actually used by the next operation. Existing review judgment and artifact inspection remain necessary.
+diff --git a/scripts/check_review_inputs.mjs b/scripts/check_review_inputs.mjs
+new file mode 100644
+index 0000000000000000000000000000000000000000..25abc86f0f1637ba451d365fb47cc8a182006c03
+--- /dev/null
++++ b/scripts/check_review_inputs.mjs
+@@ -0,0 +1,141 @@
++import { createHash } from "node:crypto";
++import { readFile, realpath, stat } from "node:fs/promises";
++import path from "node:path";
++import process from "node:process";
++import { fileURLToPath } from "node:url";
++
++export class ReviewInputError extends Error {
++  constructor(code, message) {
++    super(message);
++    this.name = "ReviewInputError";
++    this.code = code;
++  }
++}
++
++function reject(code, message) {
++  throw new ReviewInputError(code, message);
++}
++
++function nonemptyString(value) {
++  return typeof value === "string" && value.trim().length > 0;
++}
++
++function validateManifest(manifest) {
++  if (!manifest || Array.isArray(manifest) || typeof manifest !== "object") {
++    reject("INVALID_MANIFEST", "manifest must be an object");
++  }
++  if (manifest.version !== 1 || !nonemptyString(manifest.review_id)) {
++    reject("INVALID_MANIFEST", "version must be 1 and review_id must be a non-empty string");
++  }
++  if (!Array.isArray(manifest.inputs) || manifest.inputs.length === 0) {
++    reject("INVALID_MANIFEST", "inputs must be a non-empty array");
++  }
++  const ids = new Set();
++  const roles = new Set();
++  for (const [index, input] of manifest.inputs.entries()) {
++    const label = `input ${index + 1}`;
++    if (!input || Array.isArray(input) || typeof input !== "object") {
++      reject("INVALID_MANIFEST", `${label} must be an object`);
++    }
++    if (!nonemptyString(input.id) || ids.has(input.id)) {
++      reject("INVALID_MANIFEST", `${label} needs a unique non-empty id`);
++    }
++    ids.add(input.id);
++    if (!["source", "candidate", "context"].includes(input.role)) {
++      reject("INVALID_MANIFEST", `${label} has an invalid role`);
++    }
++    roles.add(input.role);
++    if (typeof input.sha256 !== "string" || !/^[a-f0-9]{64}$/.test(input.sha256)) {
++      reject("INVALID_MANIFEST", `${label} needs a lowercase 64-character SHA-256`);
++    }
++    if (!nonemptyString(input.path) || input.path.includes("\0")) {
++      reject("INVALID_MANIFEST", `${label} needs a non-empty path without NUL`);
++    }
++    // Require portable relative paths, before reading any declared input.
++    if (path.posix.isAbsolute(input.path) || path.win32.isAbsolute(input.path) ||
++        /^[A-Za-z]:/.test(input.path) || input.path.includes("\\") ||
++        input.path.split("/").includes("..")) {
++      reject("PATH_ESCAPE", `${label} path must be relative, without backslashes or '..'`);
++    }
++  }
++  if (!roles.has("source") || !roles.has("candidate")) {
++    reject("INVALID_MANIFEST", "inputs require at least one source and one candidate role");
++  }
++}
++
++function withinRoot(root, filename) {
++  const relative = path.relative(root, filename);
++  return relative !== ".." && !relative.startsWith(`..${path.sep}`) && !path.isAbsolute(relative);
++}
++
++/** Checks only the declared inputs' bytes. Use a stable, trusted filesystem snapshot. */
++export async function checkReviewInputs(manifest, rootPath) {
++  validateManifest(manifest);
++  if (!nonemptyString(rootPath)) reject("INVALID_ROOT", "root must be a directory path");
++  let root;
++  try {
++    root = await realpath(rootPath);
++    if (!(await stat(root)).isDirectory()) throw new Error("not a directory");
++  } catch {
++    reject("INVALID_ROOT", "root must resolve to an existing directory");
++  }
++  const checked = [];
++  for (const input of manifest.inputs) {
++    let filename;
++    try {
++      filename = await realpath(path.resolve(root, input.path));
++    } catch {
++      reject("INVALID_FILE", `input ${input.id} is missing or cannot be resolved`);
++    }
++    if (!withinRoot(root, filename)) {
++      reject("PATH_ESCAPE", `input ${input.id} resolves outside root`);
++    }
++    let bytes;
++    try {
++      if (!(await stat(filename)).isFile()) throw new Error("not a regular file");
++      bytes = await readFile(filename);
++    } catch {
++      reject("INVALID_FILE", `input ${input.id} is not a readable regular file`);
++    }
++    const actual = createHash("sha256").update(bytes).digest("hex");
++    if (actual !== input.sha256) {
++      reject("STALE_INPUT", `input ${input.id} (${input.role}) has changed bytes`);
++    }
++    checked.push({ id: input.id, role: input.role, path: input.path, sha256: actual });
++  }
++  return { status: "declared_inputs_match", review_id: manifest.review_id, checked };
++}
++
++const usage = "usage: node scripts/check_review_inputs.mjs --manifest review.json --root /path/to/inputs";
++
++export async function main(args) {
++  if (args.length === 1 && args[0] === "--help") {
++    console.log(usage);
++    return 0;
++  }
++  try {
++    const options = new Map();
++    if (args.length !== 4) reject("USAGE", usage);
++    for (let i = 0; i < args.length; i += 2) {
++      if (!["--manifest", "--root"].includes(args[i]) || options.has(args[i]) ||
++          !args[i + 1] || args[i + 1].startsWith("--")) reject("USAGE", usage);
++      options.set(args[i], args[i + 1]);
++    }
++    let manifest;
++    try {
++      manifest = JSON.parse(await readFile(options.get("--manifest"), "utf8"));
++    } catch {
++      reject("INVALID_MANIFEST", "manifest must be a readable JSON file");
++    }
++    const result = await checkReviewInputs(manifest, options.get("--root"));
++    console.log(JSON.stringify(result, null, 2));
++    return 0;
++  } catch (error) {
++    console.error(JSON.stringify({ status: "rejected", code: error.code ?? "ERROR", message: error.message }));
++    return 1;
++  }
++}
++
++if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
++  process.exitCode = await main(process.argv.slice(2));
++}
+diff --git a/tests/check_review_inputs.test.mjs b/tests/check_review_inputs.test.mjs
+new file mode 100644
+index 0000000000000000000000000000000000000000..8153fc24f28d0d04a237d3c23dc0994d563b94ea
+--- /dev/null
++++ b/tests/check_review_inputs.test.mjs
+@@ -0,0 +1,128 @@
++import assert from "node:assert/strict";
++import { createHash } from "node:crypto";
++import { execFileSync, spawnSync } from "node:child_process";
++import { cp, mkdtemp, readFile, rm, symlink, writeFile } from "node:fs/promises";
++import os from "node:os";
++import path from "node:path";
++import { fileURLToPath } from "node:url";
++import test from "node:test";
++import { checkReviewInputs } from "../scripts/check_review_inputs.mjs";
++
++const here = path.dirname(fileURLToPath(import.meta.url));
++const fixtures = path.join(here, "fixtures", "review-inputs");
++const cli = path.resolve(here, "../scripts/check_review_inputs.mjs");
++const load = async name => JSON.parse(await readFile(path.join(fixtures, name), "utf8"));
++
++async function sandbox(t) {
++  const temporary = await mkdtemp(path.join(os.tmpdir(), "stop-slop-input-test-"));
++  t.after(() => rm(temporary, { recursive: true, force: true }));
++  const root = path.join(temporary, "inputs");
++  await cp(fixtures, root, { recursive: true });
++  return { root, temporary, manifest: await load("unchanged.json") };
++}
++
++test("unchanged declared source, candidate and context pass without approving prose", async () => {
++  const result = await checkReviewInputs(await load("unchanged.json"), fixtures);
++  assert.equal(result.status, "declared_inputs_match");
++  assert.deepEqual(result.checked.map(x => x.role), ["source", "candidate", "context"]);
++  assert.equal(Object.hasOwn(result, "approved"), false);
++});
++
++for (const [name, code] of [
++  ["stale-candidate.json", "STALE_INPUT"],
++  ["stale-context.json", "STALE_INPUT"],
++  ["missing-role.json", "INVALID_MANIFEST"],
++  ["invalid-file.json", "INVALID_FILE"],
++]) {
++  test(`public fixture ${name} is rejected`, async () => {
++    await assert.rejects(checkReviewInputs(await load(name), fixtures), { code });
++  });
++}
++
++test("changing only source invalidates the check", async t => {
++  const { root, manifest } = await sandbox(t);
++  await writeFile(path.join(root, "source.txt"), "Dispatches close at noon.\n");
++  await assert.rejects(checkReviewInputs(manifest, root), { code: "STALE_INPUT" });
++});
++
++test("line endings are bytes, not normalized text", async t => {
++  const { root, manifest } = await sandbox(t);
++  const filename = path.join(root, "candidate.txt");
++  await writeFile(filename, (await readFile(filename, "utf8")).replaceAll("\n", "\r\n"));
++  await assert.rejects(checkReviewInputs(manifest, root), { code: "STALE_INPUT" });
++});
++
++test("context is optional, while source and candidate remain required", async () => {
++  const manifest = await load("unchanged.json");
++  manifest.inputs = manifest.inputs.filter(x => x.role !== "context");
++  assert.equal((await checkReviewInputs(manifest, fixtures)).checked.length, 2);
++  manifest.inputs = manifest.inputs.filter(x => x.role !== "source");
++  await assert.rejects(checkReviewInputs(manifest, fixtures), { code: "INVALID_MANIFEST" });
++});
++
++test("duplicate IDs, invalid hashes, unknown roles and absent paths fail before reuse", async () => {
++  for (const change of [
++    m => { m.inputs[1].id = m.inputs[0].id; },
++    m => { m.inputs[1].sha256 = "not-a-hash"; },
++    m => { m.inputs[1].role = "approval"; },
++    m => { delete m.inputs[1].path; },
++  ]) {
++    const manifest = await load("unchanged.json");
++    change(manifest);
++    await assert.rejects(checkReviewInputs(manifest, fixtures), { code: "INVALID_MANIFEST" });
++  }
++});
++
++test("malformed shapes fail closed", async () => {
++  for (const manifest of [null, [], {}, { version: 2, review_id: "r", inputs: [] },
++    { version: 1, review_id: "r", inputs: [null] }]) {
++    await assert.rejects(checkReviewInputs(manifest, fixtures), { code: "INVALID_MANIFEST" });
++  }
++});
++
++test("missing file and non-directory root are rejected", async () => {
++  const manifest = await load("unchanged.json");
++  manifest.inputs[1].path = "absent.txt";
++  await assert.rejects(checkReviewInputs(manifest, fixtures), { code: "INVALID_FILE" });
++  await assert.rejects(checkReviewInputs(manifest, path.join(fixtures, "source.txt")), { code: "INVALID_ROOT" });
++});
++
++test("lexical absolute and traversal paths are refused", async () => {
++  for (const filename of ["../outside.txt", "nested/../source.txt", "/etc/passwd", "C:\\outside.txt", "C:outside.txt"]) {
++    const manifest = await load("unchanged.json");
++    manifest.inputs[1].path = filename;
++    await assert.rejects(checkReviewInputs(manifest, fixtures), { code: "PATH_ESCAPE" });
++  }
++});
++
++test("a symlink escaping root fails even with a matching content hash", async t => {
++  const { root, temporary, manifest } = await sandbox(t);
++  const external = path.join(temporary, "outside.txt");
++  const bytes = Buffer.from("Outside the declared input root.\n");
++  await writeFile(external, bytes);
++  await symlink(external, path.join(root, "escape.txt"));
++  manifest.inputs[1].path = "escape.txt";
++  manifest.inputs[1].sha256 = createHash("sha256").update(bytes).digest("hex");
++  await assert.rejects(checkReviewInputs(manifest, root), { code: "PATH_ESCAPE" });
++});
++
++test("CLI reports matching inputs and stale failure with different exit codes", () => {
++  const good = JSON.parse(execFileSync(process.execPath, [cli, "--manifest", path.join(fixtures, "unchanged.json"), "--root", fixtures], { encoding: "utf8" }));
++  assert.equal(good.status, "declared_inputs_match");
++  const bad = spawnSync(process.execPath, [cli, "--manifest", path.join(fixtures, "stale-context.json"), "--root", fixtures], { encoding: "utf8" });
++  assert.equal(bad.status, 1);
++  assert.equal(JSON.parse(bad.stderr).code, "STALE_INPUT");
++  assert.equal(bad.stdout, "");
++});
++
++test("CLI rejects malformed JSON and duplicate flags", async t => {
++  const { root } = await sandbox(t);
++  const invalid = path.join(root, "broken.json");
++  await writeFile(invalid, "{");
++  const badJson = spawnSync(process.execPath, [cli, "--manifest", invalid, "--root", root], { encoding: "utf8" });
++  assert.equal(badJson.status, 1);
++  assert.equal(JSON.parse(badJson.stderr).code, "INVALID_MANIFEST");
++  const badFlags = spawnSync(process.execPath, [cli, "--root", root, "--root", root], { encoding: "utf8" });
++  assert.equal(badFlags.status, 1);
++  assert.equal(JSON.parse(badFlags.stderr).code, "USAGE");
++});
+diff --git a/tests/fixtures/review-inputs/candidate-changed.txt b/tests/fixtures/review-inputs/candidate-changed.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..37f1e19f252e87f7ceefa193305e2117058a3fd2
+--- /dev/null
++++ b/tests/fixtures/review-inputs/candidate-changed.txt
+@@ -0,0 +1 @@
++Weekday dispatches close at 18:00.
+diff --git a/tests/fixtures/review-inputs/candidate.txt b/tests/fixtures/review-inputs/candidate.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..bf582e89269109099b601e0859f5f9672dd49524
+--- /dev/null
++++ b/tests/fixtures/review-inputs/candidate.txt
+@@ -0,0 +1 @@
++Weekday dispatches close at 17:00.
+diff --git a/tests/fixtures/review-inputs/context-changed.txt b/tests/fixtures/review-inputs/context-changed.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..640f075131b08574dc9791acad855112a7814a9e
+--- /dev/null
++++ b/tests/fixtures/review-inputs/context-changed.txt
+@@ -0,0 +1 @@
++All times in this notice are UTC.
+diff --git a/tests/fixtures/review-inputs/context.txt b/tests/fixtures/review-inputs/context.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..1fc21bf9f267b692d8b24969d0ff1bc73ebf80f6
+--- /dev/null
++++ b/tests/fixtures/review-inputs/context.txt
+@@ -0,0 +1 @@
++All times in this notice are local to the depot.
+diff --git a/tests/fixtures/review-inputs/invalid-file.json b/tests/fixtures/review-inputs/invalid-file.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..08ca457ca028f6ff690189a134913e5d97c89109
+--- /dev/null
++++ b/tests/fixtures/review-inputs/invalid-file.json
+@@ -0,0 +1,24 @@
++{
++  "version": 1,
++  "review_id": "dispatch-notice-review-v1",
++  "inputs": [
++    {
++      "id": "source",
++      "role": "source",
++      "path": "source.txt",
++      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
++    },
++    {
++      "id": "candidate",
++      "role": "candidate",
++      "path": ".",
++      "sha256": "e8e8a750c26aa31d457184f91d11292e3e254c302af60b983f112cb815ee704e"
++    },
++    {
++      "id": "context",
++      "role": "context",
++      "path": "context.txt",
++      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
++    }
++  ]
++}
+diff --git a/tests/fixtures/review-inputs/missing-role.json b/tests/fixtures/review-inputs/missing-role.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..be047d37f5437d116ee475c56130ad8ed94e80eb
+--- /dev/null
++++ b/tests/fixtures/review-inputs/missing-role.json
+@@ -0,0 +1,18 @@
++{
++  "version": 1,
++  "review_id": "dispatch-notice-review-v1",
++  "inputs": [
++    {
++      "id": "source",
++      "role": "source",
++      "path": "source.txt",
++      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
++    },
++    {
++      "id": "context",
++      "role": "context",
++      "path": "context.txt",
++      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
++    }
++  ]
++}
+diff --git a/tests/fixtures/review-inputs/source.txt b/tests/fixtures/review-inputs/source.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..157ba4e5e8804a4625033ee3049c90ccf1613be1
+--- /dev/null
++++ b/tests/fixtures/review-inputs/source.txt
+@@ -0,0 +1 @@
++The depot accepts dispatches until 17:00 on weekdays.
+diff --git a/tests/fixtures/review-inputs/stale-candidate.json b/tests/fixtures/review-inputs/stale-candidate.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..420e3d8322e38ebd216b4c7f17170b5cfad28fe5
+--- /dev/null
++++ b/tests/fixtures/review-inputs/stale-candidate.json
+@@ -0,0 +1,24 @@
++{
++  "version": 1,
++  "review_id": "dispatch-notice-review-v1",
++  "inputs": [
++    {
++      "id": "source",
++      "role": "source",
++      "path": "source.txt",
++      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
++    },
++    {
++      "id": "candidate",
++      "role": "candidate",
++      "path": "candidate-changed.txt",
++      "sha256": "e8e8a750c26aa31d457184f91d11292e3e254c302af60b983f112cb815ee704e"
++    },
++    {
++      "id": "context",
++      "role": "context",
++      "path": "context.txt",
++      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
++    }
++  ]
++}
+diff --git a/tests/fixtures/review-inputs/stale-context.json b/tests/fixtures/review-inputs/stale-context.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..b27bb5a10cf69e51d7c9dd8a89aface23ea2a1b1
+--- /dev/null
++++ b/tests/fixtures/review-inputs/stale-context.json
+@@ -0,0 +1,24 @@
++{
++  "version": 1,
++  "review_id": "dispatch-notice-review-v1",
++  "inputs": [
++    {
++      "id": "source",
++      "role": "source",
++      "path": "source.txt",
++      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
++    },
++    {
++      "id": "candidate",
++      "role": "candidate",
++      "path": "candidate.txt",
++      "sha256": "e8e8a750c26aa31d457184f91d11292e3e254c302af60b983f112cb815ee704e"
++    },
++    {
++      "id": "context",
++      "role": "context",
++      "path": "context-changed.txt",
++      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
++    }
++  ]
++}
+diff --git a/tests/fixtures/review-inputs/unchanged.json b/tests/fixtures/review-inputs/unchanged.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..5e52a15627670236ae486daadfb920ca4b96baed
+--- /dev/null
++++ b/tests/fixtures/review-inputs/unchanged.json
+@@ -0,0 +1,24 @@
++{
++  "version": 1,
++  "review_id": "dispatch-notice-review-v1",
++  "inputs": [
++    {
++      "id": "source",
++      "role": "source",
++      "path": "source.txt",
++      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
++    },
++    {
++      "id": "candidate",
++      "role": "candidate",
++      "path": "candidate.txt",
++      "sha256": "e8e8a750c26aa31d457184f91d11292e3e254c302af60b983f112cb815ee704e"
++    },
++    {
++      "id": "context",
++      "role": "context",
++      "path": "context.txt",
++      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
++    }
++  ]
++}

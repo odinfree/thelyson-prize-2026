@@ -2,9 +2,11 @@
 
 A public workspace for our entry to the [Thélyson Orélien Prize for New Writing](https://thelyson.ai/): research the contest, develop an original book, write and revise it with AI, and preserve what we learn.
 
-**Stage:** autonomous manuscript execution is active under the user’s 4 October instruction. **The Fifteenth Year** is selected; the opening and reviewed warehouse have been adopted, the middle and ending tested, and the [22-chapter outline](book/outline/novel-outline.md) is being drafted by three authors with exclusive chapter ranges. Start with the [resume record](planning/RESUME.md), [creative brief](book/brief/creative-brief.md), and [goals](planning/goals.json). There is no complete or submitted entry yet.
+**Stage, 4 October 2026:** *The Fifteenth Year* is a complete, revised English novel: **22 chapters and 44,552 prose words**. The first draft is preserved at commit `38e7942b5e4e6fe62baec71101f860efac34eeef`. A whole-book review led to bounded revisions, which separate agents checked against the actual changed prose. The [final manifest](book/reviews/final-manifest.json) records the current order, count and source hashes. The revised manuscript is preserved at `e739f40896e8b08828bf22e8809dcc0873998225` on public main. **The [entry package](submission/README.md) is verified and unsent.**
 
-The advertised deadline is **31 October 2026, 23:59 Anywhere on Earth** — **1 November, 12:59 Europe/Zurich**. The published rules require an English PDF of **40,000–120,000 words** whose wording is entirely AI-generated. Human planning and editorial feedback are allowed. These core conditions were rechecked **4 October 2026** in a [limited page refresh](research/sources/2026-10-04-contest-refresh.json) and must be rechecked before entry.
+Read from [chapter 1](book/chapters/01-seven.md), or start with the [book guide](book/README.md), [resume record](planning/RESUME.md) and [goals](planning/goals.json). The user chose the concept and authorized autonomous completion. The subsequent setting, plot and wording are AI decisions; no human approval of the complete novel or contest score is claimed.
+
+The advertised deadline is **31 October 2026, 23:59 Anywhere on Earth** — **1 November, 12:59 Europe/Zurich**. The published rules require an English PDF of **40,000–120,000 words** whose wording is entirely AI-generated. Human planning and editorial feedback are allowed. These core conditions were rechecked **4 October 2026** in the [package-stage rules check](contest/2026-10-04-package-check.md) and must be rechecked before entry.
 
 ## Start here
 
@@ -30,15 +32,15 @@ provenance/                    Model/method records and human editorial input
 submission/                    Entry checklist; local exports and receipts
 integrations/stop-slop-refined/ Evidence and plan for later public skill improvements
 templates/                     Source, experiment, and generation-record templates
-scripts/                       Future manuscript checks and export tooling
+scripts/                       Manuscript assembly, checks and PDF export tooling
 ```
 
 ## Working approach
 
-The initial research campaign informed the process; the user chose the book. We will judge further writing work by interest, specificity, voice, coherence and emotional consequence. Word lists and automated scores can flag problems; they cannot certify literary quality or authorship. The [3 October synthesis](research/notes/2026-10-03-campaign-summary.md) preserves the earlier findings and unsuccessful methods.
+The initial research campaign informed the process; the user chose the book. The [whole-book review](book/reviews/2026-10-04-whole-book-review.md) assessed the complete arc before sentence changes. [Early/middle verification](book/reviews/2026-10-04-revision-01-a-verification.md) and [late-chapter verification](book/reviews/2026-10-04-revision-01-c-verification.md) record the actual repair checks and their limits. Counts and hashes cannot certify literary quality, originality or authorship. The [3 October synthesis](research/notes/2026-10-03-campaign-summary.md) preserves the closed research campaign, including unsuccessful methods; its automation and allocation have not been restarted.
 
 The human can direct and critique; the AI writes and revises all manuscript wording. Store feedback separately and record how it changed the draft. Preserve intended meaning, force, and useful rhythm during editing. Never make prose bland merely to remove a flagged pattern.
 
 Keep full third-party works out of this repository. Cite sources and write original summaries. Keep credentials, personal contact details, payout details, and submission receipts in ignored local storage.
 
-This repository is public by the user's choice, including future committed drafts. Publication-history eligibility is an [open contest question](contest/open-questions.md), not a stated restriction. We will transfer generalized, tested findings and purpose-written examples to [stop-slop-refined](https://github.com/odinfree/stop-slop-refined). Its current code remains unchanged during this research phase.
+This repository is public by the user's choice, including committed manuscript drafts. Publication-history eligibility remains an [open contest question](contest/open-questions.md), not a stated restriction. A [local Stop Slop proposal](integrations/stop-slop-refined/proposal/README.md) translates a demonstrated review-context problem into a small input-checking utility with original fixtures. It has not been contributed upstream. Rendering, submission and organizer acceptance remain distinct states; actual submission requires a separate instruction after the package is reviewable.

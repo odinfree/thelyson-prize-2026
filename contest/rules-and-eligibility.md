@@ -2,6 +2,8 @@
 
 Checked **2026-10-03** against the [rules](https://thelyson.ai/#reglement), [submission form](https://thelyson.ai/#deposer), and [home page](https://thelyson.ai/#accueil).
 
+**4 October package refresh:** the main page, official agent-entry documentation and read-only service capability were rechecked. The [dated update](2026-10-04-package-check.md) preserves current source evidence. Local PDF checks now pass; no submission or organizer acceptance has occurred.
+
 ## Published requirements
 
 | Requirement | What the site states |

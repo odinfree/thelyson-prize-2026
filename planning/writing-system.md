@@ -1,6 +1,6 @@
 # Writing system: useful controls and open questions
 
-3 October 2026. The private research lab has working prototypes for source storage, declared narrative state and attributed editorial review. The eventual manuscript workflow is still being assembled. A prototype passing its checks does not establish that a book is good or that an interpretation of a passage is true.
+Updated 4 October 2026. The private research lab's source, state and editorial prototypes informed the completed manuscript workflow. The 22-chapter novel has now been drafted, read in full, cross-reviewed, revised and exported. The public project uses source manifests, explicit handoffs and actual repair verification; it does not claim every private prototype was used in production. A passing mechanical check does not establish literary quality or a true interpretation of a passage.
 
 ```mermaid
 flowchart TD
@@ -37,7 +37,7 @@ Keep the writing process proportionate. We do not need a machine declaration for
 
 ## Decisions we have not delegated to scores
 
-Update, 4 October: the user selected *The Fifteenth Year*. Voice, length and ending are being developed in the [creative brief](../book/brief/creative-brief.md). The earlier four-opening reader packet still has no collected responses; the user's direct selection is recorded separately. Local model agreement did not choose the book.
+The user selected *The Fifteenth Year*. The resulting 44,552-word novel follows the adopted [creative brief](../book/brief/creative-brief.md), including its irreversible ending. The earlier four-opening reader packet still has no collected responses; the user's direct selection is recorded separately. Local model agreement did not choose the book. [Final editorial records](../book/reviews/final-editorial-status.json) describe actual scope and shared-context limits.
 
 The completed [evidence-window study](../research/notes/2026-10-03-evidence-window-results.md) showed why full-source agreement and support from the supplied excerpt must be separated. The [revision evidence](../research/notes/2026-10-03-revision-evidence.md) similarly separates an apparently reasonable edit decision from a successful repair. These results inform the controls above; neither establishes a universal editing rule.
 

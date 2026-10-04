@@ -1,36 +1,38 @@
-# The Fifteenth Year — development continuity
+# The Fifteenth Year — story bible
 
-Updated 4 October 2026. This is a compact reading of the two [pinned English sources](../brief/source-baseline.json), not automatic truth extraction or a finalized manuscript. O01 means the opening; C01 means the café continuation. Preserve narration, reported speech, plans and completed actions as distinct evidence.
+Updated 4 October 2026 against the complete revised manuscript: **22 chapters, 44,552 prose words**. The [final manifest](../reviews/final-manifest.json) identifies its exact source bytes. The [editorial completion record](../reviews/final-editorial-status.json) links the independently checked repairs. The [entry package](../../submission/README.md) is verified and unsent.
 
-| Record | Established in the development source | Evidence |
+The user selected the concept and authorized autonomous execution. Setting, detailed structure and ending are AI choices now embodied in this draft, not inferred human preferences. The [original source baseline](../brief/source-baseline.json), development candidates and earlier batch handoffs remain historical evidence; where they differ, consult the current chapters rather than silently revising that history.
+
+## People, place and knowledge
+
+Flora narrates in first-person present, bodily forty-one, fifteen years after her death. Jo is thirty. The adopted outline gives Leo's age as fifty-nine; this is an authoring choice, not a claim that every age is stated in dialogue. Flora can observe behavior, remember, infer and hear testimony. She cannot know another person's private thoughts or the survivors' future.
+
+The adopted setting is fictional Merewick in the English Midlands, on 16–17 May 2026, with clocks using British Summer Time. Fictional shops and routes are not a map of a real town. The [setting note](../../research/notes/2026-10-04-setting-logistics.md) separates the limited logistical research from invention.
+
+Jo rents a first-floor flat and works on building-conservation drawings and surveys. Arun is her adult friend and works in a restaurant; no romance between them is established. Leo sold the former family house after Jo moved out and now lives alone in a smaller cottage. Hazel, the current resident of the former family house, permits a garden visit, not entry into the house. Catherine and Leo had a six-year relationship that ended two years earlier, according to Leo. Catherine had her own home. Bess is an older rowing friend. Ellen is Flora's sister.
+
+## Actions and consequences
+
+| Sequence | Current manuscript continuity | Source |
 | --- | --- | --- |
-| Return | The attendant specifies one 24-hour return from 07:00 today to 07:00 tomorrow, no extension or second return, and collection wherever Flora is | O01, attendant's explanation |
-| Fifteen years | Flora died fifteen years earlier and chose Jo's thirtieth birthday for her return | O01, dress memory and final birthday exchange |
-| Viewpoint | Flora narrates in first-person present; others' private thoughts are unavailable | O01 and C01 |
-| Possessions | Green dress with yellow pocket stitching; Leo's blue bag contains practical clothes and shoes | O01; bag continues through C01 |
-| Initial Jo visit | Leo reports that Jo said she would try to come for half an hour | O01; Jo confirms the qualified offer in C01 |
-| Breakfast | Rose's still exists; the café scene establishes changed layout and food | C01 |
-| Photographs and boat | Leo brings six photos and says he made the boat, then answers “Mostly. There are kits”; kit use is implied rather than directly confirmed. The pictured paddle belongs to Bess and his own is on the river bottom | C01; Bess's relationship to him is unknown |
-| Jo's task | Jo is inspecting a round table at the Harper Street warehouse for her flat; she wants usable table space for evening guests | C01, telephone conversation |
-| Table fit | Leo reports a doorway measurement of seventy-four; units are unstated. The hallway turns and removing the legs is unresolved | C01, Leo's part of the call |
-| Warehouse visit | Jo permits Flora to join the current errand; Flora accepts. The scene ends outside the café as Leo unlocks the car | C01; no arrival yet |
-| Evening | Asked how many people, Jo says six, seven if Patrick joins Nina; whether Jo counts herself is unstated. Flora has no granted invitation in these scenes | C01 |
+| Return and breakfast | One return, 07:00 to 07:00, with no extension or second visit. Flora chooses Jo's thirtieth birthday. Leo brings a blue clothes bag and an envelope of six photographs. The café invitation concerns the warehouse errand; it is not yet a dinner invitation. | [1](../chapters/01-seven.md) |
+| Warehouse and delivery | Jo buys the flawed oak table for £90 including delivery. The round top is 118 cm; the flat doorway is 74 cm clear. Removing the legs and carrying the top upright makes the cleared turn feasible. Flora causes a new shallow rim chip during the carry. It is distinct from the old underside split and later floor wobble. The chip is wrapped in an opened gas bill marked TABLE and left on Jo's shelf. | [2](../chapters/02-the-underside.md), [3](../chapters/03-the-turn.md) |
+| Jo's rooms and preparations | Flora sees practical work and possessions rather than a preserved childhood. She and Arun obtain groceries and a borrowed serving dish. Felt steadies the table; fine sandpaper removes the sharp edge without making the damage disappear. Jo explicitly invites Flora for 18:00 and asks her to help at 17:00. Leo is invited and chooses his own supper. | [4](../chapters/04-upstairs.md), [5](../chapters/05-the-list.md), [6](../chapters/06-places.md) |
+| Former and present homes | Leo tells Flora he sold the old house. Hazel's garden has its own present uses. At the cottage Flora washes off the soil, changes clothes and transfers the photographs. Catherine's photograph leads to Leo's account of their relationship; the six photos were deliberately selected. | [7](../chapters/07-the-other-gate.md), [8](../chapters/08-a-smaller-kitchen.md) |
+| Boat shed | Flora helps repair the oar leathers with Leo and Bess. Jo has previously visited twice; this is new knowledge for Flora. The old photograph's borrowed paddle is separate from the two rowing oars. Handling the equipment gives Flora a bodily desire to row. A morning outing remains conditional on light and weather. | [9](../chapters/09-the-seam.md) |
+| Dinner | Jo's original six include herself, Arun, Nina, Mara, Phil and Ellen. Patrick and Flora make eight. Six places use the round table and two the old folding table; Nina brings extra chairs. The meal includes aubergines with tomato, rice, lentils, dressing, leaves, bread and Ellen's lemon cake. Arun's restaurant loaf is given, not borrowed; Phil brings a second loaf he baked. Some rice scorches. | [11](../chapters/11-in-the-kitchen.md), [12](../chapters/12-eight.md), [13](../chapters/13-dinner.md) |
+| Concert story | Flora turns Jo's childhood concert into a public anecdote and adds an untrue stamp. Jo corrects her. Flora remembers the earlier anxiety and advice about asking for a lower key, not the later promise of privacy. Flora publicly corrects the story, then believes Jo about the promise she cannot recover. Leo cannot verify a conversation he did not witness. | [14](../chapters/14-the-story-i-tell.md), [15](../chapters/15-after-the-plates.md), [16](../chapters/16-on-foot.md) |
+| Walk and photographs | Flora wants the walk with Leo despite the continuing party. Their 22:00 meeting was privately arranged before Jo learned of it. At the cottage, the remaining photos show lives and work Flora missed. They do not settle those lives or predict their continuation. | [16](../chapters/16-on-foot.md), [17](../chapters/17-the-photographs.md) |
+| Night and water | Flora borrows Leo's phone to contact Jo, then returns it. Jo may come in the morning; attendance is not promised. Flora rests, wakes at 03:50 and goes with Leo to the landing. They wait for usable light and launch nearly at 05:30, returning before six; the outline places the landing at 05:55, but that exact time is not spoken in the chapter. Jo comes by her own choice. | [18](../chapters/18-a-message.md), [19](../chapters/19-before-the-light.md), [20](../chapters/20-the-water.md), [21](../chapters/21-on-the-bank.md) |
+| Collection | Chapter 22 begins at 06:40. Ruth arrives to collect Flora. Flora's expectation of the morning attendant is her own, not knowledge attributed to Jo. Flora leaves the blue bag with Leo, keeps the clothes and jacket she wears, boards the car and looks at Jo as its clock changes to seven. No reprieve or account beyond this boundary follows. | [22](../chapters/22-the-car.md) |
 
-## Planned or inferred, not established outcomes
+## Objects and unresolved things
 
-- Earlier briefs propose Flora's body at 41 and Leo at 59, after being 44 at her death. These are inherited planning assumptions until adopted explicitly; the source establishes the fifteen-year interval and Jo's age.
-- Previous ownership of the table is plausible, not explicit. Purchase, delivery, fit and accompanying delivery remain unresolved.
-- Flora's hope of taking the photos to Jo's table does not grant an evening invitation.
-- Leo's present household, partnership status and history with Bess are unknown. Jo's circumstances must not be filled in from stereotypes about grief or estrangement.
-- The later party, departure with Leo, walk and boat visit are proposed alternatives, not canon. A morning boat trip does not force an early exit from an evening party.
-- Exact breakfast/departure time, travel duration, story location/date and detailed return mechanics remain open.
+The six physical photographs remain in the green dress pocket through chapter 7. In chapter 8 Flora puts their envelope into the blue bag's inner zipped pocket with her changed clothes accounted for. Chapter 17 takes out and returns that envelope. The two new digital photographs in chapter 21 are on Jo's phone, not new prints added to the six.
 
-## Open promises for the next scene
+The green dress has yellow pocket stitching and a warehouse snag. Flora changes at Leo's cottage into trousers, a white shirt, socks and soft shoes; the dress and original shoes go into the bag. Leo's canvas jacket accompanies the later walk and remains on Flora at collection. Jo wears a blue dress at dinner and trousers in the morning. These are distinct clothing changes, not evidence of an unseen event.
 
-Show the reunion with adult Jo and the furniture decision. Keep the clothes bag and photograph envelope accounted for when they matter. Let the result establish the next action without quietly granting additional time, access or an invitation. Update this record against generated prose; do not edit the old source to make a new plan appear pre-established.
+The blue bag travels with Flora from car to cottage and shed, returns to Jo's kitchen, then goes back to Leo's cottage and into his locked car for the rowing trip. It stays with Leo at collection. The table chip, Jo's pencil, borrowed dish and tea towel have separate owners and histories; do not treat every object as a loan or a keepsake. Phone access is also explicit: Flora borrows Leo's phone in chapter 18; Jo uses her own for the later photographs.
 
-## Drafting commitments adopted under H-005
-
-The [full outline](../outline/novel-outline.md) now chooses Merewick, an invented English Midlands town, 16–17 May2026; ages Flora41, Leo59, Jo30; a rented first-floor flat; 118cm round table with removable legs; and a calm, sheltered daylight skiff outing with two rowing oars. These are AI creative decisions, not retroactive readings of O01/C01. The borrowed paddle in the photograph remains distinct. The warehouse purchase is enacted in its reviewed candidate at £90 delivered; later dinner invitation and other planned outcomes still require their actual chapters. Six planned diners include Jo; Patrick is seventh if present, and a later Flora invitation makes eight. Old folding furniture supplies additional surface/places. Leo lives alone after a real later relationship with Catherine, ended two years earlier. Bess is a rowing friend.
-
-The development boat-shed scene is retained unchanged but cannot be imported verbatim as chapter9: its house-sale revelation, dress, lunch and one-oar demonstration differ from the adopted sequence. Chapter9 must repair all four. Chapter8 must explicitly transfer the photos out of the green dress. Per-batch handoffs record actual drafted states; reconcile them against the final prose before replacing these commitments with established-canon claims.
+The cause and administration of the return remain unexplained beyond the rules Flora receives. Other people's inner lives, the exact year of the house sale, Jo's future housing decision and what follows collection are not supplied by omniscience. These are retained limits, not missing scenes to fill automatically. Any further revision must check its dependent passages and regenerate the verified package when manuscript bytes change.

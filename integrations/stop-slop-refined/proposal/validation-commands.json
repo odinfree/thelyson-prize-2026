@@ -1,0 +1,263 @@
+[
+  {
+    "argv": [
+      "git",
+      "clone",
+      "--quiet",
+      "--no-hardlinks",
+      "{PROJECT_ROOT}/.local/reference/stop-slop-refined",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-build"
+    ],
+    "cwd": "None",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "checkout",
+      "--quiet",
+      "--detach",
+      "1d384cd0b6577ce5ad15297c8e867334e0ba1af1"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-build",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-build",
+    "exit_code": 0,
+    "stdout": "1d384cd0b6577ce5ad15297c8e867334e0ba1af1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-build",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "clone",
+      "--quiet",
+      "--no-hardlinks",
+      "{PROJECT_ROOT}/.local/reference/stop-slop-refined",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check"
+    ],
+    "cwd": "None",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "checkout",
+      "--quiet",
+      "--detach",
+      "1d384cd0b6577ce5ad15297c8e867334e0ba1af1"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "1d384cd0b6577ce5ad15297c8e867334e0ba1af1\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "apply",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/history/review-input-binding-v1.patch"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-build",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "add",
+      "--intent-to-add",
+      "."
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-build",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "apply",
+      "--check",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/review-input-binding.patch"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "scripts/build_revision_artifact.mjs",
+      "--data",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/proof/revision-data.json",
+      "--output",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/proof/before.html"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/proof/before.html\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "apply",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/review-input-binding.patch"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "--test",
+      "tests/check_review_inputs.test.mjs"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "\u2714 unchanged declared source, candidate and context pass without approving prose (2.369875ms)\n\u2714 public fixture stale-candidate.json is rejected (0.676583ms)\n\u2714 public fixture stale-context.json is rejected (0.573708ms)\n\u2714 public fixture missing-role.json is rejected (0.184791ms)\n\u2714 public fixture invalid-file.json is rejected (0.364792ms)\n\u2714 changing only source invalidates the check (4.893792ms)\n\u2714 line endings are bytes, not normalized text (3.442167ms)\n\u2714 context is optional, while source and candidate remain required (0.440625ms)\n\u2714 duplicate IDs, invalid hashes, unknown roles and absent paths fail before reuse (0.625666ms)\n\u2714 malformed shapes fail closed (0.115875ms)\n\u2714 missing file and non-directory root are rejected (0.404083ms)\n\u2714 lexical absolute and traversal paths are refused (0.303542ms)\n\u2714 a symlink escaping root fails even with a matching content hash (3.300125ms)\n\u2714 CLI reports matching inputs and stale failure with different exit codes (51.318542ms)\n\u2714 CLI rejects malformed JSON and duplicate flags (54.072708ms)\n\u2714 symlink CLI invocation checks unchanged.json, with and without preserved main symlink (58.422917ms)\n\u2714 symlink CLI invocation checks stale-candidate.json, with and without preserved main symlink (57.748667ms)\n\u2714 symlink CLI invocation checks malformed.json, with and without preserved main symlink (54.57175ms)\n\u2139 tests 18\n\u2139 suites 0\n\u2139 pass 18\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 326.530958\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "--check",
+      "docs/app.js"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "--check",
+      "scripts/generate-site-data.mjs"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "--check",
+      "scripts/build_revision_artifact.mjs"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "--check",
+      "scripts/check_review_inputs.mjs"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "scripts/generate-site-data.mjs"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "wrote docs/site-data.js\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--exit-code",
+      "--",
+      "docs/site-data.js"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "node",
+      "scripts/build_revision_artifact.mjs",
+      "--data",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/proof/revision-data.json",
+      "--output",
+      "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/proof/after.html"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/proof/after.html\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "{PROJECT_ROOT}/integrations/stop-slop-refined/proposal/.local/validation-v2/patch-check",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

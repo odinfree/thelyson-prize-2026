@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "review_id": "dispatch-notice-review-v1",
+  "inputs": [
+    {
+      "id": "source",
+      "role": "source",
+      "path": "source.txt",
+      "sha256": "dacc91571ea606f943b0a3e0545d688e551e9e62eec61e4f57e26194467e6ed0"
+    },
+    {
+      "id": "candidate",
+      "role": "candidate",
+      "path": "candidate-changed.txt",
+      "sha256": "e8e8a750c26aa31d457184f91d11292e3e254c302af60b983f112cb815ee704e"
+    },
+    {
+      "id": "context",
+      "role": "context",
+      "path": "context.txt",
+      "sha256": "a5a872f5015a2336db03da4565bc85d235a4ce72696433ae6aee1b01ebd05418"
+    }
+  ]
+}

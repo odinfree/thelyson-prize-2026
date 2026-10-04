@@ -1,6 +1,6 @@
 # Research-to-contribution roadmap
 
-Status: proposed work, 3 October 2026. Baseline: [`1d384cd0b6577ce5ad15297c8e867334e0ba1af1`](https://github.com/odinfree/stop-slop-refined/tree/1d384cd0b6577ce5ad15297c8e867334e0ba1af1). No implementation is included in this plan.
+Status updated 4 October 2026. Baseline: [`1d384cd0b6577ce5ad15297c8e867334e0ba1af1`](https://github.com/odinfree/stop-slop-refined/tree/1d384cd0b6577ce5ad15297c8e867334e0ba1af1), refreshed unchanged on 4 October. The broad style changes below remain hypotheses. A separate [review-input binding proposal](proposal/README.md) now supplies a small local implementation, original public fixtures and independently checked repair evidence. Nothing has been shipped upstream.
 
 ## Campaign evidence update
 
@@ -11,7 +11,7 @@ The more promising transfer is a small review-record extension: distinguish diag
 | Proposed transfer | Current evidence | Next acceptance evidence |
 | --- | --- | --- |
 | Fiction-specific style route | Two diagnostic overlays did not advance | Fresh comparison of actual applied revisions, with repair and preservation assessed separately |
-| Source and revision identity in review records | Working private prototype and actual-repair replay | Small public fixture demonstrating stale-review rejection without claiming semantic validation |
+| Source and revision identity in review records | Private prototype, actual-repair replay and local public proposal | Original fixtures and independent implementation review now recorded in the proposal; refresh baseline before any later upstream contribution |
 | Separate aesthetic disagreement from requirement failure | Three diagnostic labels remained disputable on audit | A public example retaining both interpretations without forcing a universal rewrite rule |
 | Reader comparison guidance | Four-opening packet prepared; no participants or responses | Actual reading evidence with exposure, order and missingness retained |
 

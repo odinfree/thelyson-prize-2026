@@ -11,7 +11,7 @@ from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, KeepTogether
 from pypdf import PdfReader
 from manuscript import inspect
 
@@ -75,16 +75,26 @@ def main():
         h.chapter_number = chapter['number']
         flow.append(h)
         first_paragraph = True
-        for paragraph in chapter['body'].split('\n\n'):
+        paragraphs = [p.strip() for p in chapter['body'].split('\n\n') if p.strip()]
+        tail_start = len(paragraphs)
+        tail_words = 0
+        while tail_start > 0 and tail_words < 60:
+            tail_start -= 1
+            tail_words += len(paragraphs[tail_start].split())
+        tail = []
+        for paragraph_index, paragraph in enumerate(paragraphs):
             paragraph = paragraph.strip()
             if not paragraph:
                 continue
+            destination = tail if paragraph_index >= tail_start else flow
             if paragraph == '* * *':
-                flow.append(Paragraph('* * *', separator))
+                destination.append(Paragraph('* * *', separator))
                 first_paragraph = True
             else:
-                flow.append(Paragraph(escape(' '.join(paragraph.splitlines())), first if first_paragraph else body))
+                destination.append(Paragraph(escape(' '.join(paragraph.splitlines())), first if first_paragraph else body))
                 first_paragraph = False
+        # Keep a small closing block together, avoiding a two-line chapter tail on a page of its own.
+        flow.append(KeepTogether(tail))
     doc.build(flow, onFirstPage=footer, onLaterPages=footer)
     reader = PdfReader(output)
     export = {'schema_version': 1, 'source_manuscript_fingerprint': report['manuscript_fingerprint'],

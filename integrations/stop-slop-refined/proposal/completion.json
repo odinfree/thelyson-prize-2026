@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "state": "local_proposal_independently_reviewed_not_contributed",
+  "patch_sha256": "fee91932f93a2abebe5d45c2404848a91f502bf18bde23fa7572b0e5e6d23ba0",
+  "upstream_commit": "1d384cd0b6577ce5ad15297c8e867334e0ba1af1",
+  "independent_review": {
+    "path": "book/reviews/2026-10-04-stop-slop-proposal-review.md",
+    "sha256": "9386c4912f897c25fed9e4525ca11a38cc4dc1882530fe33d4ca72e6a378549f"
+  },
+  "resolved_finding": "SS-01: symlinked CLI skipped execution; repaired and independently verified",
+  "metadata_only_change_after_review": {
+    "path": "integrations/stop-slop-refined/proposal/README.md",
+    "before_sha256": "109c431e2196ec24c7bc0c01ce568312af4bc3f00232155fdb31fa1a8468a11c",
+    "after_sha256": "1a2a7563361d8ee5db85c06918da13ede5495b3b10733a73b30bfd139e443cd8",
+    "description": "README now links completed independent review; implementation, tests, fixtures and patch remain unchanged."
+  },
+  "historical_status_note": "validation-summary.json and the reviewer original snapshot pins preserve author-stage status; this record documents subsequent completion without rewriting them.",
+  "literary_improvement_demonstrated": false,
+  "upstream_contribution_made": false
+}

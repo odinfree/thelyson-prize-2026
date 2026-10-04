@@ -1,0 +1,18 @@
+{
+  "type": "retrospective_origin_record",
+  "project_revision": "38e7942b5e4e6fe62baec71101f860efac34eeef",
+  "inputs": [
+    {
+      "path": "book/chapters/14-the-story-i-tell.md",
+      "sha256": "2220db8337d20f08f2862692d4b757f7bb1042fdeba78818c1da1bcd426e128c"
+    },
+    {
+      "path": "book/chapters/15-after-the-plates.md",
+      "sha256": "8bc8021e6ff9b95ee42d453484f7da76ad0a0ddb3b725a959bf0e3d6e5ad7fcc"
+    }
+  ],
+  "observation": "The adjacent first-draft chapters gave conflicting accounts of Flora remembering a prior promise. Both chapters were needed for that semantic review. The checker proposed here does not detect the contradiction; it can invalidate reuse when a declared input changes.",
+  "development_review": "book/reviews/2026-10-04-development-review.md",
+  "controlled_writing_improvement_test": false,
+  "fixture_prose": "Independently invented dispatch notices; no manuscript text or private prompts copied."
+}

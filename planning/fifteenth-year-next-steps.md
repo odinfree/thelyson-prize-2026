@@ -1,51 +1,28 @@
 # The Fifteenth Year — next steps
 
-Plan dated 4 October 2026, following the user's selection. These are working targets and assignments, not scheduled jobs. [Milestone status](goals.json) is the completion record; [workflow](workflow.md) defines how to work and [RESUME](RESUME.md) identifies the next action.
+Updated 4 October 2026. **Autonomous preparation is complete: a revised 22-chapter English novel of 44,552 prose words and a verified, unsent entry package.** [Goals](goals.json) G00–G09 and G11 are complete; G10 awaits a separate submission instruction. No live job is running. [RESUME](RESUME.md) and the [workflow](workflow.md) provide the handoff.
 
-## Immediate sequence
+## Completed sequence
 
-1. **Read the existing café continuation.** Present it to the user in German, as text in chat. It follows the selected opening and has a bounded AI continuity review. English remains the proposed entry source; reading translations do not silently revise it.
-2. **Brief and draft the warehouse reunion.** Produce approximately 1,500–2,000 English words, with a German reading version. Begin with arrival and Flora's first encounter with adult Jo. Make the table purchase, rejection or other concrete decision occur on the page. Jo and Leo must act for reasons of their own; end with a changed situation. Do not assume purchase, delivery or an evening invitation in advance.
-3. **Assess that scene before expanding.** Separate continuity, the intended scene change, character agency and the user's reading reaction. Preserve mixed motives. Revise the demonstrated problem and recheck the actual resulting passage. Human response must be recorded only when received; it is not a mandatory approval step before every reversible draft.
+1. Preserved the two original English sources in the [baseline](../book/brief/source-baseline.json) and deliberately imported them into chapter 1.
+2. Developed the warehouse reunion, a distinct middle test and two ending alternatives; recorded the [development review](../book/reviews/2026-10-04-development-review.md). German [café](../book/reading/de/02-das-cafe.md) and [warehouse](../book/reading/de/03-die-unterseite.md) excerpts remain available as text, not a complete German novel.
+3. Adopted fictional Merewick, a one-day structure and the walk-and-row ending in the [creative brief](../book/brief/creative-brief.md) and [full outline](../book/outline/novel-outline.md). These detailed choices are AI decisions under the autonomous instruction, not a human preference result.
+4. Completed the full 44,851-word first draft and preserved it at `38e7942b5e4e6fe62baec71101f860efac34eeef` before revision.
+5. Read the whole novel, cross-reviewed chapters, applied bounded structural and continuity repairs and independently checked the changed passages. The [final editorial status](../book/reviews/final-editorial-status.json) records completion; the revised source is preserved at `e739f40896e8b08828bf22e8809dcc0873998225` on public main.
+6. Rechecked published requirements and prepared the [entry package](../submission/README.md). Its 167-page PDF matches the declared source in both complete token and non-whitespace character sequences. All pages were inspected in contact sheets and six in detail. The [package report](../submission/package-report.json) records scope and limits.
 
-The user directs the book and gives feedback; Codex composes manuscript wording, maintains source records and presents reading versions. This planning delivery contains no new manuscript scene. The café continuation already exists and should not be generated again by default.
+The original calendar stretched preparation into late October. It remains historical planning evidence in Git, not unfinished work or a scheduled wait. The actual length is below the initial 45,000–50,000-word estimate and within the published 40,000–120,000-word range.
 
-## Build a book around the day
+## What remains
 
-After the reunion, develop one consequential middle scene of roughly 1,500–2,200 words and two brief ending alternatives. Choose the middle test from an activity the earlier scenes make possible, rather than jumping to a predetermined party or boat trip. It should supply pleasure, shared work or disagreement with a consequence beyond another lesson in acceptance.
+The package is available for the user's reading and entry decision. Human feedback is recorded only when received. Any resulting manuscript changes are written by AI, checked in their affected context and followed by a fresh manifest and PDF verification. A completed mechanical check does not establish reader appeal, originality or contest success.
 
-For each ending alternative, specify the last action, what makes it possible earlier, what each person wants, and what stays unresolved. Keep the 07:00 departure boundary in both. Choose a working ending after the middle test; its exact prose can develop with the draft.
+Actual entry requires a separate instruction for this concrete package and the private entrant contact and terms choices. Before sending, refresh the [applicable rules](../contest/2026-10-04-package-check.md) and [open questions](../contest/open-questions.md). Do not infer publication-history eligibility or a license from silence in the rules. If instructed to send, verify the actual receipt; acceptance remains a separate state. Follow the [submission checklist](../submission/checklist.md).
 
-Then build an approximately 18–22-chapter outline toward **45,000–50,000 English words**. Chapter count and length are planning estimates. Vary chapter size and pace; do not assign one chapter to each hour. Each outline card records viewpoint, approximate time/place, immediate desire, action, consequence and research needs. If the outline depends on waiting, repeated refusals or unnecessary flashbacks to reach length, revise the structure before filling pages.
+The internal target for entry is 30 October, with no submission automation running. The advertised deadline is 31 October 2026 at 23:59 AoE, equivalent to 1 November at 12:59 Europe/Zurich. Entry materials are ready early so a later instruction need not begin with drafting or export work.
 
-## Decisions and targeted research
+## Transfer and research
 
-| Decision | Resolve by | Work needed |
-| --- | --- | --- |
-| Flora's concrete present-day desire | Middle-scene brief | Find what she wants to do or experience beyond regaining her old role; let it evolve |
-| Jo's and Leo's independent aims | Reunion and middle briefs | Let their existing errands/interests cause choices, not just limits on Flora |
-| Setting, story date and logistics | Before full outline | Choose a place; check travel, opening hours and daylight where planned action depends on them |
-| Return mechanics | Before dependent scenes | Define fatigue/sleep, collection and necessary bodily constraints; leave irrelevant mechanics unexplained |
-| Final sequence | After middle test | Compare both ending outlines against actual preceding action |
-| Optional boat activity | Only if retained | Check specific craft, location, conditions and available time; a photograph does not establish an arranged outing |
+A demonstrated review-context problem has produced a [local Stop Slop proposal](../integrations/stop-slop-refined/proposal/README.md), with original fixtures, validation and separate review. It has not been contributed to `stop-slop-refined`; an upstream contribution remains a future phase with a fresh baseline check.
 
-Research the scene's needs using primary sources. Grief literature may inform possible experiences but cannot prescribe these characters' feelings. Label speculative rules as invention. Earlier research found recognizable reunion-with-the-dead devices; distinctiveness must arise from Flora's viewpoint and the particular life encountered, not a claim that the premise is unprecedented.
-
-## Working calendar
-
-| Target | Deliverable | Completion evidence |
-| --- | --- | --- |
-| 4–5 October | Café reading, warehouse brief and scene | Actual prose and separate feedback/continuity notes |
-| 6–7 October | Middle scene, two ending outlines, setting/world decisions | Concrete alternatives and consequences that support continued development |
-| 8–9 October | Chapter outline, timeline and minimal continuity setup | Beginning-to-ending plan without filler or unearned logistical solutions |
-| 10–21 October | Complete English draft, provisional 45,000–50,000 words | Full manuscript including ending; roughly 3,500–4,000 new words per drafting day depending on retained development material |
-| 22–25 October | Structural revision | Review complete arc, repetition, character agency and payoff |
-| 26–27 October | Continuity, voice and sentence revision | Check actual revised text and retained intentional ambiguity |
-| 28–29 October | Entry package | Live rules recheck, English PDF, extracted-text/word-count checks and accurate disclosure |
-| 30 October | Target submission, when instructed | Verified receipt; acceptance tracked separately |
-
-The [published conditions](https://thelyson.ai/#reglement) still require an English PDF of 40,000–120,000 words; the stated deadline remains 31 October at 23:59 AoE, or 1 November at 12:59 Zurich time. The [4 October refresh](../research/sources/2026-10-04-contest-refresh.json) checked core conditions, not the upload service or unresolved rights/selection questions. Keep the [open-questions register](../contest/open-questions.md) current before entry.
-
-## Keep work focused
-
-Use existing source and review tools where they help the manuscript. New model comparisons, broad paper searches and Stop Slop implementation can wait for a concrete writing problem. No more four-concept development is planned. Preserve the other concepts and the closed 3 October campaign as historical work; no new GPU or paid research allocation is created here.
+Keep the other story concepts and the [closed 3 October research campaign](../research/notes/2026-10-03-campaign-summary.md) as historical work. Do not restart the four-concept search, exhausted inference allocation or paused automation. New research is justified by a concrete unresolved writing or entry question, not by the earlier calendar.

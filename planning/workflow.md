@@ -27,7 +27,7 @@ Roles may run sequentially. A separate agent can research or review while the au
 
 ## From development to manuscript
 
-The current two scenes remain pinned in the private lab. When beginning the manuscript, deliberately import or revise the chosen source into `book/chapters/` and record provenance; do not mark a private draft as a public manuscript merely because it is linked. Keep scene IDs independent of chapter numbering until the outline settles. Use a manifest for assembled chapter order and count only manuscript prose toward entry length.
+The two original development sources remain pinned in the private lab and were deliberately imported into chapter 1 with provenance. The complete public manuscript now has 22 chapters and a [final manifest](../book/reviews/final-manifest.json). Preserve the private development baseline and first-draft Git commit when making later revisions. Count manuscript prose separately from chapter headings, notes and reading translations.
 
 Structural revision reads the whole arc before sentence polishing. Maintain separate factual continuity, character-knowledge and artistic questions. A brief, outline or promising sample does not certify a novel-length payoff. Once manuscript tooling exists, use relevant word-count/order/export checks; do not add tests that assert literary taste.
 
