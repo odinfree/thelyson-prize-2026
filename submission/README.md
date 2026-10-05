@@ -1,6 +1,6 @@
 # The Fifteenth Year — entry handoff
 
-Prepared and checked on 4 October 2026. **The English novel and local entry package are complete; no entry has been sent.**
+Prepared and checked on 4 October; **submitted on 5 October 2026 with an official successful receipt**. See [current status](status.json) and the [submission preflight](../contest/2026-10-05-submission-check.md). Eligibility and judging outcomes remain unconfirmed.
 
 The manuscript contains 22 chapters and 44,552 prose words. The local PDF contains 167 pages and is 335,928 bytes. All source chapters have been read, cross-reviewed and revised; separate reviewers checked the applied repairs. Both the extracted word sequence and all non-whitespace characters match the declared manuscript. All pages were inspected in rendered contact sheets, with six pages additionally inspected at full resolution. These are bounded editorial and technical checks, not a prediction of contest rank.
 
@@ -16,8 +16,10 @@ Local generated files are in ignored `submission/exports/`: `the-fifteenth-year.
 
 PDF SHA-256: `e2c03246cda441ffadd58a2bc95e83882ca9f87c3b2c398c984ef2138f9b6cec`.
 
-## Later submission
+## Submission record
 
-The currently published deadline is **31 October 2026, 23:59 AoE**, equivalent to **1 November 2026, 12:59 Zurich**. Recheck the live official pages before sending. The project's current instruction keeps sending separate from preparation. Entrant contact information and acceptance of terms remain for that step; store them outside Git. The optional model/pen-name field is not a reason to invent a model snapshot. No original-language supplement is needed for this English original.
+The user instructed submission of this completed package and supplied the contact email privately. The official API returned a successful upload token and then HTTP 200 with `ok: true` and a submission reference on 5 October 2026. Both steps succeeded on their first attempt. Raw requests, responses and the reference are in ignored `submission/receipts/2026-10-05/`; contact and upload tokens are not published. A separate read-only reconciliation confirmed the uploaded PDF bytes, submitted disclosure and role, and receipt.
 
-Publication-history eligibility, manuscript rights and other listed terms remain unspecified in the inspected pages. A later authorized submission should retain the actual response privately and distinguish submission from eligibility or acceptance. Do not run the old research heartbeat or start a new paid allocation to complete this handoff.
+The main and agent-entry pages were unchanged from 4 October, and the service reported submissions open. The published deadline remains 31 October 2026 at 23:59 AoE, equivalent to 1 November at 12:59 Zurich. No new manuscript revision or PDF regeneration was needed.
+
+The current state is **submission received**, with no separate eligibility or judging outcome confirmed. The [open questions](../contest/open-questions.md) retain matters not answered by the published pages. Preserve the submitted bytes and private receipt. Do not automatically upload another entry or infer that a later local revision replaces it. No monitoring automation was created.

@@ -1,6 +1,6 @@
 # The Fifteenth Year — story bible
 
-Updated 4 October 2026 against the complete revised manuscript: **22 chapters, 44,552 prose words**. The [final manifest](../reviews/final-manifest.json) identifies its exact source bytes. The [editorial completion record](../reviews/final-editorial-status.json) links the independently checked repairs. The [entry package](../../submission/README.md) is verified and unsent.
+Continuity updated 4 October 2026; submission status updated 5 October 2026. The complete revised manuscript has **22 chapters, 44,552 prose words**. The [final manifest](../reviews/final-manifest.json) identifies its exact source bytes. The [editorial completion record](../reviews/final-editorial-status.json) links the independently checked repairs. The verified [entry package](../../submission/README.md) was submitted on 5 October 2026. The [official receipt is confirmed](../../submission/status.json); eligibility and judging remain unconfirmed.
 
 The user selected the concept and authorized autonomous execution. Setting, detailed structure and ending are AI choices now embodied in this draft, not inferred human preferences. The [original source baseline](../brief/source-baseline.json), development candidates and earlier batch handoffs remain historical evidence; where they differ, consult the current chapters rather than silently revising that history.
 

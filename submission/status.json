@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-05",
+  "title": "The Fifteenth Year",
+  "submission_state": "official_receipt_confirmed",
+  "submitted_at_utc": "2026-10-05T19:31:00.526886+00:00",
+  "channel": "Official API documented at https://thelyson.ai/agents",
+  "http_status": 200,
+  "response_ok": true,
+  "confirmation_reference_saved_privately": true,
+  "private_receipt_directory": "submission/receipts/2026-10-05/",
+  "pdf_sha256": "e2c03246cda441ffadd58a2bc95e83882ca9f87c3b2c398c984ef2138f9b6cec",
+  "pdf_bytes": 335928,
+  "manuscript_prose_words": 44552,
+  "pdf_pages": 167,
+  "method_words": 210,
+  "method_body_sha256": "9253c440f5657399f0b700401443a40018f348f4712e2b7d81db4c3f94e08b69",
+  "human_role": "advice",
+  "contact_route": "User-provided email; value omitted from public records",
+  "authorization": "provenance/human-inputs.md#h-006--2026-10-05--submission-instruction",
+  "rules_check": "contest/2026-10-05-submission-check.md",
+  "attempts": {
+    "upload": 1,
+    "submit": 1
+  },
+  "eligibility": "not_confirmed",
+  "judging": "no_result",
+  "award": "no_result",
+  "limits": "An official successful submission response confirms receipt, not a separate eligibility ruling, shortlist placement or award.",
+  "automation_created": false
+}

@@ -1,6 +1,6 @@
 # The Fifteenth Year — next steps
 
-Updated 4 October 2026. **Autonomous preparation is complete: a revised 22-chapter English novel of 44,552 prose words and a verified, unsent entry package.** [Goals](goals.json) G00–G09 and G11 are complete; G10 awaits a separate submission instruction. No live job is running. [RESUME](RESUME.md) and the [workflow](workflow.md) provide the handoff.
+Updated 5 October 2026. **The revised 22-chapter, 44,552-word English novel was submitted on 5 October 2026; the official receipt is confirmed. Eligibility and judging remain unconfirmed.** All [goals](goals.json) G00–G11 are complete. The [submission status](../submission/status.json), [RESUME](RESUME.md) and [workflow](workflow.md) provide the handoff. No live job is running, and no monitoring automation was created.
 
 ## Completed sequence
 
@@ -10,16 +10,17 @@ Updated 4 October 2026. **Autonomous preparation is complete: a revised 22-chapt
 4. Completed the full 44,851-word first draft and preserved it at `38e7942b5e4e6fe62baec71101f860efac34eeef` before revision.
 5. Read the whole novel, cross-reviewed chapters, applied bounded structural and continuity repairs and independently checked the changed passages. The [final editorial status](../book/reviews/final-editorial-status.json) records completion; the revised source is preserved at `e739f40896e8b08828bf22e8809dcc0873998225` on public main.
 6. Rechecked published requirements and prepared the [entry package](../submission/README.md). Its 167-page PDF matches the declared source in both complete token and non-whitespace character sequences. All pages were inspected in contact sheets and six in detail. The [package report](../submission/package-report.json) records scope and limits.
+7. Submitted the verified package on 5 October with the user’s explicit authorization and confirmed the official receipt. Private entry details and the receipt remain outside public documentation.
 
 The original calendar stretched preparation into late October. It remains historical planning evidence in Git, not unfinished work or a scheduled wait. The actual length is below the initial 45,000–50,000-word estimate and within the published 40,000–120,000-word range.
 
 ## What remains
 
-The package is available for the user's reading and entry decision. Human feedback is recorded only when received. Any resulting manuscript changes are written by AI, checked in their affected context and followed by a fresh manifest and PDF verification. A completed mechanical check does not establish reader appeal, originality or contest success.
+The submitted package and its verification evidence remain available for reading. Human feedback is recorded only when received. Any resulting manuscript changes are written by AI, checked in their affected context and followed by a fresh manifest and PDF verification. Local changes do not replace the submitted entry, and no automatic resubmission is planned. A completed mechanical check does not establish reader appeal, originality or contest success.
 
-Actual entry requires a separate instruction for this concrete package and the private entrant contact and terms choices. Before sending, refresh the [applicable rules](../contest/2026-10-04-package-check.md) and [open questions](../contest/open-questions.md). Do not infer publication-history eligibility or a license from silence in the rules. If instructed to send, verify the actual receipt; acceptance remains a separate state. Follow the [submission checklist](../submission/checklist.md).
+The official receipt confirms submission, not eligibility or a judging outcome. Preserve the dated [package-stage rules check](../contest/2026-10-04-package-check.md), [open questions](../contest/open-questions.md) and [submission checklist](../submission/checklist.md). Do not infer publication-history eligibility or a license from silence in the rules. Record any later organizer result only when evidence is received; no automatic monitoring has been started.
 
-The internal target for entry is 30 October, with no submission automation running. The advertised deadline is 31 October 2026 at 23:59 AoE, equivalent to 1 November at 12:59 Europe/Zurich. Entry materials are ready early so a later instruction need not begin with drafting or export work.
+The original internal entry target of 30 October is superseded by the completed 5 October submission. The advertised deadline is 31 October 2026 at 23:59 AoE, equivalent to 1 November at 12:59 Europe/Zurich. No submission automation is running.
 
 ## Transfer and research
 

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "project": "The Fifteenth Year",
-  "updated_on": "2026-10-04",
+  "updated_on": "2026-10-05",
   "timezone": "Europe/Zurich",
-  "long_term_objective": "Complete and revise the selected English novel and prepare a verified contest entry package; external submission remains separately instructed.",
-  "current_phase_goal": "G10",
-  "next_execution_goal": "G10",
+  "long_term_objective": "Complete and revise the selected English novel, verify its entry package, submit when instructed, and preserve the actual receipt separately from any eligibility or award outcome.",
+  "current_phase_goal": null,
+  "next_execution_goal": null,
   "status_values": [
     "queued",
     "active",
@@ -31,15 +31,17 @@
     "new_paid_or_gpu_allocation": false,
     "recurring_automation_created": false,
     "previous_campaign_heartbeat": "paused",
-    "submission": "verified_local_package_unsent",
-    "acceptance": "not_submitted",
+    "submission": "official_receipt_confirmed",
+    "acceptance": "not_confirmed",
     "first_draft_words": 44851,
     "first_draft_complete": true,
     "revised_prose_words": 44552,
     "revision_state": "independently_verified",
     "pdf_pages": 167,
     "pdf_sha256": "e2c03246cda441ffadd58a2bc95e83882ca9f87c3b2c398c984ef2138f9b6cec",
-    "stop_slop": "local_proposal_independently_reviewed_not_contributed"
+    "stop_slop": "local_proposal_independently_reviewed_not_contributed",
+    "submitted_on": "2026-10-05",
+    "submission_status_record": "submission/status.json"
   },
   "goals": [
     {
@@ -316,13 +318,13 @@
         "contest/2026-10-04-package-check.md",
         "book/reviews/2026-10-04-package-tooling-review.md"
       ],
-      "next_action": "Complete; use the verified local package for the separately instructed submission decision. Reverify if files or rules change.",
+      "next_action": "Prepared package has now been submitted under G10. Preserve the exact submitted bytes and pre-submission verification evidence.",
       "completed_on": "2026-10-04"
     },
     {
       "id": "G10",
       "title": "Submit when instructed and reconcile receipt",
-      "status": "awaiting_instruction",
+      "status": "complete",
       "depends_on": [
         "G09"
       ],
@@ -335,8 +337,15 @@
         "Specific submission instruction received after concrete package is available.",
         "Actual receipt verified and any acceptance outcome recorded separately."
       ],
-      "evidence": [],
-      "next_action": "Await the user's separate instruction for sending this completed package and the private entry details; no submission job is running."
+      "evidence": [
+        "provenance/human-inputs.md#h-006--2026-10-05--submission-instruction",
+        "submission/status.json",
+        "contest/2026-10-05-submission-check.md",
+        "Official endpoint returned HTTP200, ok=true and a submission reference; request/response and reference saved privately."
+      ],
+      "next_action": "Complete. Preserve the private receipt; update outcome only when actual organizer evidence arrives. Do not resubmit automatically.",
+      "authorized_on": "2026-10-05",
+      "completed_on": "2026-10-05"
     },
     {
       "id": "G11",

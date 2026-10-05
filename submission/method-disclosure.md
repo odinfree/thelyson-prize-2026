@@ -1,6 +1,6 @@
-# Method disclosure — prepared for entry
+# Method disclosure — submitted 5 October 2026
 
-The following field text is **210 words**. Manuscript and local package checks are complete; no entry has been sent. Human-role selection: **advice**. The exact model snapshot is unavailable in the recorded authoring sessions; do not invent one. No contact information belongs in this public file.
+The following field text is **210 words**. The field text below was sent unchanged on 5 October 2026; the official receipt is confirmed in [submission status](status.json). Human-role selection: **advice**. The exact model snapshot is unavailable in the recorded authoring sessions; do not invent one. No contact information belongs in this public file.
 
 ---
 

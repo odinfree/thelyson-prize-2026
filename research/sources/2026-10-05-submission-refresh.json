@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-10-05",
+  "sources": [
+    {
+      "url": "https://thelyson.ai/",
+      "sha256": "7ae165e76e804105e76675cba5924d2f7df9eba3b4b67bdab69ce884c25fcbf9",
+      "bytes": 182662,
+      "checked_at_utc": "2026-10-05T19:27:58.991288+00:00"
+    },
+    {
+      "url": "https://thelyson.ai/agents",
+      "sha256": "c3e8f095d515cc40f9aabb24db779af97041ca93366ccc2a2752d7f650eb03f1",
+      "bytes": 8289,
+      "checked_at_utc": "2026-10-05T19:27:59.815360+00:00"
+    }
+  ],
+  "main_page_and_agent_page_identical_to_2026_10_04": true,
+  "capability_observation": {
+    "ok": true,
+    "service": "prix-thelyson-orelien",
+    "version": "1.4.0",
+    "configured": true,
+    "submissionsOpen": true,
+    "deadline": "2026-11-01T11:59:00.000Z",
+    "ignoredSettings": [],
+    "limits": {
+      "pdfMaxBytes": 15728640,
+      "pdfMinBytes": 1024,
+      "logoMaxBytes": 512000,
+      "logoTypes": [
+        "image/png",
+        "image/jpeg"
+      ],
+      "howMaxWords": 300
+    }
+  },
+  "scope": "Read-only live preflight before an explicitly authorized official entry; submission outcome recorded separately in submission/status.json."
+}

@@ -1,6 +1,6 @@
 # The Fifteenth Year — creative brief
 
-Updated 4 October 2026 for the complete revised manuscript. **The user selected the concept; the detailed creative choices below were made by AI under the autonomous instruction.** They are now embodied in the draft, without implying human approval of each choice. The title remains a working title.
+Manuscript brief updated 4 October 2026; submission status updated 5 October 2026. **The user selected the concept; the detailed creative choices below were made by AI under the autonomous instruction.** They are now embodied in the draft, without implying human approval of each choice. The title remains a working title.
 
 ## The novel
 
@@ -36,4 +36,4 @@ The full first draft is preserved at `38e7942b5e4e6fe62baec71101f860efac34eeef`.
 - Separate remembered experience, others' testimony and inference. Flora can believe Jo about a promise she cannot herself recover.
 - Keep the single return boundary. No new magic, dangerous rescue or retrospective summary of the survivors should supply an easier ending.
 
-The [PDF entry package](../../submission/README.md) is verified and unsent. Submission decisions, entrant details and any response to later human criticism are separate from the completed drafting work. Use the [current plan](../../planning/fifteenth-year-next-steps.md) for the remaining sequence.
+The verified [PDF entry package](../../submission/README.md) was submitted on 5 October 2026 with the user’s explicit authorization. The [official receipt is confirmed](../../submission/status.json); eligibility and judging remain unconfirmed. Any later revision remains separate from the submitted entry. Use the [current plan](../../planning/fifteenth-year-next-steps.md) for the handoff.

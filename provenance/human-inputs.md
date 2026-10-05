@@ -23,3 +23,8 @@ For later entries, record: date, subject, a concise account of the direction or 
 ## H-005 — 2026-10-04 — Autonomous execution
 
 The user instructed Codex to carry the project out autonomously from start to end. Effect: execute the selected book plan immediately, resolve provisional creative choices, draft and revise the English novel, and prepare a verified entry package. Reading translations remain text-only artifacts and do not block drafting while feedback is absent. Existing separate-instruction boundaries for actual contest submission and spending remain in force. No manuscript replacement language was supplied.
+
+
+## H-006 — 2026-10-05 — submission instruction
+
+The user instructed: “ok submit it”, referring to the completed verified entry package. The user then supplied the contest contact email in chat; it is stored only in ignored private submission records. This authorizes sending this package through the official entry channel, with the prepared truthful method and human-role disclosure. No manuscript wording was supplied or changed.
